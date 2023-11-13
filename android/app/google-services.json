@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873493013458",
+    "project_id": "project-vidya-da4c2",
+    "storage_bucket": "project-vidya-da4c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873493013458:android:2e415646e1ac390e799e0b",
+        "android_client_info": {
+          "package_name": "com.example.project_vidya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwzJLjvuUbPI20XupI7JQngK0KnMxb3I4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
