@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../controller/register_controller.dart';
-import '../../helper/firestore_helper.dart';
-import '../../model/user_model.dart';
+import '../controller/register_controller.dart';
+import '../../../../helper/firestore_helper.dart';
+import '../model/user_model.dart';
 
 class RegisterPage extends StatelessWidget {
   RegisterPage({Key? key}) : super(key: key);
   RegisterController controller = Get.put(RegisterController());
   final usernameController = TextEditingController();
   final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   GlobalKey<FormState> RegisterPageKey = GlobalKey<FormState>();
 
@@ -104,6 +105,40 @@ class RegisterPage extends StatelessWidget {
                           padding: const EdgeInsets.all(15),
                           child: TextFormField(
                             controller: emailController,
+                            validator: (val) {
+                              if (val!.isEmpty) {
+                                "Enter the your Email here.";
+                              } else if (val.length > 6) {
+                                "Enter only 6 digit username";
+                              } else if (val.endsWith("gmail.com")) {
+                                "Write the proper Email Address";
+                              }
+                            },
+                            decoration: InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.blue.shade900,
+                                ),
+                              ),
+                              prefixIcon: Icon(
+                                Icons.email,
+                                color: Colors.blue.shade900,
+                              ),
+                              suffixIconColor: Colors.blue,
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: const BorderSide(
+                                  color: Colors.blue,
+                                  width: 3,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(15),
+                          child: TextFormField(
+                            controller: passwordController,
                             validator: (val) {
                               if (val!.isEmpty) {
                                 "Enter the your Email here.";
