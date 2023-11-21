@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 class SelectionPage extends StatelessWidget {
   const SelectionPage({super.key});
@@ -32,7 +34,9 @@ class SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(MyRoutes.loginPage, arguments: "Student");
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -54,7 +58,9 @@ class SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(MyRoutes.loginPage, arguments: "Teacher");
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -76,7 +82,9 @@ class SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(MyRoutes.loginPage, arguments: "Parents");
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -98,7 +106,9 @@ class SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(MyRoutes.loginPage, arguments: "Principle");
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
@@ -120,7 +130,9 @@ class SelectionPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10),
               child: MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(MyRoutes.loginPage, arguments: "Tution Teacher");
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),

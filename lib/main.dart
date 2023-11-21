@@ -4,16 +4,19 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
+import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
 import 'package:project_vidya/view/screen/Register/page/register_page.dart';
 import 'package:project_vidya/view/screen/Register/page/selection_page.dart';
 import 'package:project_vidya/view/screen/home/page/teacher_home_page.dart';
+import 'package:project_vidya/view/screen/login/page/login_page.dart';
 import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
 import 'package:project_vidya/view/screen/topic/page/topic_page.dart';
 import 'package:provider/provider.dart';
 
+import 'Intro/intro_page.dart';
 import 'controller/splash_controller.dart';
 import 'firebase_options.dart';
 
@@ -43,7 +46,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       title: "Cart App",
-      initialRoute: MyRoutes.studHome,
+      initialRoute: MyRoutes.introPage,
       getPages: [
         GetPage(
           name: MyRoutes.splash,
@@ -82,6 +85,18 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: MyRoutes.registerPage,
           page: () => RegisterPage(),
+        ),
+        GetPage(
+          name: MyRoutes.loginPage,
+          page: () => LoginPage(),
+        ),
+        GetPage(
+          name: MyRoutes.introPage,
+          page: () => IntroScreen(),
+        ),
+        GetPage(
+          name: MyRoutes.physicsPage,
+          page: () => PhysicsPage(),
         ),
       ],
     );

@@ -8,4 +8,7 @@ class MyRoutes {
   static String registerPage = '/Registration';
   static String topicPage = '/TopicPage';
   static String exercisePage = '/ExercisePage';
+  static String loginPage = '/LoginPage';
+  static String introPage = '/IntroPage';
+  static String physicsPage = '/PhysicsPage';
 }

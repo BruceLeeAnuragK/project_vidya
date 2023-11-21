@@ -7,11 +7,12 @@ class ChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: InAppWebView(
-      initialUrlRequest: URLRequest(
-        url: Uri.parse(
-            "https://65589ad13b891453f3e54426--brilliant-axolotl-2ed172.netlify.app/"),
+      body: InAppWebView(
+        initialUrlRequest: URLRequest(
+          url: Uri.parse(
+              "https://65589ad13b891453f3e54426--brilliant-axolotl-2ed172.netlify.app/"),
+        ),
       ),
-    ));
+    );
   }
 }

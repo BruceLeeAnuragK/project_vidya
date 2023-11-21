@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../Register/model/user_model.dart';
-import '../components/Student_Component/home_component.dart';
+import '../../home/components/Student_Component/home_component.dart';
+import '../component/PhysicsComponent/select_physic_book.dart';
 
-class StudentHomePage extends StatelessWidget {
-  StudentHomePage({Key? key}) : super(key: key);
+class PhysicsPage extends StatelessWidget {
+  PhysicsPage({Key? key}) : super(key: key);
   List<String> stdList = [
     "Std 1"
         "Std 2"
@@ -25,10 +26,10 @@ class StudentHomePage extends StatelessWidget {
     int currentIndex = 0;
 
     final List<Widget> pages = [
-      HomeComponent(),
-      HomeComponent(),
-      HomeComponent(),
-      HomeComponent(),
+      SelectPhysicsComponent(),
+      SelectPhysicsComponent(),
+      SelectPhysicsComponent(),
+      SelectPhysicsComponent(),
     ];
     User? user = Get.arguments;
     return Scaffold(
