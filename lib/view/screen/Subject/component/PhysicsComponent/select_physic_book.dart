@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../../utils/route_utils.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 class SelectPhysicsComponent extends StatelessWidget {
   SelectPhysicsComponent({super.key});
@@ -21,61 +18,41 @@ class SelectPhysicsComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-            flex: 1,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Select Book : ",
-                    style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                    ),
-                  )
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 2 / 3,
+              mainAxisSpacing: 15,
+              crossAxisSpacing: 60),
+          itemCount: phyicsBooks.length,
+          itemBuilder: (context, index) => GestureDetector(
+            onTap: () {
+              Get.toNamed(MyRoutes.chapterPage);
+            },
+            child: Container(
+              height: 200,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    offset: Offset(5, 5),
+                    color: Colors.grey,
+                    spreadRadius: 5,
+                    blurRadius: 1,
+                  ),
                 ],
-              ),
-            ),
-          ),
-          Expanded(
-            flex: 10,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 2 / 3,
-                    mainAxisSpacing: 15,
-                    crossAxisSpacing: 60),
-                itemCount: phyicsBooks.length,
-                itemBuilder: (context, index) => Container(
-                  height: 200,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(5, 5),
-                        color: Colors.grey,
-                        spreadRadius: 5,
-                        blurRadius: 1,
-                      ),
-                    ],
-                    borderRadius: BorderRadius.circular(5),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(
-                        phyicsBooks[index],
-                      ),
-                    ),
+                borderRadius: BorderRadius.circular(5),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                    phyicsBooks[index],
                   ),
                 ),
               ),
             ),
           ),
-        ],
+        ),
       ),
     );
   }

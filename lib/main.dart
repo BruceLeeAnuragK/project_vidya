@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
+import 'package:project_vidya/view/screen/Chapters/chapter_page.dart';
 import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
@@ -97,6 +98,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: MyRoutes.physicsPage,
           page: () => PhysicsPage(),
+        ),
+        GetPage(
+          name: MyRoutes.chapterPage,
+          page: () => ChapterPage(),
         ),
       ],
     );

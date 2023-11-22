@@ -11,4 +11,5 @@ class MyRoutes {
   static String loginPage = '/LoginPage';
   static String introPage = '/IntroPage';
   static String physicsPage = '/PhysicsPage';
+  static String chapterPage = '/ChapterPage';
 }

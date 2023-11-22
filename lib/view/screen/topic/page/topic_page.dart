@@ -1,11 +1,7 @@
-import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../../../helper/auth_helper.dart';
-import '../../../../helper/firestore_helper.dart';
 import '../../Register/model/user_model.dart';
 
 class TopicPage extends StatelessWidget {
@@ -14,52 +10,6 @@ class TopicPage extends StatelessWidget {
   Widget build(BuildContext context) {
     User? user = Get.arguments;
     return Scaffold(
-      appBar: AppBar(
-        leading: Builder(
-          builder: (context) => MaterialButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            child: (user?.image?.isNotEmpty ?? false)
-                ? CircleAvatar(
-                    foregroundImage: NetworkImage("${user?.image}"),
-                    radius: 20,
-                  )
-                : Icon(
-                    Icons.format_list_bulleted,
-                    color: Colors.black,
-                  ),
-          ),
-        ),
-        title: Text(
-          "Topic",
-          style: GoogleFonts.sofia(
-            color: Colors.black,
-          ),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              AuthHelper.authHelper.signOut();
-              Get.offNamed('/');
-            },
-            icon: const Icon(
-              Icons.logout,
-              color: Colors.black,
-            ),
-          ),
-          IconButton(
-            onPressed: () {
-              Get.toNamed('/chat');
-            },
-            icon: Icon(
-              Icons.chat,
-              color: Colors.black,
-            ),
-          ),
-        ],
-      ),
       drawer: Drawer(
         child: Column(
           children: [
