@@ -571,7 +571,6 @@
                           "answer": " My grandmother has many wrinkles on her face. Shall I tell you a secret?\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -595,6 +594,19 @@
                     },
                     {
                       "id": 3,
+                      "name": "LET’S LISTEN TO A JOKE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "I asked my mother for twenty rupees. to see the lion jump the trees. He jumped so high, he touched the moon, and never came back till the end of June. \nCan you tell a joke and make everyone laugh? Say it first in your language and then in English. \n",
+                          "answer": "I asked my mother for twenty rupees. To see the lion jump the trees. He jumped so high, he touched the moon, and never came back till the end of June. \nYes, I can tell a joke and make everyone laugh. \nA Russian, visiting India, went for an eye checkup. \nThe Doctor shows the letters on the board: \nCZWXNQSTAZKY \nDoctor: Can you read this ? \nRussian: Read??? I even know the guy…, he’s my cousin.\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 4,
                       "name": "SAY ALOUD\n",
                       "exercise": [
                         {
@@ -603,12 +615,10 @@
                           "answer": "• walk more wrap joke \n• Smile, kite, mice, line\n",
                           "images": []
                         }
-
-
                       ]
                     },
                     {
-                      "id": 4,
+                      "id": 5,
                       "name": "LET’S WRITE\n",
                       "exercise": [
                         {
@@ -620,12 +630,10 @@
                             "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
                           ]
                         }
-
-
                       ]
                     },
                     {
-                      "id": 5,
+                      "id": 6,
                       "name": "TEAM TIME\n",
                       "exercise": [
                         {
@@ -634,12 +642,28 @@
                           "answer": "Disclaimer: This is a creative and fun activity meant to be done with your friends in group. You can make different things with clay like bird, sun, flower, tree, pen, book, etc.",
                           "images": []
                         }
-
-
                       ]
                     },
                     {
-                      "id": 6,
+                      "id": 7,
+                      "name": "FUN TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Have fun with clay – Take a clay ball. – Use a rolling pin and roll the clay out flat. – Make a clay pancake (round like a roti or idli). – With the help of a matchstick, draw a circle or use a bowl to cut a circle out of the rolled clay. – Use the extra clay to make eyes, nose, ears and a ‘smiley’ or a sad face. \n– Also try making hair. \n• What else can you do to make the face colourful? \n",
+                          "answer": "• Disclaimer: This is a creative activity meant to be done with your friends. This will help develop your imaginative skills. \n• Disclaimer: This is a sample answer. Students are advised to write the answer based on their on experience and observation. You can make the face colourful by filling its eyes with two black peas. You can colour the eyes and nose of the face with natural skin colour using wall colours.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "won    sun      man\nday       fan        hot \none      two      far \n",
+                          "answer": "Instructions: Join the dotted lines to form the given words\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 8,
                       "name": "FUN TIME\n",
                       "exercise": [
                         {
@@ -657,7 +681,353 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "pid": 1,
+                  "name": "The wind and the Sun\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Road, Coat, Quickly, Stronger, Cheeks, Won",
+                          "answer": "1) Road: an open way for travel or transportation \nExample sentences: \n1) We took the country road to meet our relatives. \n2) There was a traffic jam on the road. \n2) Coat: an outer garment with sleeves to make you feel warm \nExample sentences: \n1) I will be wearing coat at the party tonight. \n2) She gifted me a black coat on my birthday, \n3) Quickly: at a fast speed \nExample sentences: \n1) We walked quickly to catch the train. \n2) The dog ran quickly to catch the cat. \n4) Stronger: more powerful \nExample sentences: \n1) Rohan is stronger than Smith. \n2) The sun was stronger than the wind. \n5) Cheeks: either side of the face below the eye \nExample sentences: \n1) Her cheeks are pink in colour. \n2) My cheeks get red during winters. \n6) Won: to be successful or victory \nExample sentences: \n1) Our team won the football match. \n2) Saima won the championship trophy this year.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• What did the wind do to get the man’s coat off? \n• What did the sun do to get the man’s coat off? \n• Who won in the end? \n• Who said this to whom – “I can get his coat off more quickly than you can.” “I will let you try first.” “How cold it is!” “I give up. I cannot get his coat off!” “I have won.” \n",
+                          "answer": "• The wind blew hard to get the man’s coat off. \n• The sun started shining hard to get the man’s coat off. \n• The sun won in the end. \n• “I can get his coat off more quickly than you can.”- The Wind said to the Sun. \n• “I will let you try first.”- The Sun said to the Wind. \n• “How cold it is!”- The man to himself. \n• “I give up. I cannot get his coat off!”- The Wind to the Sun. \n• “I have won.”- The Sun to the Wind.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S THINK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Rohan tries to snatch Gita’s new book from her. What do you think is the best thing to do? ",
+                          "answer": "Choose an answer – \n• Gita runs away with her book. \n• Gita fights with Rohan. \n• Gita talks to Rohan. \n• Gita cries in a corner. \nNow share with the class why you feel so. Answer: Disclaimer: This is a sample answer. Students are advised to write the answer based on their own experience and observation. It would be best if Gita talks to Rohan. It is so because after having a discussion with Rohan, she will get to know why Rohan wants to have the book. It might be the case that Rohan would have needed the book urgently.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "SAY ALOUD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Find a rhyming word from the story for each of these words – bun hold boat fan sunny pot ",
+                          "answer": "burn-turn\nhold-cold\nboat-coat\nfan-can\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Look at these pairs of words with opposite meanings – hot cold big small strong weak \n• Now write the opposites of –\nGood-______________      Tall-________________\nHard-______________________        Black-______________________\n",
+                          "answer": "Bad             Short\nSoft        White\n",
+                          "images": [
+
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "TEAM TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Act out the play, “The Wind and the Sun” in class. Make paper masks for the Sun and the Wind using coloured chart paper. Everybody can take turns to be the Wind, the Sun or the Man. Now write two sentences about one of the masks.\n",
+                          "answer": "Disclaimer: This is a creative activity meant to be done with your friends. Given below are sample answers. Students are advised to write answers based on their own experience and observation. \n• The Wind \n1) I can be measured by an anemometer. \n2) I can make you feel cold. \n• The Sun \n1) I shine very brightly in the summer. \n2) People usually do not like me much.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "LET’S READ AND ANSWER\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "A BIG WIND \nA big wind is blowing. Look, the leaves are flying! \nThe wind can blow trees down. It can blow houses down. \nMy house is old. Will it come down? \n• Are these sentences Right (✓) or Wrong (✕)? \n1. The wind can blow down a house. \n2. The wind can blow down a field. \n3. The wind can blow down a child. \n4. The wind can blow down a tree. \n5. The wind can blow down a river.\n",
+                          "answer": "1. The wind can blow down a house. \n2. The wind can blow down a field. x \n3. The wind can blow down a child. x \n4. The wind can blow down a tree. 5. \nThe wind can blow down a river. \n",
+                          "images": []
+                        }
+
+                      ]
+                    }
+
+                  ]
                 }
+              ]
+            },
+            {
+              "ch": 4,
+              "part": [
+                {
+                  "pid": 1,
+                  "name": "Rain\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "field, umbrellas, ships\n",
+                          "answer": "1) Field: an area of open land planted with crops \nExample sentences: \n1)We were walking in the field. \n2) The farmers were watering the crops in the field.\n2)Umbrellas: used for protection against sun and rain \nExample sentences: \n1) We should always carry an umbrella on rainy days. \n2) My umbrella is red in colour.\n3) Ships: large boat for transporting people or goods by sea \nExample sentences:\n1) The ship left for England at two in the morning.\n 2) The travel cost of ships is very expensive.\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Where does the rain fall?\n",
+                          "answer": "The rain falls on fields and trees.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What do people use when it rains?\n",
+                          "answer": "People use umbrella when it rains.",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• What do you do on a rainy day?\n• How do you keep yourself dry in the rain?\n• Do you like to play in water?\n• Say what things live in water.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• I play with my friends on terrace on a rainy day.\n• I use umbrella to keep myself dry in the rain.\n• Yes, I like to play in water. I also play music while playing in water.\n• Many things live in water like frogs, crocodiles, fish, wha les, tortoises, etc\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S LEARN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Have you heard the sound of rainfall? \n• What sound does the rain make on umbrellas? \n• What sound does the rain make on the leaves of the trees?\n• What sound does the rain make on your window? Make all these sounds\nyourself.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• Yes, I have heard the sound of rainfall. It makes a ‘splash’ sound.\n• The rain makes the sound of ‘pitter-patter’ on umbrellas.\n• The rain makes the sound of ‘drip-drop’ on the leaves of the trees.\n• The rain makes the sound of ‘tip-tap’ on my window.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "COUNTING CLOUDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Complete the story As One little white cloud floated in the sky one day. Another little cloud called out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\n• Now write what the fifth and the sixth clouds did.\n",
+                          "answer": "As One little white cloud floated in the sky one day. Another little cloud\ncalled out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\nAs Five little clouds went to bloom, Another big cloud started to bloom!\nAs six clouds started walking along a chain, One tiny cloud asked them to dance\nalong in the rain.\n",
+                          "images": [
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx",
+                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "WORDS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Fill in the letters to complete the crossword puzzle. Use the\npictures as clues.\n",
+                          "answer": "Disclaimer: This is a creative and fun activity meant to be done with your friends in group. You can make different things with clay like bird, sun, flower, tree, pen, book, etc.",
+                          "images": [
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMu7FDcZJEfsCAD28ODSjJ4EYfk7TtkdCd4_ZyYOke-AG5pVqP",
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmZmyj7NGoIXuAGMyjWiNq6WLN9J2XQ3Q4NPrwJqryKZu7sxm"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "LET’S SHARE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "What would you call these pictures in your language? Now label\nthe pictures in English.\n",
+                          "answer": "Disclaimer: The answer to this question may vary according to the\nmother tongue of the student.\nMoon           Cloud\nSun               Star\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 8,
+                      "name": "FISH TANK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Look at this fish tank. Write three sentences on what you see.\nDraw some more creatures in this tank.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are expected to write\nthe answers based on their own experience and observation.\n1) Seven beautiful fish are swimming in the water.\n2) There are small green plants in the water.\n3) There are pebbles at the bottom of the water of the sea.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 9,
+                      "name": "LET’S SHARE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Rain on the green grass, Rain on the tree, And rain on the\nhousetop But not upon me.\n• The words away, day, play are rhyming words. Now colour the words that rhyme\nwith –\n",
+                          "answer": "",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 10,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Look at these pictures and fill in the blanks from the words in\nthe box.\nDisclaimer: Kindly refer to the textbook for the images.\nriver pond sea lake\nThe ship is sailing on the _______________.\nThe _____________ flows from the mountain.\nThe duck is swimming in the ____________.\nThe frog lives in the _____________.\n",
+                          "answer": "The ship is sailing on the sea.\nThe river flows from the mountain.\nThe duck is swimming in the lake.\nThe frog lives in the pond.\n",
+                          "images": []
+                        }
+                      ]
+                    }
+
+                  ]
+                },
+                {
+                  "pid": 1,
+                  "name": "Storm in the Garden\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "snail, dark, feelers, storm, lightning, thunder\n",
+                          "answer": "1) Snail: a small animal with a round shell \nExample sentences: \n1) Snails crawl very slowly. \n2) Snails have a spiral shell to cover their body.\n2) Dark: with little or no light \nExample sentences: \n1) We were having our dinner in a dark room as there was no electricity. \n2) I saw a monster in a forest on a dark night.\n3) Feelers: an animal organ that is used for testing things by touch \nExample sentences: \n1) Snail uses its feelers to know which food to eat. \n2) Ants have tiny feelers to reach towards their food.\n4) Storm: a violent weather with strong winds \nExample sentences: \n1)The storm took away the umbrella I was carrying. \n2) The kids got scared with the sound of the storm.\n5) Lightning: bright flash with thunder \nExample sentences: \n1) Our car got stuck because of lightning. \n2) There was a terrible flash of lightning on my birthday.\n6) Thunder: crashing noise after lightning \nExample sentences: \n1) It began to thunder after we reached the school. \n2) The river thundered below.\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Who was Sunu-sunu?\n",
+                          "answer": "Sunu Sunu was a snail.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Who was Sunu-sunu visiting?\n",
+                          "answer": "Sunu-Sunu was visiting his friends",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "Where were the ants hiding?",
+                          "answer": "The ants were hiding under a flower pot.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 4,
+                          "question": "Did Sunu-sunu get wet?",
+                          "answer": "Sunu-Sunu did not get wet.",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Do you go for morning walks?\n• Have you ever seen ants in the garden?\n• Watch and see where they go and what they carry to their holes.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• Yes, I go for morning walks. I go along with my grandparents.\n• Yes, I have seen ants in the garden. They move really fast.\n• They start from the main gate of the garden towards a small hole at the end\nof the park. They carry tiny left out grain particles and move towards their\nHoles.\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "TEAM TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Do you know why you see snails and earthworms after it rains?\nSit in a group and discuss.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answer based on their own experience and observation.\nSnails and earthworms live deep under the surface of the earth. So, whenever it\nrains, their house gets wet. It is because of which they have to come over the\nsurface, on the ground to find a place to live and food to eat.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Disclaimer: Kindly refer to the textbook for the images.\nin on under behind over\nThe cat is jumping _______________ the wall.\nThe cat is ______________ the box.\nThe cat is _______________ the door.\nThe cat is ______________ the stool.\nThe cat is ______________ the suitcase.\n",
+                          "answer": "1) The cat is jumping over the wall.\n2) The cat is in the box.\n3) The cat is behind the door.\n4) The cat is under the stool.\n5) The cat is on the suitcase\n",
+                          "images": [
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S SING\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Rain tree coat ship field play\n",
+                          "answer": "Instructions: Join the dotted lines to form the given words.\n",
+                          "images": [
+
+                          ]
+                        }
+                      ]
+                    }
+
+
+                  ]
+                }
+
               ]
             }
           ]
