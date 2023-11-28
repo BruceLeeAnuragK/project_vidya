@@ -25,7 +25,7 @@ class ChapterPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color(0xffB8b8d2),
         title: Text(
-          "Topic : ",
+          "Chapter : ",
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
             fontSize: 25,
@@ -49,7 +49,9 @@ class ChapterPage extends StatelessWidget {
           itemBuilder: (context, index) => Card(
             color: Color(0xff3D5CFF),
             child: ListTile(
-              onTap: () {},
+              onTap: () {
+                Get.toNamed(MyRoutes.topicPage);
+              },
               title: Text(
                 phyicsCh[index],
                 style: TextStyle(

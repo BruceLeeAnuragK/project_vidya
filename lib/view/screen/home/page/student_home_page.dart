@@ -2,33 +2,33 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../Register/model/user_model.dart';
-import '../components/Student_Component/home_component.dart';
+import '../components/Student_Component/s_home_component.dart';
 
 class StudentHomePage extends StatelessWidget {
   StudentHomePage({Key? key}) : super(key: key);
   List<String> stdList = [
-    "Std 1"
-        "Std 2"
-        "Std 3"
-        "Std 4"
-        "Std 5"
-        "Std 6"
-        "Std 7"
-        "Std 8"
-        "Std 9"
-        "Std 10"
-        "Std 11"
-        "Std 12"
+    "Std 1",
+    "Std 2",
+    "Std 3",
+    "Std 4",
+    "Std 5",
+    "Std 6",
+    "Std 7",
+    "Std 8",
+    "Std 9",
+    "Std 10",
+    "Std 11",
+    "Std 12",
   ];
   @override
   Widget build(BuildContext context) {
     int currentIndex = 0;
 
     final List<Widget> pages = [
-      HomeComponent(),
-      HomeComponent(),
-      HomeComponent(),
-      HomeComponent(),
+      SHomeComponent(),
+      SHomeComponent(),
+      SHomeComponent(),
+      SHomeComponent(),
     ];
     User? user = Get.arguments;
     return Scaffold(

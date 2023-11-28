@@ -5,6 +5,8 @@ import 'package:get_storage/get_storage.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
 import 'package:project_vidya/view/screen/Chapters/chapter_page.dart';
+import 'package:project_vidya/view/screen/Intro/intro_page.dart';
+import 'package:project_vidya/view/screen/Subject/component/Parents_list_of%20_subject.dart';
 import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
@@ -16,8 +18,6 @@ import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
 import 'package:project_vidya/view/screen/topic/page/topic_page.dart';
 import 'package:provider/provider.dart';
-
-import 'Intro/intro_page.dart';
 import 'controller/splash_controller.dart';
 import 'firebase_options.dart';
 
@@ -66,6 +66,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: MyRoutes.parentsHome,
           page: () => ParentsHomePage(),
+        ),
+        GetPage(
+          name: MyRoutes.parentsSubject,
+          page: () => PSubjects(),
         ),
         GetPage(
           name: MyRoutes.topicPage,

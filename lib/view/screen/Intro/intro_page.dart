@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import '../utils/imgPath_utils.dart';
-import '../utils/route_utils.dart';
+
+import '../../../utils/imgPath_utils.dart';
+import '../../../utils/route_utils.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
@@ -69,7 +70,7 @@ class IntroScreen extends StatelessWidget {
           next: const Text("Next"),
           done: TextButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(MyRoutes.studHome);
+              Navigator.of(context).pushNamed(MyRoutes.parentsHome);
             },
             child: const Text("Done"),
           ),
@@ -79,7 +80,7 @@ class IntroScreen extends StatelessWidget {
           showSkipButton: true,
           skip: const Text("Skip"),
           onDone: () {
-            Navigator.of(context).pushNamed(MyRoutes.studHome);
+            Navigator.of(context).pushNamed(MyRoutes.parentsHome);
           },
         ),
       ),

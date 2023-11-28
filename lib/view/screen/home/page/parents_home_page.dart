@@ -1,64 +1,79 @@
-import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../helper/auth_helper.dart';
-import '../../../../helper/firestore_helper.dart';
 import '../../Register/model/user_model.dart';
+import '../components/Parents_Component/p_home_component.dart';
+import '../components/Student_Component/s_home_component.dart';
 
 class ParentsHomePage extends StatelessWidget {
   ParentsHomePage({Key? key}) : super(key: key);
+  List<String> stdList = [
+    "Std 1",
+    "Std 2",
+    "Std 3",
+    "Std 4",
+    "Std 5",
+    "Std 6"
+        "Std 7"
+        "Std 8"
+        "Std 9"
+        "Std 10"
+        "Std 11"
+        "Std 12"
+  ];
   @override
   Widget build(BuildContext context) {
+    int currentIndex = 0;
+
+    final List<Widget> pages = [
+      PHomeComponent(),
+      PHomeComponent(),
+      PHomeComponent(),
+      PHomeComponent(),
+    ];
     User? user = Get.arguments;
     return Scaffold(
-      appBar: AppBar(
-        leading: Builder(
-          builder: (context) => MaterialButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            child: (user?.image?.isNotEmpty ?? false)
-                ? CircleAvatar(
-                    foregroundImage: NetworkImage("${user?.image}"),
-                    radius: 20,
-                  )
-                : Icon(
-                    Icons.drag_handle,
-                    color: Colors.black,
-                  ),
-          ),
-        ),
-        title: Text(
-          "Student",
-          style: GoogleFonts.sofia(
-            color: Colors.black,
-          ),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              AuthHelper.authHelper.signOut();
-              Get.offNamed('/');
-            },
-            icon: const Icon(
-              Icons.logout,
-              color: Colors.black,
-            ),
-          ),
-          IconButton(
-            onPressed: () {
-              Get.toNamed('/chat');
-            },
+      body: pages[currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        items: [
+          BottomNavigationBarItem(
             icon: Icon(
-              Icons.chat,
+              Icons.home_max_outlined,
               color: Colors.black,
             ),
+            label: 'Home',
+            activeIcon: Icon(
+              Icons.home_outlined,
+              color: Colors.blue,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.calendar_month_outlined,
+              color: Colors.black,
+            ),
+            label: 'Schedule',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.chat_outlined,
+              color: Colors.black,
+            ),
+            label: 'Chat',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_3_outlined,
+              color: Colors.black,
+            ),
+            label: 'Profile',
           ),
         ],
+        selectedLabelStyle: TextStyle(
+          color: Color(0xff3D5CFF),
+        ),
+        unselectedLabelStyle: TextStyle(color: Colors.black),
       ),
       drawer: Drawer(
         child: Column(
@@ -76,238 +91,6 @@ class ParentsHomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      body: StreamBuilder(
-        stream: FireStoreHelper.storeHelper.getUser(),
-        builder: (context, snapShot) {
-          log("${snapShot.data}");
-          if (snapShot.hasData) {
-            return SingleChildScrollView(
-              child: Column(
-                children: [
-                  Divider(
-                    height: 2,
-                    color: Colors.black,
-                  ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: CircleAvatar(
-                          foregroundColor: Colors.blue,
-                          backgroundColor: Colors.blue,
-                          radius: 40,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Here are the details of your child"),
-                            Text("Full name :"),
-                            Text("School Name :"),
-                            Text("GRID :"),
-                            Text("Standard :"),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    height: 2,
-                    color: Colors.black,
-                  ),
-                  Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text(
-                              "List of Subjects :",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Maths",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Science",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "S.S.T.",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "English",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Hindi",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Gujarati",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Snaskrit",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            );
-          } else if (snapShot.hasError) {
-            return const Center(
-              child: Text("no docs"),
-            );
-          } else {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
       ),
     );
   }

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 import '../../Register/model/user_model.dart';
-import '../../home/components/Student_Component/home_component.dart';
+import '../../home/components/Student_Component/s_home_component.dart';
 import '../component/PhysicsComponent/select_physic_book.dart';
 
 class PhysicsPage extends StatelessWidget {

@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../utils/route_utils.dart';
 
-class HomeComponent extends StatelessWidget {
-  HomeComponent({super.key});
+class PSubjects extends StatelessWidget {
+  PSubjects({super.key});
   TextEditingController searchController = TextEditingController();
   List<String> stdList = <String>[
     "Std 1",
@@ -27,108 +27,26 @@ class HomeComponent extends StatelessWidget {
     String dropdownValue = stdList.first;
 
     return Scaffold(
-      body: ListView(
+      appBar: AppBar(
+        title: Text(
+          "List Of Subjects :",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () {
+            Get.back();
+          },
+          icon: Icon(
+            Icons.arrow_back_sharp,
+            color: Color(0xff3D5CFF),
+          ),
+        ),
+      ),
+      body: Column(
         children: [
-          SizedBox(
-            height: 50,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "Hi,Cristin",
-                style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                ),
-              )
-            ],
-          ),
-          Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "What would you like to learn today?",
-                    style: GoogleFonts.roboto(),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Search below",
-                    style: GoogleFonts.roboto(),
-                  ),
-                ],
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: TextFormField(
-              controller: searchController,
-              decoration: InputDecoration(
-                suffixIcon: Padding(
-                  padding: const EdgeInsets.only(
-                    bottom: 10,
-                    top: 10,
-                    right: 5,
-                  ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Color(0xff3D5CFF),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                      icon: Icon(
-                        Icons.search,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {},
-                    ),
-                  ),
-                ),
-                hintText: "Search Here",
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(
-                    color: Color(0xff3D5CFF),
-                    width: 5,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: DropdownMenu(
-                    initialSelection: dropdownValue,
-                    dropdownMenuEntries:
-                        stdList.map<DropdownMenuEntry<String>>((String value) {
-                      return DropdownMenuEntry<String>(
-                        value: value,
-                        label: value,
-                      );
-                    }).toList(),
-                    onSelected: (String? val) {
-                      dropdownValue = val!;
-                    },
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
           Padding(
             padding: const EdgeInsets.all(15),
             child: Row(
@@ -258,6 +176,48 @@ class HomeComponent extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: MaterialButton(
+              onPressed: () {
+                Get.toNamed(MyRoutes.parentsSubject);
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xff3D5CFF),
+                ),
+                alignment: Alignment.center,
+                height: 50,
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      "Continue to Get",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.navigate_next,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
