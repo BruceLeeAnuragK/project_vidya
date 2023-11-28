@@ -583,11 +583,11 @@
                         {
                           "qid" : 1,
                           "question" : "Wrinkles, secret, hiding place\n",
-                          "answer" : "",
+                          "answer" : "1) Wrinkles: Straight lines on the skin of the face\nExample sentences:\n1) my grandmother has wrinkles on her face.\n2) You should take care of your face or it will get wrinkles.\n2) Secret: private\nExample sentences:\n1) I have a secret to share with you about my result.\n 2) A mother can keep all of her child’s secrets.",
                           "images" : []
                         },
                         {
-
+                          
                           "qid" : 2,
                           "question" : "Wrinkles, secret, hiding place\n",
                           "answer" : "",

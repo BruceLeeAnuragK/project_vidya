@@ -1,0 +1,668 @@
+{
+  "data": [
+    {
+      "class1": [
+        {
+          "subject": "English",
+          "chapters": [
+            {
+              "ch": 1,
+              "part": [
+                {
+                  "pid": 1,
+                  "name": "FIRST DAY AT SCHOOL\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Question 1: Wonder, drawing, stares, Gran, puppy \n",
+                          "answer": "1) Wonder: to have a wish to know something \nExample sentences:\n 1) I wonder how would my result be.\n2) I was looking at my sister with wonder.\n 2) Drawing: making a picture with a pencil or a pen \nExample sentences: \n1) I made a very colourful drawing.\n2) Her drawing was very beautiful. \n3) Stares: To look at someone for a long time \nExample sentences: \n1) My father stares at me when I do not complete my homework. \n2) She gave me a cold stare\n4) Gran: grandmother \nExample sentences:\n 1) My gran makes delicious food. \n2) Gran always loves her grandchildren.\n5) Puppy: a young dog \nExample sentences:\n 1) My puppy‘s name is Smurfy.\n 2) Robinson was a very cheerful puppy. \n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": " I wonder if the sea is blue.\n",
+                          "answer": " I wonder if the sea is blue.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "What does the child in the poem think about his drawing?\n",
+                          "answer": "The child wonders whether his drawing will be as good as the other children in the class.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What does the child wonder about his teacher? ",
+                          "answer": "The child wonders whether his teacher will look like Mom or Gran.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "Do you think the child would like to carry his puppy to school",
+                          "answer": "Yes, the child would like to carry his puppy to school.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Question 1: \n• Do you remember your first day at school? How did you feel \n   Disclaimer: Kindly refer the textbook for the images\n\n\n• When you entered your class what did you like?\n• Who was the first friend you made?\n• What did you enjoy doing the most? \n• Do you have a pet at home who waits for you to come back from school?\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answer based on their own experience and observation.\n• I felt very happy when I saw so many students playing in the classroom.\n• Reema was the first friend that I made. \n• I enjoying eating lunch during recess in the classroom. • Yes, I have a pet at home who waits for me to come back from school.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S ACT?\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Find a partner. Let your partner pretend to be the teacher who welcomed you to your class.\n • Now act out your first day at school. \n",
+                          "answer": "Teacher: Good Morning! Rahul. How are you? \nStudent: Good Morning Ma’am. I am good.\nTeacher: It’s very nice to have you in the class. Please be seated.\n Student: Thank you ma’am. \nTeacher: Rahul, please introduce yourself to everyone in the class.\n Student: Hi, My name is Rahul. I am from Mumbai. I stay with my grandparents here. I like to watch cricket.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S ACT?\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Find a partner. Let your partner pretend to be the teacher who welcomed you to your class.\n • Now act out your first day at school. \n",
+                          "answer": "Teacher: Good Morning! Rahul. How are you? \nStudent: Good Morning Ma’am. I am good.\nTeacher: It’s very nice to have you in the class. Please be seated.\n Student: Thank you ma’am. \nTeacher: Rahul, please introduce yourself to everyone in the class.\n Student: Hi, My name is Rahul. I am from Mumbai. I stay with my grandparents here. I like to watch cricket.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S WRITE\n\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Brush, brush, brush your teeth, Brush them everyday. Father, mother, brother, sister Brush them everyday. Comb, comb, comb your hair, Comb it everyday. Father, mother, brother, sister Comb it everyday. Wash, wash, wash your face, Wash it everyday. Father, mother, brother, sister Wash it everyday.\n",
+                          "answer": " Disclaimer: Students are advised to practice this on their own.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "How many words can you make using letters from the word in the picture? One has been done for you.",
+                          "answer": "Pot ,Potato, Hip, Tap, Pit, Hop",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S DO\n\n\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "a b c d e f g h i j k l \n",
+                          "answer": " Instructions: Join the dotted lines to form the given alphabet.\n",
+                          "images": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "pid": 2,
+                  "name": "Haldi’s Adventure",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "LET’S READ\n\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Giraffe, surprised, adventure, wonderful, playground\n",
+                          "answer": "1) Giraffe: a tall mammal with a very long neck and forelegs\nExample sentences: \n1) Harish saw a giraffe in the zoo.\n2) The giraffe eats leaves.\n2) Surprised: amazed\nExample sentences:\n1) I was surprised to see my mother at the airport.\n2) She was surprised to see her birthday gift.\n3) Adventure: an exciting and daring experience \nExample sentences:\n 1) I have to share my adventure experience with Reema.\n 2) My first day in school was an adventure for me. \n4) Wonderful: extremely good\n Example sentences:\n 1) Eating ice-cream is winters is wonderful. \n2) We all had a wonderful weekend.\n5) Playground: an outdoor area for children to play\nExample sentences:\n1) I play football with my friends in the playground.\n2) Ravi was shouting in the playground with his friends. \n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Where was Haldi going?\n",
+                          "answer": "Hadi was walking towards school.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Why did Haldi stare at the giraffe?",
+                          "answer": "Haldi stared at the giraffe as the giraffe was wearing big glasses and holding a book in his hand.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "How did she reach school?",
+                          "answer": "She reached school by jumping on the giraffe’s back.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Where was Haldi going?\n",
+                          "answer": "I go to school on my school bus.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What do you wear to school?",
+                          "answer": "I wear a T-shirt and skirt to school.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "Have you ever seen anything strange on your way to school?\nTalk about it.\n",
+                          "answer": "Yes, I saw a very cute puppy playing with a kitten on the street one day. The puppy was blue in colour and the kitten was white. They looked very cute together.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "SAY ALOUD , LET’S COLOUR\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Where was Haldi going?\n",
+                          "answer": "I go to school on my school bus.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What do you wear to school?",
+                          "answer": "I wear a T-shirt and skirt to school.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "Have you ever seen anything strange on your way to school?\nTalk about it.\n",
+                          "answer": "Yes, I saw a very cute puppy playing with a kitten on the street one day. The puppy was blue in colour and the kitten was white. They looked very cute together.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Fill in the blanks with the words given in the brackets – (sail, bark, sing, play, ring) \nDisclaimer: Kindly refer to the textbook for the images. \nBoats ______________.\nDogs______________. \nChildren ______________. \nBells ______________. \nBirds ______________. \n• Write the names of the days of the week. You can begin with Sunday. \n• Haldi wrote her name at school in this way – ‘haldi‘. She made one mistake. What was it? Write her name correctly. _______________ Now write your name correctly. _______________.\n• Haldi wrote – I met a giraffe. \nShe made two mistakes. What are they? Write Haldi’s sentences correctly.\n",
+                          "answer": "Boats sail. Dogs bark. Children play. Bells ring. Birds sing. \n1)Sunday \n2)Monday \n3)Tuesday \n4)Wednesday \n5)Thursday \n6)Friday \n7)Saturday \nAnswer:\n She did not capitalise the first letter of her name. Write her name correctly. Haldi Now write your name correctly. Shraddha \nAnswer: \n1) She did not capitalise the first alphabet of the sentence. \n2) She did not put full stop at the end of the sentence. \nCorrect sentence: I met a giraffe. \n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S GET READY FOR SCHOOL\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• What do you do before going to school? Put ‘Y’ for yes and ‘N’ for no. \nDisclaimer: Kindly refer to the textbook for the images.\n\n• Fill in the blanks with ‘before’ or ‘after’. \n________________ eating food, I wash my hands. \n________________ _ reaches school, I sit in class. \n________________ eating food, I wash my mouth. \n________________ reaching home, I do my homework.\n",
+                          "answer": "Before eating food, I wash my hands. \nAfter reaching school, I sit in class. \nBefore eating food, I wash my mouth. \nAfter reaching home, I do my homework.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "FUN TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "FUN TIME\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answers based on their own experience and observation.\n• My school bell sounds very loud. It sounds like ‘Brrrrrrriiiiing’. \n• Yes, I can make sounds of different bells that I have heard. \n1) phone bell Tring tring \n2) doorbell Ding-dong \n3) cow bell Tun-tun \n4) horse bell Chuk-chuk \n5) Bus bell Paw-paw\n",
+                          "images": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ch": 2,
+              "part": [
+                {
+                  "pid": 1,
+                  "name": "I Am Lucky!",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "butterfly, myna, fish, kangaroo, octopus\n",
+                          "answer": "1) Butterfly: an insect with bright colored wings \nExample sentences: \n1) I saw a red butterfly on my way to school. \n2) The butterfly sat on the nose of my dog. \n2) Myna: an Asian bird with a loud voice \nExample sentences: \n1) The myna was sitting on a banyan tree. \n2) Myna was perching on the top of our building. \n3)Fish: an aqualtic animal with gills and fins\nExample sentences: \n1) This lake does not have any fish in it. \n2) A fish can give millions of eggs at a time. \n4) Kangaroo: A herbivorous animal with a thick tail and hind legs \nExample sentences: \n1) Kangaroos carry their babies in their pouch. \n2) Kangaroos are very friendly. \n5) Octopus: an aquatic animal with a soft oval body with long eight arms \nExample sentences:\n1) We have fresh grilled octopus on our menu. \n2) Octopus can do their work very quickly\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "butterfly, myna, fish, kangaroo, octopus\n",
+                          "answer": "1) Butterfly: an insect with bright colored wings \nExample sentences: \n1) I saw a red butterfly on my way to school. \n2) The butterfly sat on the nose of my dog. \n2) Myna: an Asian bird with a loud voice \nExample sentences: \n1) The myna was sitting on a banyan tree. \n2) Myna was perching on the top of our building. \n3)Fish: an aqualtic animal with gills and fins\nExample sentences: \n1) This lake does not have any fish in it. \n2) A fish can give millions of eggs at a time. \n4) Kangaroo: A herbivorous animal with a thick tail and hind legs \nExample sentences: \n1) Kangaroos carry their babies in their pouch. \n2) Kangaroos are very friendly. \n5) Octopus: an aquatic animal with a soft oval body with long eight arms \nExample sentences:\n1) We have fresh grilled octopus on our menu. \n2) Octopus can do their work very quickly\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Complete these sentence –\na butterfly can",
+                          "answer": "flutter",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Why do you think the butterfly likes its wings? \n",
+                          "answer": "The butterfly likes its wings because they are very colourful.",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What can the myna do?",
+                          "answer": "The Myna can sing and fly high in the sky.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "What can you do – sing/ paint/ write…?",
+                          "answer": "I can sing, paint and dance.",
+                          "images": []
+                        },
+                        {
+                          "qid": 4,
+                          "question": " Do you think the fish was really happy to be in water?",
+                          "answer": "Yes, the fish was really happy to be in water as she can swim in it with its fins.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 5,
+                          "question": "What are the lucky things that have happened to you?\nTell your friends in the class.\n",
+                          "answer": "A number of lucky things have happened to me. I won a first prize in painting competition held in my school. I also was awarded with a medal in sports. I was chosen as a monitor of my class.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "SILENCE GAME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Close your eyes and hear your teacher say the following words: butterfly, myna, fish, elephant, kangaroo. \nWith your eyes still shut, imagine that you are seeing these creatures. Open your eyes and move like they do. \n",
+                          "answer": "Disclaimer: This is a creative activity meant to be done with your class teacher. This will help you develop your imaginative and creative skills.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S DRAW\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Complete the pictures and label them. \nDisclaimer: Kindly refer to the textbook for the images.\ne _____ t _____ t _____ e _____ l ______\n",
+                          "answer": "Ears trunk tail ears legs",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S WRITE AND ACT\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Fill in the blanks using the hint words given below. If I were a kangaroo, I would ________________. \nIf I were a tiger, I would ________________.\nIf I were a fish, I would ________________. \nIf I were a bird, I would ________________. \nNow hop, roar, swim and fly like them. \n",
+                          "answer": "If I were a kangaroo, I would hop. If I were a tiger, I would roar. If I were a fish, I would swim. If I were a bird, I would fly.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "LET’S WRITE AND ACT\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "oc – to – pus \nel – e – phant \nbutt – er – fly \nkang – ga – roo \n",
+                          "answer": "Disclaimer: Students are advised to practice this on their own. \noc – to – pus \nel – e – phant \nbutt – er – fly \nkang – ga – roo\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 8,
+                      "name": "LET’S DRAW\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Complete this picture and draw some plants, shells, stones and fish.\n",
+                          "answer": "Disclaimer: Students are advised to practice this on their own. \noc – to – pus \nel – e – phant \nbutt – er – fly \nkang – ga – roo\n",
+                          "images": [
+                            "https://i.ytimg.com/vi/SYZspvrtS0E/maxresdefault.jpg"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "pid": 2,
+                  "name": "I Want\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Strong, wand, wishes, blows, trunk, monster.",
+                          "answer": "1) Strong: powerful \nExample sentences: \n1) She has a strong built. \n2) She has strong arms. \n2) Wand: a long thick stick\n Example sentences: \n1) Her brother gifted her a magic wand on her birthday. \n2) He asked the magic wand to turn him into a monkey. \n3) Wishes: want to do something \nExample sentences:\n1) He wishes to visit Shimla on this weekend. \n2) My mother wishes to win the Best Mother contest. \n4) Trunk: long and flexible body part of an elephant \nExample sentences:\n1) The elephant was taking a bath with the help of its trunk. \n2) Elephants have long trunk. \n5) Monster: an imaginary ugly looking creature \nExample sentences: \n1) I saw a monster in my room at night. \n2) The cartoon had a monster in it.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Put a (✔) or a (✘) against the following sentences. One has been done for you. • The Little Monkey wants to be big and strong. \n• A wise woman does not hear him. \n• She gives him a wand. \n• The giraffe stretches his long neck. \n• The elephant has no trunk. \n• The zebra has stripes. \n• The Little Monkey sees a monster in the river. \n",
+                          "answer": "• The Little Monkey wants to be big and strong.( ) \n• A wise woman does not hear him.(x) \n• She gives him a wand.( ) \n• The giraffe stretches his long neck.( ) \n• The elephant has no trunk.(x) \n• The zebra has stripes.( ) \n• The Little Monkey sees a monster in the river.( ) \n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Is there anyone in your class whom you like? \n",
+                          "answer": "Yes, I like my best friend in my class. Her name is Priyanka.",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Do you want to be like him/her? Why?",
+                          "answer": "Yes, I like to be like her because she is very intelligent. She is the topper of our class.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "Do you know about the food that each animal eats?",
+                          "answer": "Yes, I know about the food of a few animals that they eat. A giraffe eats leaves. The tiger and lion eats the flesh of other animals. The cow eats grass.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S LISTEN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "What does Little Monkey want to be? \n",
+                          "answer": "The little monkey wants to be strong. \n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Who hears him? ",
+                          "answer": "A wise woman hears him.",
+                          "images": []
+                        },
+                        {
+                          "qid": 3,
+                          "question": "How does an elephant have a bath?",
+                          "answer": "An elephant fills his trunk with water and blows it over himself.",
+                          "images": []
+                        },
+                        {
+                          "qid": 4,
+                          "question": "Does the zebra have spots or stripes?",
+                          "answer": "Zebra has stripes all over his body.",
+                          "images": []
+                        },
+                        {
+                          "qid": 5,
+                          "question": "Why does Little Monkey want to be himself again?",
+                          "answer": "The little monkey found himself look like a monster. Therefore, he wanted to be himself again.",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "LET’S SHARE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "There are many kinds of people. They all look different. One face has been drawn for you. Complete the rest of the faces. \nDisclaimer: Kindly refer to the textbook for the images.\n",
+                          "answer": "Disclaimer: Such activities are made for increasing the self-creative skills and should be tried on your own. \n",
+                          "images": [
+                            "https://www.cbse-ncert.co.in/wp-content/uploads/2022/08/NCERT-Solutions-for-Class-2-English-Chapter-5-I-Want-Lets-Share-Q1.png"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S ACT\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Act out the story. Play the parts of the monkey, the wise woman and the mother, in turns in the classroom. \n• What would you do if you had a magic wand? I would turn it round and round and turn a book into a _________________. I would turn a dog into a _________________. I would turn a pencil into a _________________. I would turn you into a _________________. \n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answers based on their own experience and observation. \n• Monkey: I look so simple. I wish I could look like a giraffe. \n• Wise Woman: If that is you wish, let me give you a magic wand that will fulfil any of your wish. \n• Monkey: Oh wow! You are so kind. Thank you very much. Magic wand! Turn me into a giraffe. whizzzz! \n• Wise Woman: Your wish has been granted. You now look so tall. \n• Monkey: Let me see myself in the mirror. Oh No! My neck and tail does not match with each other. I look so ugly. It is very uncomfortable for me to walk with this long neck. \n• Mother: Son! I already told you that you are unique in your own self. \n• Monkey: I should have listened to you. Magic wand! Please turn me back into a monkey. \n• Wise Woman: You are back again. You look so wonderful! \n• If I had a magic wand, I would turn myself into a Superman and help all the people in their tough time. I would fly to any part of the world and help them solve their problems. \n I would turn it round and round and turn a book into a pizza. I would turn a dog into a puppy. I would turn a pencil into a music system. I would turn you into a fairy.\n",
+                          "images": [
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "SAY ALOUD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Strong\nSchool\nSpot\nZebra\nSkin\nString\nStrips",
+                          "answer": "",
+                          "images": [
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 8,
+                      "name": "LET’S FIND\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Monkeys are fun to watch! Can you find the word monkey five times in the box?\nNow, write about your favourite animal or bird by completing these sentences –\n• My favourite animal/bird is ________________.\n• I like it because ________________. \n• I don’t like it because _______________.\n• I think it looks like ______________. \n",
+                          "answer": "I like it because it is strong. • I don’t like it because it eats other animals. • I think it looks like a tiger.",
+                          "images": [
+                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLntGPIGOsKJhMn3umw2RuX2gP_O3hwvapRKBVBPtWbUQ0ixt",
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrN3jZCgUcrXSSu8futyS4m5lBtM1rZLCoSCodK4qOh3-O5qp9"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 9,
+                      "name": "WORD’S BUILDING\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• The monkey wrote to his mother – i look awful\nHe made two mistakes. What are they? Write the sentence correctly. \n• Put the letters in order to make a word. Two have been done for you. \not ___ si____ eh___ gib____ \nmih____ sih ____ reh ____ nac____ \n",
+                          "answer": "1) He did not capitalise the first alphabet of the sentence. \n2) He did not put a full stop at the end of the sentence. \nCorrect sentence: \nI look awful. \n",
+                          "images": [
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bFb0WPLgK6-OyspOMMhiDkghNG99AlupRijQcQyXigE06rDY"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ch": 3,
+              "part": [
+                {
+                  "pid": 1,
+                  "name": "A Smile",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "LET’S READ\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Wrinkles, secret, hiding place\n",
+                          "answer": "1) Wrinkles: Straight lines on the skin of the face \nExample sentences: \n1) my grandmother has wrinkles on her face. \n2) You should take care of your face or it will get wrinkles. \n2) Secret: private \nExample sentences: \n1) I have a secret to share with you about my result. \n2) A mother can keep all of her child’s secrets. \n3) Hiding place: a place where no one can find you \nExample sentences: \n1) I took the butter from its hiding place in the kitchen. \n2) Garden is the best hiding place for me when we play hide and seek.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "My grandmother has many wrinkles on her face. Shall I tell you a secret? ",
+                          "answer": " My grandmother has many wrinkles on her face. Shall I tell you a secret?\n",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Why is a smile a funny thing? \n",
+                          "answer": "Smile is a funny thing as it can make other people happy when they are sad.",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What happens when you smile at someone?",
+                          "answer": "When we smile at someone, they get happy and forget their worries",
+                          "images": []
+                        }
+
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "SAY ALOUD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "trunk, sink, wrinkle, worry",
+                          "answer": "• walk more wrap joke \n• Smile, kite, mice, line\n",
+                          "images": []
+                        }
+
+
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Play this game with your partner. Close your eyes. Move your finger over the page while you sing – \nTIC TAC TOE, ROUND I GO, IF I MISS, I’LL TAKE THIS. \nWhen you finish reciting the poem, stop moving your finger. Open your eyes, see which letter you stop at. Use the clues to write the word beginning with the letter that you find. \n",
+                          "answer": "",
+                          "images": [
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx",
+                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                          ]
+                        }
+
+
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "TEAM TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Form a Clay Club in groups. Give your club a name. – Take a wet slab of clay. – Use a matchstick to write the name of your club and all the club members on it. – Let the slabs dry. – Display your slabs in the classroom. \n• Try making different things with clay like bird, sun, flower, etc. \n",
+                          "answer": "Disclaimer: This is a creative and fun activity meant to be done with your friends in group. You can make different things with clay like bird, sun, flower, tree, pen, book, etc.",
+                          "images": []
+                        }
+
+
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "FUN TIME\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "• Have fun with clay – Take a clay ball. – Use a rolling pin and roll the clay out flat. – Make a clay pancake (round like a roti or idli). – With the help of a matchstick, draw a circle or use a bowl to cut a circle out of the rolled clay. – Use the extra clay to make eyes, nose, ears and a ‘smiley’ or a sad face. \n– Also try making hair. \n• What else can you do to make the face colourful? \n",
+                          "answer": "• Disclaimer: This is a creative activity meant to be done with your friends. This will help develop your imaginative skills. \n• Disclaimer: This is a sample answer. Students are advised to write the answer based on their on experience and observation. You can make the face colourful by filling its eyes with two black peas. You can colour the eyes and nose of the face with natural skin colour using wall colours.\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "won    sun      man\nday       fan        hot \none      two      far \n",
+                          "answer": "Instructions: Join the dotted lines to form the given words\n",
+                          "images": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
