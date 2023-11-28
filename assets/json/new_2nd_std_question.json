@@ -265,7 +265,8 @@
                           "qid": 1,
                           "question": "butterfly, myna, fish, kangaroo, octopus\n",
                           "answer": "1) Butterfly: an insect with bright colored wings \nExample sentences: \n1) I saw a red butterfly on my way to school. \n2) The butterfly sat on the nose of my dog. \n2) Myna: an Asian bird with a loud voice \nExample sentences: \n1) The myna was sitting on a banyan tree. \n2) Myna was perching on the top of our building. \n3)Fish: an aqualtic animal with gills and fins\nExample sentences: \n1) This lake does not have any fish in it. \n2) A fish can give millions of eggs at a time. \n4) Kangaroo: A herbivorous animal with a thick tail and hind legs \nExample sentences: \n1) Kangaroos carry their babies in their pouch. \n2) Kangaroos are very friendly. \n5) Octopus: an aquatic animal with a soft oval body with long eight arms \nExample sentences:\n1) We have fresh grilled octopus on our menu. \n2) Octopus can do their work very quickly\n",
-                          "images": []
+                          "images": [
+                          ]
                         }
                       ]
                     },
@@ -380,7 +381,10 @@
                           "question": "Complete this picture and draw some plants, shells, stones and fish.\n",
                           "answer": "Disclaimer: Students are advised to practice this on their own. \noc – to – pus \nel – e – phant \nbutt – er – fly \nkang – ga – roo\n",
                           "images": [
-                            "https://i.ytimg.com/vi/SYZspvrtS0E/maxresdefault.jpg"
+                            {
+                              "question": true,
+                              "img": "https://i.ytimg.com/vi/SYZspvrtS0E/maxresdefault.jpg"
+                            }
                           ]
                         }
                       ]
@@ -484,7 +488,10 @@
                           "question": "There are many kinds of people. They all look different. One face has been drawn for you. Complete the rest of the faces. \nDisclaimer: Kindly refer to the textbook for the images.\n",
                           "answer": "Disclaimer: Such activities are made for increasing the self-creative skills and should be tried on your own. \n",
                           "images": [
-                            "https://www.cbse-ncert.co.in/wp-content/uploads/2022/08/NCERT-Solutions-for-Class-2-English-Chapter-5-I-Want-Lets-Share-Q1.png"
+                            {
+                              "question": true,
+                              "img": "https://www.cbse-ncert.co.in/wp-content/uploads/2022/08/NCERT-Solutions-for-Class-2-English-Chapter-5-I-Want-Lets-Share-Q1.png"
+                            }
                           ]
                         }
                       ]
@@ -524,8 +531,14 @@
                           "question": "Monkeys are fun to watch! Can you find the word monkey five times in the box?\nNow, write about your favourite animal or bird by completing these sentences –\n• My favourite animal/bird is ________________.\n• I like it because ________________. \n• I don’t like it because _______________.\n• I think it looks like ______________. \n",
                           "answer": "I like it because it is strong. • I don’t like it because it eats other animals. • I think it looks like a tiger.",
                           "images": [
-                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLntGPIGOsKJhMn3umw2RuX2gP_O3hwvapRKBVBPtWbUQ0ixt",
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrN3jZCgUcrXSSu8futyS4m5lBtM1rZLCoSCodK4qOh3-O5qp9"
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpLntGPIGOsKJhMn3umw2RuX2gP_O3hwvapRKBVBPtWbUQ0ixt"
+                            },
+                            {
+                              "question": false,
+                              "img": "\nhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrN3jZCgUcrXSSu8futyS4m5lBtM1rZLCoSCodK4qOh3-O5qp9\n"
+                            }
                           ]
                         }
                       ]
@@ -539,7 +552,10 @@
                           "question": "• The monkey wrote to his mother – i look awful\nHe made two mistakes. What are they? Write the sentence correctly. \n• Put the letters in order to make a word. Two have been done for you. \not ___ si____ eh___ gib____ \nmih____ sih ____ reh ____ nac____ \n",
                           "answer": "1) He did not capitalise the first alphabet of the sentence. \n2) He did not put a full stop at the end of the sentence. \nCorrect sentence: \nI look awful. \n",
                           "images": [
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bFb0WPLgK6-OyspOMMhiDkghNG99AlupRijQcQyXigE06rDY"
+                            {
+                              "question": false,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_bFb0WPLgK6-OyspOMMhiDkghNG99AlupRijQcQyXigE06rDY"
+                            }
                           ]
                         }
                       ]
@@ -589,7 +605,6 @@
                           "answer": "When we smile at someone, they get happy and forget their worries",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -602,7 +617,6 @@
                           "answer": "I asked my mother for twenty rupees. To see the lion jump the trees. He jumped so high, he touched the moon, and never came back till the end of June. \nYes, I can tell a joke and make everyone laugh. \nA Russian, visiting India, went for an eye checkup. \nThe Doctor shows the letters on the board: \nCZWXNQSTAZKY \nDoctor: Can you read this ? \nRussian: Read??? I even know the guy…, he’s my cousin.\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -626,8 +640,14 @@
                           "question": "Play this game with your partner. Close your eyes. Move your finger over the page while you sing – \nTIC TAC TOE, ROUND I GO, IF I MISS, I’LL TAKE THIS. \nWhen you finish reciting the poem, stop moving your finger. Open your eyes, see which letter you stop at. Use the clues to write the word beginning with the letter that you find. \n",
                           "answer": "",
                           "images": [
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx",
-                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx"
+                            },
+                            {
+                              "question": false,
+                              "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                            }
                           ]
                         }
                       ]
@@ -743,7 +763,6 @@
                           "question": "Look at these pairs of words with opposite meanings – hot cold big small strong weak \n• Now write the opposites of –\nGood-______________      Tall-________________\nHard-______________________        Black-______________________\n",
                           "answer": "Bad             Short\nSoft        White\n",
                           "images": [
-
                           ]
                         }
                       ]
@@ -770,10 +789,8 @@
                           "answer": "1. The wind can blow down a house. \n2. The wind can blow down a field. x \n3. The wind can blow down a child. x \n4. The wind can blow down a tree. 5. \nThe wind can blow down a river. \n",
                           "images": []
                         }
-
                       ]
                     }
-
                   ]
                 }
               ]
@@ -795,7 +812,6 @@
                           "answer": "1) Field: an area of open land planted with crops \nExample sentences: \n1)We were walking in the field. \n2) The farmers were watering the crops in the field.\n2)Umbrellas: used for protection against sun and rain \nExample sentences: \n1) We should always carry an umbrella on rainy days. \n2) My umbrella is red in colour.\n3) Ships: large boat for transporting people or goods by sea \nExample sentences:\n1) The ship left for England at two in the morning.\n 2) The travel cost of ships is very expensive.\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -814,7 +830,6 @@
                           "answer": "People use umbrella when it rains.",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -827,7 +842,6 @@
                           "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• I play with my friends on terrace on a rainy day.\n• I use umbrella to keep myself dry in the rain.\n• Yes, I like to play in water. I also play music while playing in water.\n• Many things live in water like frogs, crocodiles, fish, wha les, tortoises, etc\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -920,7 +934,6 @@
                         }
                       ]
                     }
-
                   ]
                 },
                 {
@@ -937,7 +950,6 @@
                           "answer": "1) Snail: a small animal with a round shell \nExample sentences: \n1) Snails crawl very slowly. \n2) Snails have a spiral shell to cover their body.\n2) Dark: with little or no light \nExample sentences: \n1) We were having our dinner in a dark room as there was no electricity. \n2) I saw a monster in a forest on a dark night.\n3) Feelers: an animal organ that is used for testing things by touch \nExample sentences: \n1) Snail uses its feelers to know which food to eat. \n2) Ants have tiny feelers to reach towards their food.\n4) Storm: a violent weather with strong winds \nExample sentences: \n1)The storm took away the umbrella I was carrying. \n2) The kids got scared with the sound of the storm.\n5) Lightning: bright flash with thunder \nExample sentences: \n1) Our car got stuck because of lightning. \n2) There was a terrible flash of lightning on my birthday.\n6) Thunder: crashing noise after lightning \nExample sentences: \n1) It began to thunder after we reached the school. \n2) The river thundered below.\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -968,7 +980,6 @@
                           "answer": "Sunu-Sunu did not get wet.",
                           "images": []
                         }
-
                       ]
                     },
                     {
@@ -978,33 +989,48 @@
                         {
                           "qid": 1,
                           "question": "• Do you go for morning walks?\n• Have you ever seen ants in the garden?\n• Watch and see where they go and what they carry to their holes.\n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• Yes, I go for morning walks. I go along with my grandparents.\n• Yes, I have seen ants in the garden. They move really fast.\n• They start from the main gate of the garden towards a small hole at the end\nof the park. They carry tiny left out grain particles and move towards their\nHoles.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• Yes, I have heard the sound of rainfall. It makes a ‘splash’ sound.\n• The rain makes the sound of ‘pitter-patter’ on umbrellas.\n• The rain makes the sound of ‘drip-drop’ on the leaves of the trees.\n• The rain makes the sound of ‘tip-tap’ on my window.\n",
                           "images": []
                         }
-
                       ]
                     },
                     {
                       "id": 4,
-                      "name": "TEAM TIME\n",
+                      "name": "COUNTING CLOUDS\n",
                       "exercise": [
                         {
                           "qid": 1,
-                          "question": "Do you know why you see snails and earthworms after it rains?\nSit in a group and discuss.\n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answer based on their own experience and observation.\nSnails and earthworms live deep under the surface of the earth. So, whenever it\nrains, their house gets wet. It is because of which they have to come over the\nsurface, on the ground to find a place to live and food to eat.\n",
+                          "question": " Complete the story As One little white cloud floated in the sky one day. Another little cloud called out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\n• Now write what the fifth and the sixth clouds did.\n",
+                          "answer": "As One little white cloud floated in the sky one day. Another little cloud\ncalled out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\nAs Five little clouds went to bloom, Another big cloud started to bloom!\nAs six clouds started walking along a chain, One tiny cloud asked them to dance\nalong in the rain.\n",
                           "images": []
                         }
                       ]
                     },
                     {
                       "id": 5,
-                      "name": "LET’S WRITE\n",
+                      "name": "WORDS FUN\n",
                       "exercise": [
                         {
                           "qid": 1,
-                          "question": "Disclaimer: Kindly refer to the textbook for the images.\nin on under behind over\nThe cat is jumping _______________ the wall.\nThe cat is ______________ the box.\nThe cat is _______________ the door.\nThe cat is ______________ the stool.\nThe cat is ______________ the suitcase.\n",
-                          "answer": "1) The cat is jumping over the wall.\n2) The cat is in the box.\n3) The cat is behind the door.\n4) The cat is under the stool.\n5) The cat is on the suitcase\n",
+                          "question": "Fill in the letters to complete the crossword puzzle. Use the\npictures as clues.\n",
+                          "answer": "",
                           "images": [
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMu7FDcZJEfsCAD28ODSjJ4EYfk7TtkdCd4_ZyYOke-AG5pVqP"
+                            },
+                            {
+                              "question": false,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmZmyj7NGoIXuAGMyjWiNq6WLN9J2XQ3Q4NPrwJqryKZu7sxm"
+                            }
+                          ]
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What would you call these pictures in your language? Now label\nthe pictures in English.\n",
+                          "answer": "Disclaimer: The answer to this question may vary according to the\nmother tongue of the student.\nMoon           Cloud\nSun               Star\n",
+                          "images": [
+
                           ]
                         }
                       ]
@@ -1018,16 +1044,12 @@
                           "question": "Rain tree coat ship field play\n",
                           "answer": "Instructions: Join the dotted lines to form the given words.\n",
                           "images": [
-
                           ]
                         }
                       ]
                     }
-
-
                   ]
                 }
-
               ]
             }
           ]
