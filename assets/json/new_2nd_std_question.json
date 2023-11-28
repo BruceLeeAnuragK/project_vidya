@@ -865,8 +865,14 @@
                           "question": "• Complete the story As One little white cloud floated in the sky one day. Another little cloud called out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\n• Now write what the fifth and the sixth clouds did.\n",
                           "answer": "As One little white cloud floated in the sky one day. Another little cloud\ncalled out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\nAs Five little clouds went to bloom, Another big cloud started to bloom!\nAs six clouds started walking along a chain, One tiny cloud asked them to dance\nalong in the rain.\n",
                           "images": [
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx",
-                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmUz0N58CpwseXM8oJsMB6spssvwLbtjZDM2iYO6_L8k19HYx"
+                            },
+                            {
+                              "question": false,
+                              "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReU8m2KWAQ2LiQPgZcb5VxnsCtjX1LXmZim96gfOlTYLKqUm87"
+                            }
                           ]
                         }
                       ]
@@ -880,8 +886,14 @@
                           "question": "Fill in the letters to complete the crossword puzzle. Use the\npictures as clues.\n",
                           "answer": "Disclaimer: This is a creative and fun activity meant to be done with your friends in group. You can make different things with clay like bird, sun, flower, tree, pen, book, etc.",
                           "images": [
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMu7FDcZJEfsCAD28ODSjJ4EYfk7TtkdCd4_ZyYOke-AG5pVqP",
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmZmyj7NGoIXuAGMyjWiNq6WLN9J2XQ3Q4NPrwJqryKZu7sxm"
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMu7FDcZJEfsCAD28ODSjJ4EYfk7TtkdCd4_ZyYOke-AG5pVqP"
+                            },
+                            {
+                              "question": false,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmZmyj7NGoIXuAGMyjWiNq6WLN9J2XQ3Q4NPrwJqryKZu7sxm"
+                            }
                           ]
                         }
                       ]
@@ -996,42 +1008,25 @@
                     },
                     {
                       "id": 4,
-                      "name": "COUNTING CLOUDS\n",
+                      "name": "TEAM TIME\n",
                       "exercise": [
                         {
                           "qid": 1,
-                          "question": " Complete the story As One little white cloud floated in the sky one day. Another little cloud called out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\n• Now write what the fifth and the sixth clouds did.\n",
-                          "answer": "As One little white cloud floated in the sky one day. Another little cloud\ncalled out. “Come, let us play!”\nAs Two little clouds danced in the sky so blue, Another little cloud asked, “Can I\njoin you?”\nAs Three little clouds held hands in the sky, The wind blew another little cloud\nvery close by.\nAs Four little clouds decided what to do, Another little cloud joined them very\nquietly too!\nAs Five little clouds went to bloom, Another big cloud started to bloom!\nAs six clouds started walking along a chain, One tiny cloud asked them to dance\nalong in the rain.\n",
+                          "question": "Do you know why you see snails and earthworms after it rains?\nSit in a group and discuss.\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answer based on their own experience and observation.\nSnails and earthworms live deep under the surface of the earth. So, whenever it\nrains, their house gets wet. It is because of which they have to come over the\nsurface, on the ground to find a place to live and food to eat.\n",
                           "images": []
                         }
                       ]
                     },
                     {
                       "id": 5,
-                      "name": "WORDS FUN\n",
+                      "name": "LET’S WRITE\n",
                       "exercise": [
                         {
                           "qid": 1,
-                          "question": "Fill in the letters to complete the crossword puzzle. Use the\npictures as clues.\n",
-                          "answer": "",
-                          "images": [
-                            {
-                              "question": true,
-                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMu7FDcZJEfsCAD28ODSjJ4EYfk7TtkdCd4_ZyYOke-AG5pVqP"
-                            },
-                            {
-                              "question": false,
-                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcmZmyj7NGoIXuAGMyjWiNq6WLN9J2XQ3Q4NPrwJqryKZu7sxm"
-                            }
-                          ]
-                        },
-                        {
-                          "qid": 2,
-                          "question": "What would you call these pictures in your language? Now label\nthe pictures in English.\n",
-                          "answer": "Disclaimer: The answer to this question may vary according to the\nmother tongue of the student.\nMoon           Cloud\nSun               Star\n",
-                          "images": [
-
-                          ]
+                          "question": "Look at the picture and complete the sentences. Pick the right\nword from the box.\nDisclaimer: Kindly refer to the textbook for the images.\nin on under behind over\nThe cat is jumping _______________ the wall.\nThe cat is ______________ the box.\nThe cat is _______________ the door.\nThe cat is ______________ the stool.\nThe cat is ______________ the suitcase.\n",
+                          "answer": "1) The cat is jumping over the wall.\n2) The cat is in the box.\n3) The cat is behind the door.\n4) The cat is under the stool.\n5) The cat is on the suitcase\n",
+                          "images": []
                         }
                       ]
                     },
@@ -1042,9 +1037,233 @@
                         {
                           "qid": 1,
                           "question": "Rain tree coat ship field play\n",
-                          "answer": "Instructions: Join the dotted lines to form the given words.\n",
+                          "answer": "Instructions: Join the dotted lines to form the given words.\n\n",
+                          "images": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "ch": 5,
+              "part": [
+                {
+                  "pid": 1,
+                  "name": "Zoo Manners\n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Proud, noble, wise, penguins, strutting, remarks\n",
+                          "answer": "1) Proud: feeling self-respect or pleasure in something \nExample sentences: \n1) My mother was proud of my recent result. \n2) I am proud of my country.\n2) Noble: someone with a very good character \nExample sentences: \n1) Mother Teresa was a noble lady. \n2) The students were working for a noble cause.\n3) Wise: someone who has a good experience and knowledge \nExample sentences: \n1) Ashoka was a wise king. \n2) He took a wise decision in his business deal.\n4) Penguins: a large sea-bird with wings for swimming under water \nExample sentences: \n1) She was dancing like a penguin in rain. 2) Penguins‘ favourite\nfood is fish.\n5) Strutting: to walk with a proud air \nExample sentences: \n1) He was strutting after he won the music competition. \n2) She strutted down the catwalk.\n6) Remarks: to say something as a comment \nExample sentences: \n1) Her teacher’s remarks made her feel bad.\n2) You should give remarks at the bottom of the test paper.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "What do you see at the zoo?\n",
+                          "answer": "We see animals at the zoo.",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "What does the camel have on its back?\n",
+                          "answer": "The camel has a hump on its back",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "LET’S TALK\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Have you been to a zoo?\nName the animals which you have seen in a zoo. Say the names in your own\nlanguage and then in English.\nName the animal you liked the most. Why?\nDid you feed any animals at the zoo? Should we tease animals?\n",
+                          "answer": "Disclaimer: These are sample answers. Students are advised to write\nthe answers based on their own experience and observation.\n• Yes, I have been to a zoo when I was 6 years.\n• I have seen tiger, lion, giraffe, elephant and monkey in the zoo.\n• I liked monkey the most because it can act exactly like me. He was copying\nme when I was dancing. He too danced in the same way.\n• Yes, I fed giraffe at the zoo. No, we should not tease animals. We should\nalways love them and take care of them.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S LISTEN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Listen and put a tick (✓) against the words that the teacher says\n–\nit            at\nthink           thank\nfun           fan\nmuch          match\nwell            wall\n",
+                          "answer": "",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "SAY ALOUD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "bump            hump         dump\ncrowd           crow            cloud          claw\nnoise           prize         size          pies           flies\n",
+                          "answer": "Bump        hump        dump\nCrowd        crow        cloud        claw\nnoise         prize       size         pies     flie\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S SING AND ADD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "The elephant walks Like this and that. He’s so tall And so fat.\nHe has no fingers, He has some toes, But oh! my goodness, What a big\nNOSE…\nMake sentences using – ‘this’ and ‘that’.\n_______________________________________________\n_______________________________________________\n_______________________________________________\n_______________________________________________\n_______________________________________________\n_______________________________________________\n",
+                          "answer": "1) This is the book that you have to read.\n2) That is the girl who won the prize.\n3) This is the food that you have to eat.\n4) That lady asked me for money.\n5) This system is not working.\n6) That building collapsed.\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Fill in the blanks with the words from the box.\nhorses village cat dogs milk kittens\nhay pond grandmother cow cock hen\nDisclaimer: Kindly refer to the textbook for the images.\nIn June we went to a ____________ where my ____________ lives. She has a\nfarm.\nOn her farm there are many animals. There are two ____________, a\n_____________\nWith its ___________, three ____________, one ____________ as well as a\n____________ And a ____________. Every morning she feeds her animals with ____________ or ____________ . They drink water from a ____________ on\nthe farm.\n• Composition corner – Look at the picture and fill in the blanks.\nlines flowers buzzed\ntwo bee buzzed\nDisclaimer: Kindly refer the textbook for the images.\nThis is a __________. It has __________ on its wings. It has __________\nantennas. It buzzes round the __________. It __________ and __________ and\ncame to the zoo.\n",
+                          "answer": "• In June we went to a village where my grandmother lives. She has a farm.\nOn her farm there are many animals. There are two horses, a cat\nwith its kittens, three dogs, one hen as well as a\ncock and a cow. Every morning she feeds her animals with\nhay or milk. They drink water from a pond on\nthe farm.\n• This is a bee. It has lines on its wings. It has two antennas. It buzzes round\nthe flowers. It buzzed and buzzed and came to the zoo\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 8,
+                      "name": "LET’S DO\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Help the bee to reach its home. What are the things that it met on the way that rhyme with bee?",
+                          "answer": "pea, tree, key, tea\n",
+                          "images": []
+                        },
+                        {
+                          "qid": 2,
+                          "question": "Look at the incomplete words and fill in the blanks\nL__N\nTI__R\nW__F\nD__R\nB__R\nO__",
+                          "answer": "LION\nTIGER\nWOLF\nDEER\nBEAR\n",
+                          "images": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "pid": 2,
+                  "name": "A visit to my village \n",
+                  "topics": [
+                    {
+                      "id": 1,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Nut, ouch, met, I’m, I’ll, off, we’re Answer: ",
+                          "answer": "1) Nut: a fruit with a hard shell \nExample sentences:\n1) I like to eats nuts during summers. \n2) Squirrels love to eat nuts. \n2) Ouch: used to express pain\nExample sentences: \n1) Ouch! I hurt my leg while playing football. \n2) Ouch! I touched the hot pan. \n3) Met: to see someone after a certain period of time. \nExample sentences: \n1) I met my mother after three months. \n2) I met my neighbour after he met the accident. \n4) I’m: I am \nExample sentences: \n1) I’m the monitor of my class. \n2) I’m at the top of my floor. \n5) I’ll: I will \nExample sentences:\n1) I’ll do my homework on time. \n2) I’ll come to pick you up from your music class. \n6) Off: to move away \nExample sentences:\n1) I was off to Bangalore last night. \n2) He went off to school in his uniform. \n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 2,
+                      "name": "NEW WORDS\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Nut, ouch, met, I’m, I’ll, off, we’re Answer: ",
+                          "answer": "1) Nut: a fruit with a hard shell \nExample sentences:\n1) I like to eats nuts during summers. \n2) Squirrels love to eat nuts. \n2) Ouch: used to express pain\nExample sentences: \n1) Ouch! I hurt my leg while playing football. \n2) Ouch! I touched the hot pan. \n3) Met: to see someone after a certain period of time. \nExample sentences: \n1) I met my mother after three months. \n2) I met my neighbour after he met the accident. \n4) I’m: I am \nExample sentences: \n1) I’m the monitor of my class. \n2) I’m at the top of my floor. \n5) I’ll: I will \nExample sentences:\n1) I’ll do my homework on time. \n2) I’ll come to pick you up from your music class. \n6) Off: to move away \nExample sentences:\n1) I was off to Bangalore last night. \n2) He went off to school in his uniform. \n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 3,
+                      "name": "READING IS FUN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "One day, ______________ (a nut/the sky) fell on Funny Bunny. \n• Funny Bunny wanted to tell _____________ (the king/the cock/the sky) what he saw. \n• Who said these words in the story? “Ouch! The sky is falling down,” _________________________________________________________ \n“I must tell the King.” _______________________________________________________\n“The King lives here.” _______________________________________________________\n“Follow me.” _______________________________________________________\n • What happened to all the animals in the end? \n",
+                          "answer": "• One day, a nut (a nut/the sky) fell on Funny Bunny. \n• Funny Bunny wanted to tell the king (the king/the cock/the sky) what he saw. \n• “Ouch! The sky is falling down,” Funny Bunny said these words. \n“I must tell the King.” Funny Bunny said these words. \n“The King lives here.” Woxy Foxy said these words. \n“Follow me.” Woxy Foxy said these words. \n• Woxy Foxy eats all the animals in the end\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 4,
+                      "name": "LET’S LISTEN\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Funny Bunny Cocky Locky Henny Penny Poosey Goosey Woxy Foxy \n",
+                          "answer": "Funny Bunny Cocky Locky Henny Penny Poosey Goosey Woxy Foxy",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 5,
+                      "name": "SAY ALOUD\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Funny Bunny Cocky Locky Henny Penny Poosey Goosey Woxy Foxy \n",
+                          "answer": "Funny Bunny Cocky Locky Henny Penny Poosey Goosey Woxy Foxy",
                           "images": [
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpISnzP9WUS6rmkuzmZPREnfgidNy9tc9a-IJbfjyfVbgMq4Go"
+                            }
                           ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 6,
+                      "name": "LET’S WRITE\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Write the Rhyming word.",
+                          "answer": "Funny Bunny Cocky Locky Henny Penny Poosey Goosey Woxy Foxy",
+                          "images": [
+                            {
+                              "question": true,
+                              "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkm5DxV2qRUthNOLikZSo7nXtnv1AQrOREHaIfeCFaFo3OPhdG"
+                            }
+                          ]
+                        },
+                        {
+                          "qid": 2,
+                          "question": "1. \nFind the opposites of the given words and make sentences. \nfat______________________________________________________ fall_____________________________________________________\nstart____________________________________________________\ncome____________________________________________________\nbig _____________________________________________________\n\n\n2. \nFill in the blanks with the correct word. I read a funny story of a funny rabbit. One day, a nut ____________ (fell/fall) on his head. He thought that the sky ___________ (is/was) falling. So, he ___________ (go/went) to tell the King. On the way, he met different animals. All of them ____________ (join/joined) him. At last, they ___________ (meet/met) a clever fox. It took them to a forest and ____________ (eat/ate) them all up.\n\n3. \nRearrange these words to form sentences – \n1. on/Funny Bunny/fell/a/nut/one day. _____________________________________________ \n2. falling/down/the/sky/is/said/Funny Bunny. _____________________________________________ \n3. King/I/must/the/tell. _____________________________________________ \n4. lives/here/the/King. _____________________________________________\n\n4. \nChange only one letter of each word and make another rhyming word. For example : Fell Tell \ndown _____________ king _____________ \nmet _____________ soon _____________ \nway _____________ bat _____________\n",
+                          "answer": "1) fat : thin You should not eat junk food or else you will get fat. \nfall : rise Raindrops fall from the sky. \nstart : end You should start the game at 5 in the evening. \ncome : go Come and take the food from the kitchen. \nbig : small I have a big tree near my house. \n\n3. \nI read a funny story about a funny rabbit. One day, a nut fell(fell/fall) on his head. He thought that the sky was (is/was) falling. So, he went (go/went) to tell the King. On the way, he met different animals. All of them joined (join/joined) him. At last, they met (meet/met) a clever fox. It took them to a forest and ate (eat/ate) them all up. \n\n4. \n1) One day a nut fell on Funny Bunny. \n2) Funny Bunny said the sky was falling. \n3) I must tell the king. \n4) The king lives here.\n\n5. \nDown               town                 king               sing \nmet                  pet               soon               moon \nway                   bay               bat                 cat\n",
+                          "images": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": 7,
+                      "name": "PICTURE STORY\n",
+                      "exercise": [
+                        {
+                          "qid": 1,
+                          "question": "Look at the pictures. Narrate the story in your language and then in English. ",
+                          "answer": "Disclaimer: This is a sample story provided to you. Students are advised to write the story using their own imaginative and creative skills. \nOne day three rabbits were playing with each other on a sunny day. Their names were Rabbu, Reeyas and Ruby. Ruby found a carrot from the forest and asked Reeyas if he also wanted to have the carrot. Suddenly, a tiger came from behind the tree and started howling loudly. All the three rabbits got terribly frightened and ran towards the pond. \nThey saw their best friend Gumpu, the elephant coming from the pond. Seeing the tiger chasing the rabbits, Gumpu asked them to cross the pond on his nose. The three rabbits quickly jumped on Gumpu’s nose and crossed the pond. The tiger got very angry looking at this. \nGumpu then stored a lot of water in its mouth and raised its trunk to throw the water on the tiger’s face. The water got splashed on the tiger’s face. Gumpu and rabbits laughed loudly looking at the tiger’s terrible condition.\n",
+                          "images": []
                         }
                       ]
                     }
