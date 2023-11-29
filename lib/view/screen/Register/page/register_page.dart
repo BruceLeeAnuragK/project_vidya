@@ -54,7 +54,7 @@ class RegisterPage extends StatelessWidget {
                   ),
                   Center(
                     child: Text(
-                      "you will get your product within 30mins.",
+                      "you will get your product within 30 mins.",
                       style: TextStyle(
                         color: Colors.blue.shade100,
                         fontSize: 10,

@@ -6,7 +6,7 @@ class StorageHelper {
 
   GetStorage storage = GetStorage();
 
-  String _first = "first";
+  final String _first = "first";
 
   bool get isFirstItem {
     return storage.read(_first) ?? true;
