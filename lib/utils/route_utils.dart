@@ -7,12 +7,15 @@ class MyRoutes {
   static String chatPage = '/Chat';
   static String selectionPage = '/Selection';
   static String registerPage = '/Registration';
-  static String topicPage = '/TopicPage';
+  static String physicstopicPage = '/PhysicsTopicPage';
+  static String englishstopicPage = '/EnglishTopicPage';
   static String exercisePage = '/ExercisePage';
   static String loginPage = '/LoginPage';
   static String introPage = '/IntroPage';
   static String physicsPage = '/PhysicsPage';
-  static String chapterPage = '/ChapterPage';
+  static String physicschapterPage = '/PhysicsChapterPage';
+  static String englishchapterPage = '/EnglishChapterPage';
+  static String englishPage = '/EnglishPage';
 ////////////////////////////////////////////////////////////////////////////////
   static String childDetailPage = '/childDetailPage';
   static String childProgressReportPage = '/childProgressReportPage';

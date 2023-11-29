@@ -1,11 +1,12 @@
 import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../helper/auth_helper.dart';
 import '../../../../helper/firestore_helper.dart';
+import '../../../../utils/route_utils.dart';
 import '../../Register/model/user_model.dart';
 
 class TeacherHomePage extends StatelessWidget {
@@ -197,6 +198,30 @@ class TeacherHomePage extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: MaterialButton(
+                              onPressed: () {
+                                Get.toNamed(MyRoutes.physicsPage);
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Color(0xff3D5CFF),
+                                ),
+                                alignment: Alignment.center,
+                                height: 50,
+                                width: double.infinity,
+                                child: Text(
+                                  "Physics",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),

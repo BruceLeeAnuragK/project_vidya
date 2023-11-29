@@ -3,18 +3,18 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
-class TopicPage extends StatelessWidget {
-  TopicPage({super.key});
+class PhysicsChapterPage extends StatelessWidget {
+  PhysicsChapterPage({super.key});
   TextEditingController searchController = TextEditingController();
   List<String> phyicsCh = <String>[
-    "Electric Charge",
-    "Conductors and Insulators",
-    "Charging by Induction",
-    "Basic Properties of Electric Charge",
-    "Forces between Multiple Charges",
-    "Electric Field",
-    "Electric Field Lines",
-    "Electric Flux",
+    "Electric Charges and Field",
+    "Electrostatic Potential and Capacitance",
+    "Current Electricity",
+    "Moving Charges and Magnetism",
+    "Magnetism and Matter",
+    "Electromagnetic",
+    "Alternating Current",
+    "Work",
     "Waves",
     "Energy",
   ];
@@ -25,7 +25,7 @@ class TopicPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color(0xffB8b8d2),
         title: Text(
-          "Topic : ",
+          "Chapter : ",
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
             fontSize: 25,
@@ -49,7 +49,9 @@ class TopicPage extends StatelessWidget {
           itemBuilder: (context, index) => Card(
             color: Color(0xff3D5CFF),
             child: ListTile(
-              onTap: () {},
+              onTap: () {
+                Get.toNamed(MyRoutes.physicstopicPage);
+              },
               title: Text(
                 phyicsCh[index],
                 style: TextStyle(

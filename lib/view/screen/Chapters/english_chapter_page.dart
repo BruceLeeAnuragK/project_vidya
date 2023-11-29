@@ -3,20 +3,18 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
-class ChapterPage extends StatelessWidget {
-  ChapterPage({super.key});
+class EnglishChapterPage extends StatelessWidget {
+  EnglishChapterPage({super.key});
   TextEditingController searchController = TextEditingController();
-  List<String> phyicsCh = <String>[
-    "Electric Charges and Field",
-    "Electrostatic Potential and Capacitance",
-    "Current Electricity",
-    "Moving Charges and Magnetism",
-    "Magnetism and Matter",
-    "Electromagnetic",
-    "Alternating Current",
-    "Work",
-    "Waves",
-    "Energy",
+  List<String> EnglishCh = <String>[
+    "First Day at School",
+    " I am Lucky! ",
+    "A Smile",
+    "Rain",
+    "Zoo Manners ",
+    " Mr Nobody ",
+    "On My Blackboard I can Draw",
+    "I am the Music Man",
   ];
   @override
   Widget build(BuildContext context) {
@@ -45,15 +43,15 @@ class ChapterPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView.builder(
-          itemCount: phyicsCh.length,
+          itemCount: EnglishCh.length,
           itemBuilder: (context, index) => Card(
             color: Color(0xff3D5CFF),
             child: ListTile(
               onTap: () {
-                Get.toNamed(MyRoutes.topicPage);
+                Get.toNamed(MyRoutes.englishstopicPage);
               },
               title: Text(
-                phyicsCh[index],
+                EnglishCh[index],
                 style: TextStyle(
                   color: Colors.white,
                 ),

@@ -55,6 +55,8 @@ dependencies:
   flutter_inappwebview:
   crypto:
   introduction_screen:
+  gap:
+
 
 
 

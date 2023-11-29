@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:logger/logger.dart';
+
 import '../view/screen/Register/model/user_model.dart';
 
 class FireStoreHelper {
@@ -10,6 +12,7 @@ class FireStoreHelper {
   String collection = "User";
   String colusername = "username";
   String colemail = "email";
+  String schCollection = "lists";
 
   addUser({required UserModel userModel}) {
     Map<String, dynamic> datas = {
@@ -22,7 +25,12 @@ class FireStoreHelper {
         .set(datas);
   }
 
+  Logger logger = Logger();
   Stream<QuerySnapshot<Map<String, dynamic>>> getUser() {
     return firestore.collection(collection).snapshots();
+  }
+
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getSchoolList() {
+    return firestore.collection(schCollection).doc('schools').snapshots();
   }
 }

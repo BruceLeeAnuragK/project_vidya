@@ -4,12 +4,14 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
-import 'package:project_vidya/view/screen/Chapters/chapter_page.dart';
+import 'package:project_vidya/view/screen/Chapters/english_chapter_page.dart';
+import 'package:project_vidya/view/screen/Chapters/physics_chapter_page.dart';
 import 'package:project_vidya/view/screen/Intro/intro_page.dart';
 import 'package:project_vidya/view/screen/Intro/select_category_page.dart';
 import 'package:project_vidya/view/screen/Register/page/register_page.dart';
 import 'package:project_vidya/view/screen/Register/page/selection_page.dart';
 import 'package:project_vidya/view/screen/Subject/component/Parents_list_of%20_subject.dart';
+import 'package:project_vidya/view/screen/Subject/page/english_page.dart';
 import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_details_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_progress_report.dart';
@@ -20,8 +22,9 @@ import 'package:project_vidya/view/screen/home/page/teacher_home_page.dart';
 import 'package:project_vidya/view/screen/login/page/login_page.dart';
 import 'package:project_vidya/view/screen/login/page/verification_page.dart';
 import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
+import 'package:project_vidya/view/screen/topic/page/english_topic_page.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
-import 'package:project_vidya/view/screen/topic/page/topic_page.dart';
+import 'package:project_vidya/view/screen/topic/page/physics_topic_page.dart';
 import 'package:provider/provider.dart';
 
 import 'controller/splash_controller.dart';
@@ -78,8 +81,8 @@ class MyApp extends StatelessWidget {
           page: () => PSubjects(),
         ),
         GetPage(
-          name: MyRoutes.topicPage,
-          page: () => TopicPage(),
+          name: MyRoutes.englishstopicPage,
+          page: () => EnglishTopicPage(),
         ),
         GetPage(
           name: MyRoutes.exercisePage,
@@ -110,8 +113,12 @@ class MyApp extends StatelessWidget {
           page: () => PhysicsPage(),
         ),
         GetPage(
-          name: MyRoutes.chapterPage,
-          page: () => ChapterPage(),
+          name: MyRoutes.physicschapterPage,
+          page: () => PhysicsChapterPage(),
+        ),
+        GetPage(
+          name: MyRoutes.englishchapterPage,
+          page: () => EnglishChapterPage(),
         ),
         GetPage(
           name: MyRoutes.childDetailPage,
@@ -132,6 +139,14 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: MyRoutes.verificationPage,
           page: () => const VerificationPage(),
+        ),
+        GetPage(
+          name: MyRoutes.englishPage,
+          page: () => EnglishPage(),
+        ),
+        GetPage(
+          name: MyRoutes.physicstopicPage,
+          page: () => PhysicsTopicPage(),
         ),
       ],
     );

@@ -29,7 +29,7 @@ class SelectPhysicsComponent extends StatelessWidget {
           itemCount: phyicsBooks.length,
           itemBuilder: (context, index) => GestureDetector(
             onTap: () {
-              Get.toNamed(MyRoutes.chapterPage);
+              Get.toNamed(MyRoutes.physicschapterPage);
             },
             child: Container(
               height: 200,

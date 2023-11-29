@@ -70,8 +70,7 @@ class IntroScreen extends StatelessWidget {
           next: const Text("Next"),
           done: TextButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushReplacementNamed(MyRoutes.selectCategoryPage);
+              Navigator.of(context).pushReplacementNamed(MyRoutes.registerPage);
             },
             child: const Text("Done"),
           ),
@@ -81,8 +80,7 @@ class IntroScreen extends StatelessWidget {
           showSkipButton: true,
           skip: const Text("Skip"),
           onDone: () {
-            Navigator.of(context)
-                .pushReplacementNamed(MyRoutes.selectCategoryPage);
+            Navigator.of(context).pushReplacementNamed(MyRoutes.registerPage);
           },
         ),
       ),

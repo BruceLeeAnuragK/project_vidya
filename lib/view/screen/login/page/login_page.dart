@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -37,13 +39,23 @@ class LoginPage extends StatelessWidget {
                     OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
               ),
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [SizedBox(), Text("Forgot Password?")],
+              children: [
+                SizedBox(),
+                TextButton(
+                  onPressed: () {
+                    Get.toNamed(MyRoutes.registerPage);
+                  },
+                  child: Text("Forget Password?"),
+                )
+              ],
             ),
             SizedBox(height: s.height * 0.01),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.toNamed(MyRoutes.selectCategoryPage);
+              },
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.blue),
               ),
@@ -58,7 +70,9 @@ class LoginPage extends StatelessWidget {
               children: [
                 const Text("Don't have an account?"),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed(MyRoutes.registerPage);
+                  },
                   child: const Text("Sign Up"),
                 )
               ],
