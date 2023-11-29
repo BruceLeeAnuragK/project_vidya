@@ -53,6 +53,7 @@ dependencies:
   reference:
   image_picker:
   flutter_inappwebview:
+  crypto:
   introduction_screen:
 
 

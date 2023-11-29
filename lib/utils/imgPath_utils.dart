@@ -1,6 +1,15 @@
 class ImgPath {
   static String path = "assets/images/";
-
+  static String btnEllipse = 'ellipse.png';
+  static String btnEmail = 'email.png';
+  static String btnAdd = 'add.png';
+  static String btnBProfile = 'b_profile.png';
+  static String btnBell = 'bell.png';
+  static String btnGProfile = 'g_profile.png';
+  static String btnKey = 'key.png';
+  static String btnPhone = 'phone.png';
+  static String btnStar = 'star.png';
+  static String notification = 'notification.png';
   static String dimg1 = "img.png";
   static String dimg2 = "img_1.png";
   static String dimg3 = "img_2.png";
