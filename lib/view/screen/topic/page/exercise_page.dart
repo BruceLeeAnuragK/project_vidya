@@ -13,6 +13,18 @@ class ExercisePage extends StatefulWidget {
 }
 
 class _ExercisePageState extends State<ExercisePage> {
+  List<bool> answer = [];
+  Future<void> setAnswer() async {
+    List? tmp = await ApiHelper.apiHelper.assign();
+    answer = List.generate(tmp!.length, (index) => false);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    setAnswer();
+  }
+
   @override
   Widget build(BuildContext context) {
     User? user = Get.arguments;
@@ -47,7 +59,10 @@ class _ExercisePageState extends State<ExercisePage> {
                     ),
                     child: Column(
                       children: [
-                        Text("$index : ${data[index]['question']}"),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("$index : ${data[index]['question']}"),
+                        ),
                         TextFormField(
                           keyboardType: TextInputType.multiline,
                           controller: answerController,
@@ -56,12 +71,21 @@ class _ExercisePageState extends State<ExercisePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              seeAnswer = true;
+                              answer[index] = !answer[index];
                             });
                           },
                           child: const Text("See Answer"),
                         ),
-                        seeAnswer ? const Text("") : Text("Answer${index + 1}"),
+                        answer[index]
+                            ? Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: SingleChildScrollView(
+                                    child: SizedBox(
+                                        height: 117,
+                                        child: Text(
+                                            "Answer : ${data[index]['answer']}"))),
+                              )
+                            : const Text(" "),
                       ],
                     ),
                   ),
