@@ -26,7 +26,6 @@ import 'package:project_vidya/view/screen/topic/page/english_topic_page.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
 import 'package:project_vidya/view/screen/topic/page/physics_topic_page.dart';
 import 'package:provider/provider.dart';
-
 import 'controller/splash_controller.dart';
 import 'firebase_options.dart';
 
@@ -52,9 +51,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
       title: "Cart App",
       initialRoute: MyRoutes.introPage,
       getPages: [
