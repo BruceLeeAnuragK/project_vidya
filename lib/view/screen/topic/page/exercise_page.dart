@@ -32,7 +32,12 @@ class _ExercisePageState extends State<ExercisePage> {
     bool seeAnswer = false;
     return Scaffold(
       appBar: AppBar(
-        leading: Container(),
+        leading: IconButton(
+            onPressed: () => Get.back(),
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.black,
+            )),
         title: Text(
           "Exercise",
           style: GoogleFonts.sofia(
@@ -51,7 +56,6 @@ class _ExercisePageState extends State<ExercisePage> {
                 itemBuilder: (context, index) => Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 300,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.deepPurpleAccent.shade400.withOpacity(0.3),
@@ -61,12 +65,25 @@ class _ExercisePageState extends State<ExercisePage> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text("$index : ${data[index]['question']}"),
+                          child:
+                              Text("${index + 1} : ${data[index]['question']}"),
                         ),
-                        TextFormField(
-                          keyboardType: TextInputType.multiline,
-                          controller: answerController,
-                          onFieldSubmitted: (val) {},
+                        ...List.generate(
+                            data[index]['images'].length,
+                            (index2) => data[index]['images'][index2]
+                                    ['question']
+                                ? Image.network(
+                                    data[index]['images'][index2]['img'])
+                                : const Text(" ")),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextFormField(
+                            decoration: const InputDecoration(
+                                border: OutlineInputBorder()),
+                            keyboardType: TextInputType.multiline,
+                            controller: answerController,
+                            onFieldSubmitted: (val) {},
+                          ),
                         ),
                         TextButton(
                           onPressed: () {
@@ -79,11 +96,10 @@ class _ExercisePageState extends State<ExercisePage> {
                         answer[index]
                             ? Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: SingleChildScrollView(
-                                    child: SizedBox(
-                                        height: 117,
-                                        child: Text(
-                                            "Answer : ${data[index]['answer']}"))),
+                                child: SizedBox(
+                                  child:
+                                      Text("Answer : ${data[index]['answer']}"),
+                                ),
                               )
                             : const Text(" "),
                       ],

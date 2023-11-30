@@ -36,16 +36,17 @@ class _RegisterPageState extends State<RegisterPage> {
     String dropdownValue = stdList.first;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color(0xff3d5cff),
         leading: Container(),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -58,8 +59,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -72,7 +73,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ],
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -94,7 +95,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.center,
                   child: Text(
                     "OR",
@@ -104,7 +105,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -126,7 +127,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -147,8 +148,8 @@ class _RegisterPageState extends State<RegisterPage> {
                         hide = !hide;
                       },
                       icon: hide
-                          ? Icon(Icons.visibility_outlined)
-                          : Icon(Icons.visibility_off_outlined),
+                          ? const Icon(Icons.visibility_outlined)
+                          : const Icon(Icons.visibility_off_outlined),
                     ),
                     hintText: "Password",
                     border: OutlineInputBorder(
@@ -168,11 +169,11 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 50,
                       width: 327,
                       decoration: BoxDecoration(
-                        color: Color(0xff3d5cff),
+                        color: const Color(0xff3d5cff),
                         borderRadius: BorderRadius.circular(18),
                       ),
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         "CREATE ACCOUNT",
                         style: TextStyle(
                           color: Colors.white,
@@ -185,36 +186,38 @@ class _RegisterPageState extends State<RegisterPage> {
                 StreamBuilder(
                   stream: FireStoreHelper.storeHelper.getSchoolList(),
                   builder: (context, snap) {
-                    DocumentSnapshot<Map<String, dynamic>>? doc = snap.data;
-                    log(doc.toString());
-                    Map<String, dynamic>? data = doc?.data();
-                    List school = data?['list'];
-                    return (snap.hasData)
-                        ? Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: DropdownMenu(
-                                    initialSelection: dropdownValue,
-                                    dropdownMenuEntries: school
-                                        .map<DropdownMenuEntry<String>>((e) {
-                                      return DropdownMenuEntry<String>(
-                                        value: e,
-                                        label: e,
-                                      );
-                                    }).toList(),
-                                    onSelected: (val) {
-                                      dropdownValue = val!;
-                                    },
-                                  ),
-                                ),
-                              ],
+                    if (snap.hasData) {
+                      DocumentSnapshot<Map<String, dynamic>>? doc = snap.data;
+                      log(doc.toString());
+                      Map<String, dynamic>? data = doc?.data();
+                      List school = data?['list'];
+                      return Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: DropdownMenu(
+                                initialSelection: dropdownValue,
+                                dropdownMenuEntries:
+                                    school.map<DropdownMenuEntry<String>>((e) {
+                                  return DropdownMenuEntry<String>(
+                                    value: e,
+                                    label: e,
+                                  );
+                                }).toList(),
+                                onSelected: (val) {
+                                  dropdownValue = val!;
+                                },
+                              ),
                             ),
-                          )
-                        : Container();
+                          ],
+                        ),
+                      );
+                    } else {
+                      return Container();
+                    }
                   },
                 ),
               ],

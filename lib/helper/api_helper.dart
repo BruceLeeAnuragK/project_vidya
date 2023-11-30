@@ -16,4 +16,14 @@ class ApiHelper {
       return null;
     }
   }
+
+  Future<Map?> assignAll() async {
+    Response response = await dio.get(api);
+    if (response.statusCode == 200) {
+      Map data = response.data[0];
+      return data;
+    } else {
+      return null;
+    }
+  }
 }

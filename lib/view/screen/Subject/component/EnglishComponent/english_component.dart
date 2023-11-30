@@ -16,11 +16,12 @@ class SelectEnglishComponent extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 2 / 3,
-              mainAxisSpacing: 15,
-              crossAxisSpacing: 60),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 2 / 3,
+            mainAxisSpacing: 15,
+            crossAxisSpacing: 60,
+          ),
           itemCount: englishBooks.length,
           itemBuilder: (context, index) => GestureDetector(
             onTap: () {
@@ -29,7 +30,7 @@ class SelectEnglishComponent extends StatelessWidget {
             child: Container(
               height: 200,
               decoration: BoxDecoration(
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     offset: Offset(5, 5),
                     color: Colors.grey,
