@@ -35,6 +35,9 @@ class LoginPage extends StatelessWidget {
                   TextField(
                     onChanged: (val) {},
                     decoration: InputDecoration(
+                      isCollapsed: true,
+                      isDense: true,
+                      contentPadding: EdgeInsets.all(20),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                     ),
