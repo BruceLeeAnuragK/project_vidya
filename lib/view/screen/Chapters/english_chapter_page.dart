@@ -43,13 +43,13 @@ class EnglishChapterPage extends StatelessWidget {
                 return ListView.builder(
                   itemCount: chapters.length,
                   itemBuilder: (context, index) => Card(
-                    color: const Color(0xff3D5CFF),
+                    color: const Color(0xff3d5cff),
                     child: ListTile(
                       onTap: () {
                         Get.toNamed(MyRoutes.englishstopicPage);
                       },
                       title: Text(
-                        chapters[index]['ch'].toString(),
+                        "Ch: ${chapters[index]['ch'].toString()}",
                         style: const TextStyle(
                           color: Colors.white,
                         ),
@@ -63,7 +63,9 @@ class EnglishChapterPage extends StatelessWidget {
                 );
               } else {
                 return const Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(
+                    color: Color(0xff3d5cff),
+                  ),
                 );
               }
             }),

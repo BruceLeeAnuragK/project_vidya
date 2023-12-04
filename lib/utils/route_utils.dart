@@ -26,4 +26,5 @@ class MyRoutes {
   static String otpVerificationPage = '/otpVerificationPage';
   static String notificationsPage = '/notificationsPage';
   static String summaryPage = '/summaryPage';
+  static String loggedInPage = '/LoggedInPage';
 }

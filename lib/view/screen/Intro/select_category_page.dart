@@ -30,11 +30,12 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
         title: Text(
           "Select Category :",
           style: TextStyle(
-            fontSize: 31,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
             color: MyColors.appTitle,
           ),
         ),
+        backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -66,7 +67,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   border: student
                       ? Border.all(
                           color: Colors.black,
@@ -101,7 +102,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   border: teacher
                       ? Border.all(
                           color: Colors.black,
@@ -142,7 +143,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                           width: 2,
                         )
                       : null,
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
@@ -177,7 +178,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                           width: 2,
                         )
                       : null,
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
@@ -206,7 +207,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   border: principal
                       ? Border.all(
                           color: Colors.black,
@@ -226,60 +227,54 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
               ),
             ),
             const Spacer(),
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                height: 50,
-                width: 327,
-                decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const SizedBox(width: 90),
-                    GestureDetector(
-                      onTap: () {
-                        if (student) {
-                          Get.toNamed(MyRoutes.studHome);
-                        } else if (teacher) {
-                          Get.toNamed(MyRoutes.teacherHome);
-                        } else if (tutionteacher) {
-                          Get.toNamed(MyRoutes.parentsHome);
-                        } else if (parent) {
-                          Get.toNamed(MyRoutes.parentsHome);
-                        } else if (principal) {
-                          Get.toNamed(MyRoutes.parentsHome);
-                        } else {
-                          Get.snackbar("Access Denied",
-                              "Select any Category to Continue",
-                              backgroundColor: Colors.red);
-                        }
-                      },
-                      child: const Text(
-                        "CONTINUE",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 50,
+                  width: 327,
+                  decoration: BoxDecoration(
+                    color: Color(0xff3d5cff),
+                    borderRadius: BorderRadius.circular(18),
+                  ),
+                  alignment: Alignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const SizedBox(width: 90),
+                      GestureDetector(
+                        onTap: () {
+                          if (student) {
+                            Get.toNamed(MyRoutes.studHome);
+                          } else if (teacher) {
+                            Get.toNamed(MyRoutes.teacherHome);
+                          } else if (tutionteacher) {
+                            Get.toNamed(MyRoutes.parentsHome);
+                          } else if (parent) {
+                            Get.toNamed(MyRoutes.parentsHome);
+                          } else if (principal) {
+                            Get.toNamed(MyRoutes.parentsHome);
+                          } else {
+                            Get.snackbar("Access Denied",
+                                "Select any Category to Continue",
+                                backgroundColor: Colors.red);
+                          }
+                        },
+                        child: const Text(
+                          "CONTINUE",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 90),
-                    const Align(
-                      alignment: Alignment.centerRight,
-                      child: Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                    ),
-                  ],
+                      const SizedBox(width: 90),
+                    ],
+                  ),
                 ),
               ),
             ),
-            const Spacer(),
           ],
         ),
       ),

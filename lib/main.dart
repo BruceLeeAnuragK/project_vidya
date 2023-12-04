@@ -19,13 +19,18 @@ import 'package:project_vidya/view/screen/home/components/Student_Component/stud
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/teacher_home_page.dart';
+import 'package:project_vidya/view/screen/login/page/lets_get_started_page.dart';
+import 'package:project_vidya/view/screen/login/page/logged_in_successfully_page.dart';
 import 'package:project_vidya/view/screen/login/page/login_page.dart';
+import 'package:project_vidya/view/screen/login/page/notification_page.dart';
+import 'package:project_vidya/view/screen/login/page/otp_verification_page.dart';
 import 'package:project_vidya/view/screen/login/page/verification_page.dart';
 import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
 import 'package:project_vidya/view/screen/topic/page/english_topic_page.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
 import 'package:project_vidya/view/screen/topic/page/physics_topic_page.dart';
 import 'package:provider/provider.dart';
+
 import 'controller/splash_controller.dart';
 import 'firebase_options.dart';
 
@@ -101,6 +106,10 @@ class MyApp extends StatelessWidget {
           page: () => LoginPage(),
         ),
         GetPage(
+          name: MyRoutes.loggedInPage,
+          page: () => Logged(),
+        ),
+        GetPage(
           name: MyRoutes.introPage,
           page: () => IntroScreen(),
         ),
@@ -135,6 +144,18 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: MyRoutes.verificationPage,
           page: () => const VerificationPage(),
+        ),
+        GetPage(
+          name: MyRoutes.otpVerificationPage,
+          page: () => const OtpVerificationPage(),
+        ),
+        GetPage(
+          name: MyRoutes.notificationsPage,
+          page: () => const NotificationsPage(),
+        ),
+        GetPage(
+          name: MyRoutes.letsGetStartedPage,
+          page: () => const LetsGetStartedPage(),
         ),
         GetPage(
           name: MyRoutes.englishPage,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../utils/colour_utils.dart';
+import '../../../../utils/route_utils.dart';
 
 class VerificationPage extends StatelessWidget {
   const VerificationPage({super.key});
@@ -21,7 +23,7 @@ class VerificationPage extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           onPressed: () {
-            Navigator.of(context).pop();
+            Get.back();
           },
           icon: Icon(
             Icons.arrow_back,
@@ -74,17 +76,19 @@ class VerificationPage extends StatelessWidget {
               "RESEND",
               style: TextStyle(
                 fontSize: 18,
-                color: MyColors.btnColor,
+                color: Color(0xff3d5cff),
               ),
             ),
             const Spacer(),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Get.toNamed(MyRoutes.notificationsPage);
+              },
               child: Container(
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
+                  color: Color(0xff3d5cff),
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
@@ -93,7 +97,9 @@ class VerificationPage extends StatelessWidget {
                   children: [
                     const SizedBox(width: 90),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.toNamed(MyRoutes.notificationsPage);
+                      },
                       child: const Text(
                         "CONTINUE",
                         style: TextStyle(
@@ -103,19 +109,10 @@ class VerificationPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 90),
-                    const Align(
-                      alignment: Alignment.centerRight,
-                      child: Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                    ),
                   ],
                 ),
               ),
             ),
-            const Spacer(),
           ],
         ),
       ),

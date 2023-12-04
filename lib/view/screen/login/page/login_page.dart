@@ -10,7 +10,7 @@ class LoginPage extends StatelessWidget {
     Size s = MediaQuery.of(context).size;
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(14.0),
+        padding: const EdgeInsets.all(16),
         child: ListView(
           children: [
             SizedBox(height: s.height * 0.16),
@@ -22,21 +22,48 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.w500),
             ),
             SizedBox(height: s.height * 0.04),
-            const Text("Your Email"),
-            TextField(
-              onChanged: (val) {},
-              decoration: InputDecoration(
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            Padding(
+              padding: const EdgeInsets.only(top: 10, bottom: 10),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const Text("Your Email"),
+                    ],
+                  ),
+                  TextField(
+                    onChanged: (val) {},
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: s.height * 0.01),
-            const Text("Password"),
-            TextField(
-              onChanged: (val) {},
-              decoration: InputDecoration(
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 10,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text("Password"),
+                    ],
+                  ),
+                  TextField(
+                    onChanged: (val) {},
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             Row(
@@ -45,23 +72,40 @@ class LoginPage extends StatelessWidget {
                 SizedBox(),
                 TextButton(
                   onPressed: () {
-                    Get.toNamed(MyRoutes.registerPage);
+                    Get.toNamed(MyRoutes.letsGetStartedPage);
                   },
-                  child: Text("Forget Password?"),
+                  child: Text(
+                    "Forget Password?",
+                    style: TextStyle(
+                      color: Color(0xff3d5cff),
+                    ),
+                  ),
                 )
               ],
             ),
             SizedBox(height: s.height * 0.01),
-            ElevatedButton(
-              onPressed: () {
-                Get.toNamed(MyRoutes.selectCategoryPage);
-              },
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.blue),
-              ),
-              child: const Text(
-                "LOG IN",
-                style: TextStyle(color: Colors.white),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: GestureDetector(
+                onTap: () {
+                  Get.toNamed(MyRoutes.loggedInPage);
+                },
+                child: Container(
+                  height: 50,
+                  width: 327,
+                  decoration: BoxDecoration(
+                    color: const Color(0xff3d5cff),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    "LOG IN",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: s.height * 0.01),
@@ -73,7 +117,12 @@ class LoginPage extends StatelessWidget {
                   onPressed: () {
                     Get.toNamed(MyRoutes.registerPage);
                   },
-                  child: const Text("Sign Up"),
+                  child: const Text(
+                    "Sign Up",
+                    style: TextStyle(
+                      color: Color(0xff3d5cff),
+                    ),
+                  ),
                 )
               ],
             ),
@@ -103,7 +152,6 @@ class LoginPage extends StatelessWidget {
           ],
         ),
       ),
-      backgroundColor: const Color(0xffF3F5F9),
     );
   }
 }

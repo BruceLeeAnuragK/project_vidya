@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../utils/colour_utils.dart';
+import '../../../../utils/route_utils.dart';
 
 class OtpVerificationPage extends StatelessWidget {
   const OtpVerificationPage({super.key});
@@ -10,10 +12,11 @@ class OtpVerificationPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.white,
         title: Text(
           "Verification :",
           style: TextStyle(
-            fontSize: 32,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
             color: MyColors.appTitle,
           ),
@@ -97,11 +100,15 @@ class OtpVerificationPage extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            Text(
-              "RESEND",
-              style: TextStyle(
-                fontSize: 18,
-                color: MyColors.btnColor,
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "RESEND",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: MyColors.btnColor,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             const Spacer(),
@@ -120,7 +127,9 @@ class OtpVerificationPage extends StatelessWidget {
                   children: [
                     const SizedBox(width: 90),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.toNamed(MyRoutes.letsGetStartedPage);
+                      },
                       child: const Text(
                         "CONTINUE",
                         style: TextStyle(

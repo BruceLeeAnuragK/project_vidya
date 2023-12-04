@@ -10,7 +10,7 @@ class ChatPage extends StatelessWidget {
       body: InAppWebView(
         initialUrlRequest: URLRequest(
           url: Uri.parse(
-              "https://65589ad13b891453f3e54426--brilliant-axolotl-2ed172.netlify.app/"),
+              "https://mediafiles.botpress.cloud/a5cf75bb-d679-4d34-b40e-e2c67d70be03/webchat/bot.html"),
         ),
       ),
     );

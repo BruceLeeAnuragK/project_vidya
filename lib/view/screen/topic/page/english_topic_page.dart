@@ -46,7 +46,7 @@ class EnglishTopicPage extends StatelessWidget {
                 return ListView.builder(
                   itemCount: data['chapters'][0]['part'][0]['topics'].length,
                   itemBuilder: (context, index) => Card(
-                    color: const Color(0xff3D5CFF),
+                    color: const Color(0xff3d5cff),
                     child: ListTile(
                       onTap: () {
                         Get.toNamed(MyRoutes.exercisePage);
@@ -66,7 +66,9 @@ class EnglishTopicPage extends StatelessWidget {
                 );
               } else {
                 return const Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(
+                    color: Color(0xff3d5cff),
+                  ),
                 );
               }
             }),

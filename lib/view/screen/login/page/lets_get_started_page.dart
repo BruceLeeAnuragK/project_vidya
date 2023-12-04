@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 import '../../../../utils/colour_utils.dart';
 
@@ -10,20 +12,31 @@ class LetsGetStartedPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: Colors.white,
         title: Text(
           "Lets Get Started",
           style: TextStyle(
-            fontSize: 32,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
             color: MyColors.appTitle,
           ),
         ),
         actions: [
-          Text(
-            "Skip",
-            style: TextStyle(
-              fontSize: 14,
-              color: MyColors.smallText,
+          Container(
+            height: 50,
+            width: 50,
+            alignment: Alignment.center,
+            child: TextButton(
+              child: Text(
+                "Skip",
+                style: TextStyle(
+                  fontSize: 14,
+                  color: MyColors.smallText,
+                ),
+              ),
+              onPressed: () {
+                Get.toNamed(MyRoutes.loginPage);
+              },
             ),
           ),
         ],
@@ -42,92 +55,99 @@ class LetsGetStartedPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Text(
-              "Enter Your Mobile Number for Two\n            Step Verification",
-              style: TextStyle(
-                fontSize: 16,
-                color: MyColors.smallText,
-              ),
-            ),
-            const SizedBox(
-              height: 48,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.number,
-              maxLength: 10,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                prefixText: "+91 ",
-                prefixStyle: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text(
+                  "Enter Your Mobile Number for Two\n            Step Verification",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: MyColors.smallText,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              "OR",
-              style: TextStyle(
-                fontSize: 12,
-                color: MyColors.smallText,
+              SizedBox(
+                height: 30,
               ),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Email Address",
-              ),
-            ),
-            const Spacer(),
-            GestureDetector(
-              onTap: () {},
-              child: Container(
-                height: 50,
-                width: 327,
-                decoration: BoxDecoration(
-                  color: Colors.indigoAccent,
-                  borderRadius: BorderRadius.circular(18),
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: TextFormField(
+                  keyboardType: TextInputType.number,
+                  maxLength: 10,
+                  decoration: const InputDecoration(
+                    hintText: "Mobile Number",
+                    border: OutlineInputBorder(),
+                    prefixText: "+91 ",
+                    prefixStyle: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
-                alignment: Alignment.center,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const SizedBox(width: 90),
-                    GestureDetector(
-                      onTap: () {},
-                      child: const Text(
-                        "CONTINUE",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+              ),
+              Text(
+                "OR",
+                style: TextStyle(
+                  fontSize: 15,
+                  color: MyColors.smallText,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: "Email Address",
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    height: 50,
+                    width: 327,
+                    decoration: BoxDecoration(
+                      color: Colors.indigoAccent,
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                    alignment: Alignment.center,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const SizedBox(width: 90),
+                        GestureDetector(
+                          onTap: () {
+                            Get.toNamed(MyRoutes.otpVerificationPage);
+                          },
+                          child: const Text(
+                            "CONTINUE",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
                         ),
-                      ),
+                        const SizedBox(width: 90),
+                      ],
                     ),
-                    const SizedBox(width: 90),
-                    const Align(
-                      alignment: Alignment.centerRight,
-                      child: Icon(
-                        Icons.arrow_forward,
-                        color: Colors.white,
-                        size: 18,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-            ),
-            const Spacer(),
-          ],
+            ],
+          ),
         ),
       ),
     );

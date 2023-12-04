@@ -12,6 +12,10 @@ class IntroScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: IntroductionScreen(
+          dotsDecorator: DotsDecorator(
+            color: Colors.grey,
+            activeColor: Color(0xff3d5cff),
+          ),
           pages: [
             PageViewModel(
               title: "Numerous free\ntrial courses",
@@ -67,18 +71,33 @@ class IntroScreen extends StatelessWidget {
                   "Get answer to your very own\nquestions  with the help\nof your teachers.",
             ),
           ],
-          next: const Text("Next"),
+          next: const Text(
+            "Next",
+            style: TextStyle(
+              color: Color(0xff3d5cff),
+            ),
+          ),
           done: TextButton(
             onPressed: () {
               Navigator.of(context).pushReplacementNamed(MyRoutes.registerPage);
             },
-            child: const Text("Done"),
+            child: const Text(
+              "Done",
+              style: TextStyle(
+                color: Color(0xff3d5cff),
+              ),
+            ),
           ),
           curve: Curves.easeInOut,
           showDoneButton: true,
           showNextButton: true,
           showSkipButton: true,
-          skip: const Text("Skip"),
+          skip: const Text(
+            "Skip",
+            style: TextStyle(
+              color: Color(0xff3d5cff),
+            ),
+          ),
           onDone: () {
             Navigator.of(context).pushReplacementNamed(MyRoutes.registerPage);
           },

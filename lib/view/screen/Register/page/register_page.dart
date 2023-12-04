@@ -35,10 +35,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xff3d5cff),
-        leading: Container(),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
@@ -53,14 +49,14 @@ class _RegisterPageState extends State<RegisterPage> {
                       "Sign Up",
                       style: TextStyle(
                         color: Color(0xff1F1F39),
-                        fontSize: 40,
+                        fontSize: 30,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
                   ],
                 ),
-                const Padding(
-                  padding: EdgeInsets.all(8.0),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, bottom: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -68,19 +64,19 @@ class _RegisterPageState extends State<RegisterPage> {
                         "Enter your details below &\nfree sign up",
                         style: TextStyle(
                           color: Color(0xffB8B8D2),
+                          fontSize: 15,
                         ),
                       ),
                     ],
                   ),
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       "Your Email",
                       style: TextStyle(
                         color: Color(0xff858597),
-                        fontSize: 18,
                       ),
                     ),
                   ],
@@ -89,73 +85,139 @@ class _RegisterPageState extends State<RegisterPage> {
                   keyboardType: TextInputType.emailAddress,
                   strutStyle: StrutStyle.disabled,
                   decoration: InputDecoration(
+                    label: Text("Email"),
                     hintText: "Email",
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
-                const Align(
-                  alignment: Alignment.center,
-                  child: Text(
-                    "OR",
-                    style: TextStyle(
-                      color: Color(0xff858597),
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Your Phone Number",
+                Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "OR",
                       style: TextStyle(
                         color: Color(0xff858597),
-                        fontSize: 18,
+                        fontSize: 16,
                       ),
-                    ),
-                  ],
-                ),
-                TextFormField(
-                  keyboardType: TextInputType.number,
-                  strutStyle: StrutStyle.disabled,
-                  decoration: InputDecoration(
-                    hintText: "Number",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(18),
                     ),
                   ),
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Password",
-                      style: TextStyle(
-                        color: Color(0xff858597),
-                        fontSize: 18,
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, bottom: 10),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Your Phone Number",
+                            style: TextStyle(
+                              color: Color(0xff858597),
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                  ],
-                ),
-                TextFormField(
-                  obscureText: true,
-                  strutStyle: StrutStyle.disabled,
-                  decoration: InputDecoration(
-                    suffixIcon: IconButton(
-                      onPressed: () {
-                        hide = !hide;
-                      },
-                      icon: hide
-                          ? const Icon(Icons.visibility_outlined)
-                          : const Icon(Icons.visibility_off_outlined),
-                    ),
-                    hintText: "Password",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(18),
-                    ),
+                      TextFormField(
+                        keyboardType: TextInputType.number,
+                        strutStyle: StrutStyle.disabled,
+                        decoration: InputDecoration(
+                          hintText: "Number",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, bottom: 10),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Password",
+                            style: TextStyle(
+                              color: Color(0xff858597),
+                            ),
+                          ),
+                        ],
+                      ),
+                      TextFormField(
+                        obscureText: true,
+                        strutStyle: StrutStyle.disabled,
+                        decoration: InputDecoration(
+                          suffixIcon: IconButton(
+                            onPressed: () {
+                              setState(() {
+                                hide = !hide;
+                              });
+                            },
+                            icon: hide
+                                ? Icon(
+                                    Icons.visibility_outlined,
+                                  )
+                                : Icon(
+                                    Icons.visibility_off_outlined,
+                                  ),
+                          ),
+                          hintText: "Password",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                StreamBuilder(
+                  stream: FireStoreHelper.storeHelper.getSchoolList(),
+                  builder: (context, snap) {
+                    if (snap.hasData) {
+                      DocumentSnapshot<Map<String, dynamic>>? doc = snap.data;
+                      log(doc.toString());
+                      Map<String, dynamic>? data = doc?.data();
+                      List school = data?['list'];
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              flex: 12,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: DropdownMenu(
+                                  width: 280,
+                                  hintText: "Select Your School",
+                                  initialSelection: dropdownValue,
+                                  dropdownMenuEntries:
+                                      school.map<DropdownMenuEntry<String>>(
+                                    (e) {
+                                      return DropdownMenuEntry<String>(
+                                        value: e,
+                                        label: e,
+                                      );
+                                    },
+                                  ).toList(),
+                                  onSelected: (val) {
+                                    dropdownValue = val!;
+                                  },
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    } else {
+                      return Container();
+                    }
+                  },
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
@@ -170,7 +232,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       width: 327,
                       decoration: BoxDecoration(
                         color: const Color(0xff3d5cff),
-                        borderRadius: BorderRadius.circular(18),
+                        borderRadius: BorderRadius.circular(10),
                       ),
                       alignment: Alignment.center,
                       child: const Text(
@@ -182,43 +244,6 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                   ),
-                ),
-                StreamBuilder(
-                  stream: FireStoreHelper.storeHelper.getSchoolList(),
-                  builder: (context, snap) {
-                    if (snap.hasData) {
-                      DocumentSnapshot<Map<String, dynamic>>? doc = snap.data;
-                      log(doc.toString());
-                      Map<String, dynamic>? data = doc?.data();
-                      List school = data?['list'];
-                      return Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: DropdownMenu(
-                                initialSelection: dropdownValue,
-                                dropdownMenuEntries:
-                                    school.map<DropdownMenuEntry<String>>((e) {
-                                  return DropdownMenuEntry<String>(
-                                    value: e,
-                                    label: e,
-                                  );
-                                }).toList(),
-                                onSelected: (val) {
-                                  dropdownValue = val!;
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
-                      );
-                    } else {
-                      return Container();
-                    }
-                  },
                 ),
               ],
             ),
