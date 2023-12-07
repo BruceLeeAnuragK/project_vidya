@@ -85,7 +85,6 @@ class _RegisterPageState extends State<RegisterPage> {
                   keyboardType: TextInputType.emailAddress,
                   strutStyle: StrutStyle.disabled,
                   decoration: InputDecoration(
-                    label: Text("Email"),
                     hintText: "Email",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),

@@ -3,8 +3,6 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/helper/api_helper.dart';
 
-import '../../Register/model/user_model.dart';
-
 class ExercisePage extends StatefulWidget {
   ExercisePage({Key? key}) : super(key: key);
 
@@ -27,7 +25,7 @@ class _ExercisePageState extends State<ExercisePage> {
 
   @override
   Widget build(BuildContext context) {
-    User? user = Get.arguments;
+    int topicIndex = Get.arguments;
     TextEditingController answerController = TextEditingController();
     bool seeAnswer = false;
     return Scaffold(
@@ -74,7 +72,7 @@ class _ExercisePageState extends State<ExercisePage> {
                           child: Padding(
                             padding: const EdgeInsets.all(10),
                             child: Text(
-                              "${index + 1} : ${data[index]['question']}",
+                              "${index + 1} : ${data[topicIndex]['question']}",
                               style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
@@ -104,7 +102,7 @@ class _ExercisePageState extends State<ExercisePage> {
                         onPressed: () {
                           setState(
                             () {
-                              answer[index] = !answer[index];
+                              answer[topicIndex] = !answer[topicIndex];
                             },
                           );
                         },
@@ -115,7 +113,7 @@ class _ExercisePageState extends State<ExercisePage> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      answer[index]
+                      answer[topicIndex]
                           ? Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: SizedBox(
@@ -126,7 +124,7 @@ class _ExercisePageState extends State<ExercisePage> {
                                   child: Container(
                                     alignment: Alignment.centerLeft,
                                     child: Text(
-                                      "Answer :\n${data[index]['answer']}",
+                                      "Answer :\n${data[topicIndex]['answer']}",
                                       style: TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,

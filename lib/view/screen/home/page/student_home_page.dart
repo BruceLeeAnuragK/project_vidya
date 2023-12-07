@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import '../../Register/model/user_model.dart';
 import '../components/Student_Component/s_home_component.dart';
 
-class StudentHomePage extends StatelessWidget {
+class StudentHomePage extends StatefulWidget {
   StudentHomePage({Key? key}) : super(key: key);
+
+  @override
+  State<StudentHomePage> createState() => _StudentHomePageState();
+}
+
+class _StudentHomePageState extends State<StudentHomePage> {
   List<String> stdList = [
     "Std 1",
     "Std 2",
@@ -20,6 +26,7 @@ class StudentHomePage extends StatelessWidget {
     "Std 11",
     "Std 12",
   ];
+
   @override
   Widget build(BuildContext context) {
     int currentIndex = 0;
@@ -35,6 +42,10 @@ class StudentHomePage extends StatelessWidget {
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
+        onTap: (index) {
+          setState(() {});
+          currentIndex = index;
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(

@@ -35,40 +35,41 @@ class EnglishChapterPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: FutureBuilder(
-            future: ApiHelper.apiHelper.assignAll(),
-            builder: (context, snapShot) {
-              if (snapShot.hasData) {
-                Map? data = snapShot.data;
-                List chapters = data!['chapters'];
-                return ListView.builder(
-                  itemCount: chapters.length,
-                  itemBuilder: (context, index) => Card(
-                    color: const Color(0xff3d5cff),
-                    child: ListTile(
-                      onTap: () {
-                        Get.toNamed(MyRoutes.englishstopicPage);
-                      },
-                      title: Text(
-                        "Ch: ${chapters[index]['ch'].toString()}",
-                        style: const TextStyle(
-                          color: Colors.white,
-                        ),
+          future: ApiHelper.apiHelper.assignAll(),
+          builder: (context, snapShot) {
+            if (snapShot.hasData) {
+              Map? data = snapShot.data;
+              List chapters = data!['chapters'];
+              return ListView.builder(
+                itemCount: chapters.length,
+                itemBuilder: (context, index) => Card(
+                  color: const Color(0xff3d5cff),
+                  child: ListTile(
+                    onTap: () {
+                      Get.toNamed(MyRoutes.englishstopicPage);
+                    },
+                    title: Text(
+                      "Ch: ${chapters[index]['ch'].toString()}",
+                      style: const TextStyle(
+                        color: Colors.white,
                       ),
                     ),
                   ),
-                );
-              } else if (snapShot.hasError) {
-                return Center(
-                  child: Text(snapShot.error.toString()),
-                );
-              } else {
-                return const Center(
-                  child: CircularProgressIndicator(
-                    color: Color(0xff3d5cff),
-                  ),
-                );
-              }
-            }),
+                ),
+              );
+            } else if (snapShot.hasError) {
+              return Center(
+                child: Text(snapShot.error.toString()),
+              );
+            } else {
+              return const Center(
+                child: CircularProgressIndicator(
+                  color: Color(0xff3d5cff),
+                ),
+              );
+            }
+          },
+        ),
       ),
     );
   }

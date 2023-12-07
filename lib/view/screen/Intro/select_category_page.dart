@@ -70,7 +70,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                   color: Color(0xff3d5cff),
                   border: student
                       ? Border.all(
-                          color: Colors.black,
+                          color: Colors.black.withOpacity(0.5),
                           width: 2,
                         )
                       : null,
@@ -105,7 +105,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                   color: Color(0xff3d5cff),
                   border: teacher
                       ? Border.all(
-                          color: Colors.black,
+                          color: Colors.black.withOpacity(0.5),
                           width: 2,
                         )
                       : null,
@@ -139,7 +139,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 decoration: BoxDecoration(
                   border: tutionteacher
                       ? Border.all(
-                          color: Colors.black,
+                          color: Colors.black.withOpacity(0.5),
                           width: 2,
                         )
                       : null,
@@ -210,7 +210,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                   color: Color(0xff3d5cff),
                   border: principal
                       ? Border.all(
-                          color: Colors.black,
+                          color: Colors.black.withOpacity(0.5),
                           width: 2,
                         )
                       : null,

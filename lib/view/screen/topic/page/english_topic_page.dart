@@ -49,7 +49,8 @@ class EnglishTopicPage extends StatelessWidget {
                     color: const Color(0xff3d5cff),
                     child: ListTile(
                       onTap: () {
-                        Get.toNamed(MyRoutes.exercisePage);
+                        Get.toNamed(MyRoutes.exercisePage,
+                            arguments: topics[index]);
                       },
                       title: Text(
                         topics[index]['name'],
