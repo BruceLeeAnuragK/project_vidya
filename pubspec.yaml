@@ -56,7 +56,9 @@ dependencies:
   crypto:
   introduction_screen:
   gap:
-  dots_indicator:
+  smooth_page_indicator:
+  smooth_carousel_slider_widget:
+
 
 
 
