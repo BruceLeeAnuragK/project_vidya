@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:project_vidya/helper/firestore_helper.dart';
 import 'package:project_vidya/utils/route_utils.dart';
@@ -34,147 +35,167 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(16),
+      body: Container(
+        height: size.height,
+        width: size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xff4471CE),
+              Color(0xff5A44C3),
+            ],
+          ),
+        ),
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              children: [
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Sign Up",
-                      style: TextStyle(
-                        color: Color(0xff1F1F39),
-                        fontSize: 30,
-                        fontWeight: FontWeight.w900,
-                      ),
+          child: Column(
+            children: [
+              Gap(75),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Sign Up",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.w900,
                     ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10, bottom: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Enter your details below &\nfree sign up",
-                        style: TextStyle(
-                          color: Color(0xffB8B8D2),
-                          fontSize: 15,
-                        ),
-                      ),
-                    ],
                   ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 6, bottom: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Your Email",
+                      "Enter your details below & free sign up",
                       style: TextStyle(
-                        color: Color(0xff858597),
+                        color: Color(0xffE3E3E3),
+                        fontSize: 15,
                       ),
                     ),
                   ],
                 ),
-                TextFormField(
-                  keyboardType: TextInputType.emailAddress,
+              ),
+              Gap(53),
+              Padding(
+                padding: const EdgeInsets.only(right: 20, left: 20),
+                child: TextFormField(
+                  keyboardType: TextInputType.phone,
                   strutStyle: StrutStyle.disabled,
                   decoration: InputDecoration(
-                    hintText: "Email",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: size.height * 0.0046,
                     ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10),
-                  child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "OR",
+                    label: Text(
+                      "Phone number",
                       style: TextStyle(
-                        color: Color(0xff858597),
-                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
                       ),
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10, bottom: 10),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Your Phone Number",
-                            style: TextStyle(
-                              color: Color(0xff858597),
-                            ),
-                          ),
-                        ],
+              ),
+              Gap(32),
+              Padding(
+                padding: const EdgeInsets.only(right: 20, left: 20),
+                child: TextFormField(
+                  keyboardType: TextInputType.phone,
+                  strutStyle: StrutStyle.disabled,
+                  decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: size.height * 0.0046,
+                    ),
+                    label: Text(
+                      "Username",
+                      style: TextStyle(
+                        color: Colors.white,
                       ),
-                      TextFormField(
-                        keyboardType: TextInputType.number,
-                        strutStyle: StrutStyle.disabled,
-                        decoration: InputDecoration(
-                          hintText: "Number",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
                       ),
-                    ],
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 10, bottom: 10),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Password",
-                            style: TextStyle(
-                              color: Color(0xff858597),
+              ),
+              Gap(32),
+              Padding(
+                padding: const EdgeInsets.only(right: 20, left: 20),
+                child: TextFormField(
+                  obscureText: true,
+                  strutStyle: StrutStyle.disabled,
+                  decoration: InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: size.height * 0.0046,
+                    ),
+                    suffixIcon: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          hide = !hide;
+                        });
+                      },
+                      icon: hide
+                          ? Icon(
+                              Icons.visibility_outlined,
+                            )
+                          : Icon(
+                              Icons.visibility_off_outlined,
                             ),
-                          ),
-                        ],
+                    ),
+                    label: Text(
+                      "Password",
+                      style: TextStyle(
+                        color: Colors.white,
                       ),
-                      TextFormField(
-                        obscureText: true,
-                        strutStyle: StrutStyle.disabled,
-                        decoration: InputDecoration(
-                          suffixIcon: IconButton(
-                            onPressed: () {
-                              setState(() {
-                                hide = !hide;
-                              });
-                            },
-                            icon: hide
-                                ? Icon(
-                                    Icons.visibility_outlined,
-                                  )
-                                : Icon(
-                                    Icons.visibility_off_outlined,
-                                  ),
-                          ),
-                          hintText: "Password",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                        ),
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
                       ),
-                    ],
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
                   ),
                 ),
-                StreamBuilder(
+              ),
+              Gap(32),
+              Padding(
+                padding: const EdgeInsets.only(right: 20, left: 20),
+                child: StreamBuilder(
                   stream: FireStoreHelper.storeHelper.getSchoolList(),
                   builder: (context, snap) {
                     if (snap.hasData) {
@@ -184,16 +205,39 @@ class _RegisterPageState extends State<RegisterPage> {
                       List school = data?['list'];
                       return Padding(
                         padding: const EdgeInsets.only(top: 10),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              flex: 12,
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: DropdownMenu(
-                                  width: 280,
-                                  hintText: "Select Your School",
+                        child: Expanded(
+                          flex: 12,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                DropdownMenu(
+                                  width: 200,
+                                  inputDecorationTheme: InputDecorationTheme(
+                                    contentPadding: EdgeInsets.symmetric(
+                                      horizontal: 20,
+                                      vertical: size.height * 0.0046,
+                                    ),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                      borderSide: BorderSide(
+                                        color: Color(0xffFFFFFF),
+                                      ),
+                                    ),
+                                    enabledBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(50),
+                                      borderSide: BorderSide(
+                                        color: Color(0xffFFFFFF),
+                                      ),
+                                    ),
+                                  ),
+                                  label: Text(
+                                    "Category",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   initialSelection: dropdownValue,
                                   dropdownMenuEntries:
                                       school.map<DropdownMenuEntry<String>>(
@@ -208,9 +252,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     dropdownValue = val!;
                                   },
                                 ),
-                              ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
                       );
                     } else {
@@ -218,34 +262,90 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                   },
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 50,
-                  ),
-                  child: GestureDetector(
-                    onTap: () {
-                      Get.toNamed(MyRoutes.loginPage);
-                    },
-                    child: Container(
-                      height: 50,
-                      width: 327,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff3d5cff),
-                        borderRadius: BorderRadius.circular(10),
+              ),
+              Gap(32),
+              Padding(
+                padding: const EdgeInsets.only(right: 17, left: 17),
+                child: GestureDetector(
+                  onTap: () {
+                    Get.toNamed(MyRoutes.loginPage);
+                  },
+                  child: Container(
+                    height: 50,
+                    width: 327,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Color(0xff4471CE),
+                          Color(0xff4F3DA4),
+                        ],
                       ),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        "CREATE ACCOUNT",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                        ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    alignment: Alignment.center,
+                    child: const Text(
+                      "CREATE ACCOUNT",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
                       ),
                     ),
                   ),
                 ),
-              ],
-            ),
+              ),
+              Gap(32),
+              Row(
+                children: [
+                  Checkbox(
+                    value: false,
+                    checkColor: Colors.white,
+                    activeColor: Color(0xffFFFFFF),
+                    side: BorderSide(
+                      color: Color(0xffFFFFFF),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    onChanged: (value) {},
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(""),
+                      Text(
+                        "By creating an account you have to agree\nwith our terms & condition.",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Gap(32),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Already have an account?",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Log in",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

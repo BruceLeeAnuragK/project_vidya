@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 import '../../../utils/imgPath_utils.dart';
+import '../../../utils/route_utils.dart';
 import 'controller/intro_screen_controller.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -13,28 +14,6 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-//     // Assuming you have a MediaQueryData object named 'mediaQuery' and a BuildContext object named 'context'
-//     MediaQueryData mediaQuery = MediaQuery.of(context);
-//
-// // Get the Figma artboard or element dimensions in design units
-//     double figmaArtboardWidth =
-//         375; // Replace with the actual width in Figma units
-//     double figmaArtboardHeight =
-//         667; // Replace with the actual height in Figma units
-//
-// // Calculate the percentage of the height
-//     double percentage = 0.05;
-//     double heightPercentage = mediaQuery.size.height * percentage;
-//
-// // Convert the percentage to Figma units
-//     double figmaWidth =
-//         figmaArtboardWidth * heightPercentage / mediaQuery.size.height;
-//     double figmaHeight =
-//         figmaArtboardHeight * heightPercentage / mediaQuery.size.height;
-
-// // Print the result
-//     print('Figma Width: $figmaWidth');
-//     print('Figma Height: $figmaHeight');
     return SafeArea(
       child: Consumer<IntroScreenProvider>(
         builder: (context, provider, child) {
@@ -134,8 +113,9 @@ class IntroScreen extends StatelessWidget {
                             ),
                             child: Container(
                               height: size.height * 0.3,
-                              child:
-                                  Image.asset(ImgPath.path + ImgPath.intro2gif),
+                              child: Image.asset(
+                                ImgPath.path + ImgPath.intro2gif,
+                              ),
                             ),
                           ),
                           Padding(
@@ -234,6 +214,27 @@ class IntroScreen extends StatelessWidget {
                                   const EdgeInsets.symmetric(horizontal: 3.0),
                             ),
                           ),
+                          Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: MaterialButton(
+                              onPressed: () {
+                                Navigator.of(context)
+                                    .pushNamed(MyRoutes.registerPage);
+                              },
+                              child: Container(
+                                height: size.height * 0.06,
+                                width: size.width * 0.15,
+                                decoration: BoxDecoration(
+                                  color: Color(0xff4471CE),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Icon(
+                                  Icons.arrow_forward_ios,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          )
                           // SmoothPageIndicator(
                           //   onDotClicked: (int index) {},
                           //   controller: PageController(),
@@ -249,6 +250,7 @@ class IntroScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  Image.asset(ImgPath.path + ImgPath.sparklegif),
                 ],
               ),
             ),

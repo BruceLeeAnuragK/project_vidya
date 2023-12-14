@@ -5,6 +5,9 @@ import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
 import 'package:project_vidya/view/screen/Chapters/english_chapter_page.dart';
 import 'package:project_vidya/view/screen/Chapters/physics_chapter_page.dart';
+import 'package:project_vidya/view/screen/Intro/component/intro1_screen.dart';
+import 'package:project_vidya/view/screen/Intro/component/intro2_screen.dart';
+import 'package:project_vidya/view/screen/Intro/component/intro3_screen.dart';
 import 'package:project_vidya/view/screen/Intro/controller/intro_screen_controller.dart';
 import 'package:project_vidya/view/screen/Intro/intro_page.dart';
 import 'package:project_vidya/view/screen/Intro/select_category_page.dart';
@@ -66,6 +69,9 @@ class MyApp extends StatelessWidget {
       initialRoute: MyRoutes.introPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
+        MyRoutes.introComponent1: (context) => const Intro1Screen(),
+        MyRoutes.introComponent2: (context) => const Intro2Screen(),
+        MyRoutes.introComponent3: (context) => const Intro3Screen(),
         MyRoutes.selectCategoryPage: (context) => SelectCategoryPage(),
         MyRoutes.loginPage: (context) => const LoginPage(),
         MyRoutes.otpVerificationPage: (context) => const OtpVerificationPage(),
