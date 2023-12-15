@@ -7,6 +7,7 @@ class MyRoutes {
   static String chatPage = '/Chat';
   static String selectionPage = '/Selection';
   static String registerPage = '/Registration';
+  static String succcessfullyRegisteredPage = '/SuccessfullyRegisteredPage';
   static String physicstopicPage = '/PhysicsTopicPage';
   static String englishstopicPage = '/EnglishTopicPage';
   static String exercisePage = '/ExercisePage';

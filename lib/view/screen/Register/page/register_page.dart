@@ -268,7 +268,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 padding: const EdgeInsets.only(right: 17, left: 17),
                 child: GestureDetector(
                   onTap: () {
-                    Get.toNamed(MyRoutes.loginPage);
+                    setState(() {
+                      Get.toNamed(MyRoutes.succcessfullyRegisteredPage);
+                    });
                   },
                   child: Container(
                     height: 50,

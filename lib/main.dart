@@ -16,6 +16,7 @@ import 'package:project_vidya/view/screen/Register/page/selection_page.dart';
 import 'package:project_vidya/view/screen/Subject/component/Parents_list_of%20_subject.dart';
 import 'package:project_vidya/view/screen/Subject/page/english_page.dart';
 import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
+import 'package:project_vidya/view/screen/Successfull/successfully_registered_screen.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_details_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_progress_report.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_setting_page.dart';
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Cart App",
-      initialRoute: MyRoutes.introPage,
+      initialRoute: MyRoutes.letsGetStartedPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
@@ -80,6 +81,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.loggedInPage: (context) => const Logged(),
         MyRoutes.notificationsPage: (context) => const NotificationsPage(),
         MyRoutes.registerPage: (context) => const RegisterPage(),
+        MyRoutes.succcessfullyRegisteredPage: (context) =>
+            const SuccessfullyRegistered(),
         MyRoutes.splash: (context) => const SplashScreen(),
         MyRoutes.studHome: (context) => StudentHomePage(),
         MyRoutes.teacherHome: (context) => TeacherHomePage(),
