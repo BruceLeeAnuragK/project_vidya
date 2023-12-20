@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/imgPath_utils.dart';
 
+import '../../../utils/route_utils.dart';
+
 class SuccessfullyRegistered extends StatefulWidget {
   const SuccessfullyRegistered({super.key});
 
@@ -10,6 +12,15 @@ class SuccessfullyRegistered extends StatefulWidget {
 }
 
 class _SuccessfullyRegisteredState extends State<SuccessfullyRegistered> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 8), () {
+      Navigator.pushNamed(context, MyRoutes.letsGetStartedPage);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;

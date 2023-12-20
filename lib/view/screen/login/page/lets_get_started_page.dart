@@ -1,61 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
-import '../../../../utils/colour_utils.dart';
-
-class LetsGetStartedPage extends StatelessWidget {
+class LetsGetStartedPage extends StatefulWidget {
   const LetsGetStartedPage({super.key});
 
+  @override
+  State<LetsGetStartedPage> createState() => _LetsGetStartedPageState();
+}
+
+class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        title: Text(
-          "Lets Get Started",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: MyColors.appTitle,
-          ),
-        ),
-        actions: [
-          Container(
-            height: 50,
-            width: 50,
-            alignment: Alignment.center,
-            child: TextButton(
-              child: Text(
-                "Skip",
-                style: TextStyle(
-                  fontSize: 14,
-                  color: MyColors.smallText,
-                ),
-              ),
-              onPressed: () {
-                Get.toNamed(MyRoutes.loginPage);
-              },
-            ),
-          ),
-        ],
-        elevation: 0,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          icon: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(
-              Icons.arrow_back,
-              color: MyColors.btnColor,
-              weight: 1,
-            ),
-          ),
-        ),
-      ),
       body: Container(
         height: size.height,
         width: size.width,
@@ -74,88 +33,98 @@ class LetsGetStartedPage extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
+                Gap(69),
+                Text(
+                  "Lets Get Started",
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                  ),
+                ),
+                Gap(18),
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Enter Your Mobile Number for Two\n            Step Verification",
                     style: TextStyle(
                       fontSize: 16,
-                      color: MyColors.smallText,
+                      color: Colors.white,
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 30,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: TextFormField(
-                    keyboardType: TextInputType.number,
-                    maxLength: 10,
-                    decoration: const InputDecoration(
-                      hintText: "Mobile Number",
-                      border: OutlineInputBorder(),
-                      prefixText: "+91 ",
-                      prefixStyle: TextStyle(
-                        fontSize: 14,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                ),
-                Text(
-                  "OR",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: MyColors.smallText,
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
+                Gap(26),
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: TextFormField(
                     keyboardType: TextInputType.emailAddress,
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "Email Address",
+                    cursorColor: Colors.white,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                    decoration: InputDecoration(
+                      label: Text(
+                        "Email Address",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                        ),
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(50),
+                        borderSide: BorderSide(
+                          color: Color(0xffFFFFFF),
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(50),
+                        borderSide: BorderSide(
+                          color: Color(0xffFFFFFF),
+                        ),
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(50),
+                        borderSide: BorderSide(
+                          color: Color(0xffFFFFFF),
+                        ),
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                Gap(132),
                 Padding(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.only(right: 17, left: 17),
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      setState(() {
+                        Get.toNamed(MyRoutes.verificationPage);
+                      });
+                    },
                     child: Container(
                       height: 50,
                       width: 327,
-                      decoration: BoxDecoration(
-                        color: Colors.indigoAccent,
-                        borderRadius: BorderRadius.circular(18),
-                      ),
                       alignment: Alignment.center,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const SizedBox(width: 90),
-                          GestureDetector(
-                            onTap: () {
-                              Get.toNamed(MyRoutes.otpVerificationPage);
-                            },
-                            child: const Text(
-                              "CONTINUE",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 90),
-                        ],
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Color(0xffFFFFFF),
+                          width: 1,
+                        ),
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Color(0xff4471CE),
+                            Color(0xff4F3DA4),
+                          ],
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Text(
+                        "CONTINUE",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
                   ),

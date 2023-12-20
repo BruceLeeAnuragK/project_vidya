@@ -250,7 +250,6 @@ class IntroScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Image.asset(ImgPath.path + ImgPath.sparklegif),
                 ],
               ),
             ),

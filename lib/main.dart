@@ -67,7 +67,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Cart App",
-      initialRoute: MyRoutes.letsGetStartedPage,
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      initialRoute: MyRoutes.verificationPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
