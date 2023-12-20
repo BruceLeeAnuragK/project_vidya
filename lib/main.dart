@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: MyRoutes.verificationPage,
+      initialRoute: MyRoutes.introPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),

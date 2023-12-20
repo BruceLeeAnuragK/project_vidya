@@ -25,6 +25,7 @@ class ImgPath {
   static String intro2gif = 'intro2gif.gif';
   static String intro3gif = 'intro3gif.gif';
   static String sparklegif = 'sparklegif.gif';
+  static String notificationgif = 'notificationgif.gif';
   static String successfullyRegistergif = 'successfull_registered.gif';
   static String intro2 = 'intro2.png';
   static String intro3 = 'intro3.png';

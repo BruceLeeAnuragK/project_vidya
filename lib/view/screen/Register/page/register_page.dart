@@ -3,7 +3,6 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get.dart';
 import 'package:project_vidya/helper/firestore_helper.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
@@ -376,7 +375,8 @@ class _RegisterPageState extends State<RegisterPage> {
                     child: GestureDetector(
                       onTap: () {
                         setState(() {
-                          Get.toNamed(MyRoutes.succcessfullyRegisteredPage);
+                          Navigator.of(context).pushReplacementNamed(
+                              MyRoutes.succcessfullyRegisteredPage);
                         });
                       },
                       child: Container(

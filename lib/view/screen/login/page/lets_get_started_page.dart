@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
 class LetsGetStartedPage extends StatefulWidget {
@@ -97,7 +96,8 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                   child: GestureDetector(
                     onTap: () {
                       setState(() {
-                        Get.toNamed(MyRoutes.verificationPage);
+                        Navigator.of(context)
+                            .pushNamed(MyRoutes.verificationPage);
                       });
                     },
                     child: Container(
