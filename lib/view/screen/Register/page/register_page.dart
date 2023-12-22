@@ -119,7 +119,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
               Column(
                 children: [
-                  Gap(75),
+                  Gap(60),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -148,7 +148,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       ],
                     ),
                   ),
-                  Gap(53),
+                  Gap(50),
                   Padding(
                     padding: const EdgeInsets.only(right: 20, left: 20),
                     child: TextFormField(

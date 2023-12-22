@@ -1,6 +1,8 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../AI/page/select_chat_page.dart';
 import '../../Register/model/user_model.dart';
 import '../components/Student_Component/s_home_component.dart';
 
@@ -12,6 +14,7 @@ class StudentHomePage extends StatefulWidget {
 }
 
 class _StudentHomePageState extends State<StudentHomePage> {
+  final navigationKey = GlobalKey<CurvedNavigationBarState>();
   List<String> stdList = [
     "Std 1",
     "Std 2",
@@ -26,6 +29,20 @@ class _StudentHomePageState extends State<StudentHomePage> {
     "Std 11",
     "Std 12",
   ];
+  final navigationItems = <Widget>[
+    Icon(
+      Icons.home,
+      color: Color(0xff4470CD),
+    ),
+    Icon(
+      Icons.chat_outlined,
+      color: Color(0xff4470CD),
+    ),
+    Icon(
+      Icons.card_giftcard,
+      color: Color(0xff4470CD),
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,57 +50,24 @@ class _StudentHomePageState extends State<StudentHomePage> {
 
     final List<Widget> pages = [
       SHomeComponent(),
-      SHomeComponent(),
-      SHomeComponent(),
+      SelectChatpage(),
       SHomeComponent(),
     ];
     User? user = Get.arguments;
     return Scaffold(
+      extendBody: true,
       body: pages[currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
+      bottomNavigationBar: CurvedNavigationBar(
+        key: navigationKey,
+        backgroundColor: Colors.transparent,
+        index: currentIndex,
+        items: navigationItems,
+        height: 60,
         onTap: (index) {
-          setState(() {});
-          currentIndex = index;
+          setState(() {
+            currentIndex = index;
+          });
         },
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_max_outlined,
-              color: Colors.black,
-            ),
-            label: 'Home',
-            activeIcon: Icon(
-              Icons.home_outlined,
-              color: Colors.blue,
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.calendar_month_outlined,
-              color: Colors.black,
-            ),
-            label: 'Schedule',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.chat_outlined,
-              color: Colors.black,
-            ),
-            label: 'Chat',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_3_outlined,
-              color: Colors.black,
-            ),
-            label: 'Profile',
-          ),
-        ],
-        selectedLabelStyle: TextStyle(
-          color: Color(0xff3D5CFF),
-        ),
-        unselectedLabelStyle: TextStyle(color: Colors.black),
       ),
       drawer: Drawer(
         child: Column(

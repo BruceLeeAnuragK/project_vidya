@@ -2,7 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:project_vidya/utils/route_utils.dart';
+import 'package:project_vidya/view/screen/AI/page/chat_anonymously.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
+import 'package:project_vidya/view/screen/AI/page/chat_with_teacher.dart';
+import 'package:project_vidya/view/screen/AI/page/select_chat_page.dart';
 import 'package:project_vidya/view/screen/Chapters/english_chapter_page.dart';
 import 'package:project_vidya/view/screen/Chapters/physics_chapter_page.dart';
 import 'package:project_vidya/view/screen/Intro/component/intro1_screen.dart';
@@ -19,7 +22,8 @@ import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/Successfull/successfully_registered_screen.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_details_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_progress_report.dart';
-import 'package:project_vidya/view/screen/home/components/Student_Component/student_setting_page.dart';
+import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
+import 'package:project_vidya/view/screen/home/controller/badges_provider.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/teacher_home_page.dart';
@@ -53,6 +57,9 @@ void main() async {
         ChangeNotifierProvider(
           create: (context) => IntroScreenProvider(),
         ),
+        ChangeNotifierProvider(
+          create: (context) => BadgesProvider(),
+        ),
       ],
       child: const MyApp(),
     ),
@@ -70,7 +77,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: MyRoutes.introPage,
+      initialRoute: MyRoutes.chatAnonymouselyPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
@@ -93,7 +100,11 @@ class MyApp extends StatelessWidget {
         MyRoutes.parentsSubject: (context) => PSubjects(),
         MyRoutes.englishstopicPage: (context) => EnglishTopicPage(),
         MyRoutes.exercisePage: (context) => ExercisePage(),
-        MyRoutes.chatPage: (context) => const ChatPage(),
+        MyRoutes.chatPage: (context) => const ChatBotPage(),
+        MyRoutes.chatWithTeacherPage: (context) => const ChatWithTeacherPage(),
+        MyRoutes.chatAnonymouselyPage: (context) =>
+            const ChatAnonymouselyPage(),
+        MyRoutes.selectChatPage: (context) => const SelectChatpage(),
         MyRoutes.selectionPage: (context) => const SelectionPage(),
         MyRoutes.physicstopicPage: (context) => PhysicsTopicPage(),
         MyRoutes.englishchapterPage: (context) => EnglishChapterPage(),
@@ -103,7 +114,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.childDetailPage: (context) => ChildDetailPage(),
         MyRoutes.childProgressReportPage: (context) =>
             const ChildProgressReportPage(),
-        MyRoutes.settingsPage: (context) => const SettingsPage(),
+        MyRoutes.badgesPage: (context) => const BadgesPage(),
       },
       // getPages: [
       //   GetPage(

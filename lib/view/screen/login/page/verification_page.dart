@@ -186,7 +186,7 @@ class _VerificationPageState extends State<VerificationPage> {
                   ),
                 ),
               ),
-              const Spacer(),
+              Gap(50),
               GestureDetector(
                 onTap: () {
                   setState(() {
@@ -235,6 +235,7 @@ class _VerificationPageState extends State<VerificationPage> {
                   ),
                 ),
               ),
+              Gap(150),
             ],
           ),
         ),

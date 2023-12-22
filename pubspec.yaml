@@ -58,6 +58,7 @@ dependencies:
   gap:
   smooth_page_indicator:
   smooth_carousel_slider_widget:
+  curved_navigation_bar:
 
 
 

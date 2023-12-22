@@ -5,9 +5,16 @@ import 'package:project_vidya/utils/route_utils.dart';
 
 import '../../../helper/api_helper.dart';
 
-class EnglishChapterPage extends StatelessWidget {
+class EnglishChapterPage extends StatefulWidget {
   EnglishChapterPage({super.key});
+
+  @override
+  State<EnglishChapterPage> createState() => _EnglishChapterPageState();
+}
+
+class _EnglishChapterPageState extends State<EnglishChapterPage> {
   TextEditingController searchController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +35,9 @@ class EnglishChapterPage extends StatelessWidget {
             color: Color(0xFF1F1F39),
           ),
           onPressed: () {
-            Get.back();
+            setState(() {
+              Navigator.of(context).pop();
+            });
           },
         ),
       ),
@@ -40,7 +49,10 @@ class EnglishChapterPage extends StatelessWidget {
             if (snapShot.hasData) {
               Map? data = snapShot.data;
               List chapters = data!['chapters'];
-              return ListView.builder(
+              return GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
                 itemCount: chapters.length,
                 itemBuilder: (context, index) => Card(
                   color: const Color(0xff3d5cff),

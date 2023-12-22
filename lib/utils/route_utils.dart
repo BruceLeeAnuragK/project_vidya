@@ -5,6 +5,9 @@ class MyRoutes {
   static String parentsHome = '/ParentsHome';
   static String parentsSubject = '/ParentsSubject';
   static String chatPage = '/Chat';
+  static String chatWithTeacherPage = '/ChatWithTeacher';
+  static String chatAnonymouselyPage = '/ChatAnonymousely';
+  static String selectChatPage = '/selectChat';
   static String selectionPage = '/Selection';
   static String registerPage = '/Registration';
   static String succcessfullyRegisteredPage = '/SuccessfullyRegisteredPage';
@@ -23,7 +26,7 @@ class MyRoutes {
 ////////////////////////////////////////////////////////////////////////////////
   static String childDetailPage = '/childDetailPage';
   static String childProgressReportPage = '/childProgressReportPage';
-  static String settingsPage = '/settingsPage';
+  static String badgesPage = '/badgesPage';
   static String selectCategoryPage = '/selectCategoryPage';
   static String verificationPage = '/verificationPage';
   static String letsGetStartedPage = '/letsGetStartedPage';

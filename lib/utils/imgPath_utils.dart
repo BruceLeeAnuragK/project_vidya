@@ -10,6 +10,11 @@ class ImgPath {
   static String btnPhone = 'phone.png';
   static String btnStar = 'star.png';
   static String notification = 'notification.png';
+  static String champion = 'champion.png';
+  static String archieves = 'archieves.png';
+  static String goal = 'goal.png';
+  static String perfectionist = 'perfectionist.png';
+  static String scholar = 'scholar.png';
   static String dimg1 = "img.png";
   static String dimg2 = "img_1.png";
   static String dimg3 = "img_2.png";
@@ -26,6 +31,9 @@ class ImgPath {
   static String intro3gif = 'intro3gif.gif';
   static String sparklegif = 'sparklegif.gif';
   static String notificationgif = 'notificationgif.gif';
+  static String chatbotgif = 'chatbotgif.gif';
+  static String chatannonimouselygif = 'chatannonimouselygif.gif';
+  static String chatteachergif = 'chatteachergif.gif';
   static String successfullyRegistergif = 'successfull_registered.gif';
   static String intro2 = 'intro2.png';
   static String intro3 = 'intro3.png';
