@@ -3,12 +3,15 @@ class MyRoutes {
   static String studHome = '/StudHome';
   static String teacherHome = '/TeacherHome';
   static String parentsHome = '/ParentsHome';
+  static String principalHome = '/PrincipalHome';
   static String parentsSubject = '/ParentsSubject';
   static String chatPage = '/Chat';
   static String chatWithTeacherPage = '/ChatWithTeacher';
   static String chatAnonymouselyPage = '/ChatAnonymousely';
+  static String progressReportTeacher = '/ProgressReportTeacherComponent';
   static String selectChatPage = '/selectChat';
   static String selectionPage = '/Selection';
+  static String settingPage = '/SettingPage';
   static String registerPage = '/Registration';
   static String succcessfullyRegisteredPage = '/SuccessfullyRegisteredPage';
   static String physicstopicPage = '/PhysicsTopicPage';

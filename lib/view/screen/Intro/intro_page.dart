@@ -162,9 +162,28 @@ class IntroScreen extends StatelessWidget {
                       ),
                       Column(
                         children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child: MaterialButton(
+                                  onPressed: () {
+                                    Navigator.of(context)
+                                        .pushNamed(MyRoutes.registerPage);
+                                  },
+                                  child: Text(
+                                    "Skip",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                           Padding(
                             padding: EdgeInsets.only(
-                              top: size.height * 0.11,
                               right: size.width * 0.05,
                               left: size.width * 0.05,
                             ),
@@ -175,7 +194,7 @@ class IntroScreen extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.only(top: size.height * 0.059),
+                            padding: EdgeInsets.only(top: size.height * 0.045),
                             child: Text(
                               "Ask any\nQuestion",
                               style: GoogleFonts.poppins(
@@ -214,27 +233,7 @@ class IntroScreen extends StatelessWidget {
                                   const EdgeInsets.symmetric(horizontal: 3.0),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(20),
-                            child: MaterialButton(
-                              onPressed: () {
-                                Navigator.of(context)
-                                    .pushNamed(MyRoutes.registerPage);
-                              },
-                              child: Container(
-                                height: size.height * 0.06,
-                                width: size.width * 0.15,
-                                decoration: BoxDecoration(
-                                  color: Color(0xff4471CE),
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          )
+
                           // SmoothPageIndicator(
                           //   onDotClicked: (int index) {},
                           //   controller: PageController(),

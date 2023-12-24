@@ -16,15 +16,18 @@ import 'package:project_vidya/view/screen/Intro/intro_page.dart';
 import 'package:project_vidya/view/screen/Intro/select_category_page.dart';
 import 'package:project_vidya/view/screen/Register/page/register_page.dart';
 import 'package:project_vidya/view/screen/Register/page/selection_page.dart';
+import 'package:project_vidya/view/screen/Setting/setting_page.dart';
 import 'package:project_vidya/view/screen/Subject/component/Parents_list_of%20_subject.dart';
 import 'package:project_vidya/view/screen/Subject/page/english_page.dart';
 import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/Successfull/successfully_registered_screen.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_details_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_progress_report.dart';
+import 'package:project_vidya/view/screen/home/components/Principal_Component/progress_report_teacher.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
 import 'package:project_vidya/view/screen/home/controller/badges_provider.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
+import 'package:project_vidya/view/screen/home/page/principle_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/teacher_home_page.dart';
 import 'package:project_vidya/view/screen/login/page/lets_get_started_page.dart';
@@ -77,7 +80,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: MyRoutes.chatAnonymouselyPage,
+      initialRoute: MyRoutes.settingPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
@@ -85,6 +88,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.introComponent3: (context) => const Intro3Screen(),
         MyRoutes.selectCategoryPage: (context) => SelectCategoryPage(),
         MyRoutes.loginPage: (context) => const LoginPage(),
+        MyRoutes.settingPage: (context) => SettingPage(),
         MyRoutes.otpVerificationPage: (context) => const OtpVerificationPage(),
         MyRoutes.verificationPage: (context) => const VerificationPage(),
         MyRoutes.letsGetStartedPage: (context) => const LetsGetStartedPage(),
@@ -97,6 +101,9 @@ class MyApp extends StatelessWidget {
         MyRoutes.studHome: (context) => StudentHomePage(),
         MyRoutes.teacherHome: (context) => TeacherHomePage(),
         MyRoutes.parentsHome: (context) => ParentsHomePage(),
+        MyRoutes.principalHome: (context) => PrincipalHomePage(),
+        MyRoutes.progressReportTeacher: (context) =>
+            ProgressReportTeacherComponent(),
         MyRoutes.parentsSubject: (context) => PSubjects(),
         MyRoutes.englishstopicPage: (context) => EnglishTopicPage(),
         MyRoutes.exercisePage: (context) => ExercisePage(),

@@ -1,64 +1,74 @@
-import 'dart:developer';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../../../../helper/auth_helper.dart';
-import '../../../../helper/firestore_helper.dart';
+import '../../AI/page/select_chat_page.dart';
 import '../../Register/model/user_model.dart';
+import '../components/Principal_Component/pri_home_component.dart';
+import '../components/Student_Component/s_home_component.dart';
 
-class TeacherHomePage extends StatelessWidget {
-  TeacherHomePage({Key? key}) : super(key: key);
+class PrincipalHomePage extends StatefulWidget {
+  PrincipalHomePage({Key? key}) : super(key: key);
+
+  @override
+  State<PrincipalHomePage> createState() => _PrincipalHomePageState();
+}
+
+class _PrincipalHomePageState extends State<PrincipalHomePage> {
+  final navigationKey = GlobalKey<CurvedNavigationBarState>();
+  List<String> stdList = [
+    "Std 1",
+    "Std 2",
+    "Std 3",
+    "Std 4",
+    "Std 5",
+    "Std 6",
+    "Std 7",
+    "Std 8",
+    "Std 9",
+    "Std 10",
+    "Std 11",
+    "Std 12",
+  ];
+  final navigationItems = <Widget>[
+    Icon(
+      Icons.home,
+      color: Color(0xff4470CD),
+    ),
+    Icon(
+      Icons.chat_outlined,
+      color: Color(0xff4470CD),
+    ),
+    Icon(
+      Icons.card_giftcard,
+      color: Color(0xff4470CD),
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
+    int currentIndex = 0;
+
+    final List<Widget> pages = [
+      PriHomeComponent(),
+      SelectChatpage(),
+      SHomeComponent(),
+    ];
     User? user = Get.arguments;
     return Scaffold(
-      appBar: AppBar(
-        leading: Builder(
-          builder: (context) => MaterialButton(
-            onPressed: () {
-              Scaffold.of(context).openDrawer();
-            },
-            child: (user?.image?.isNotEmpty ?? false)
-                ? CircleAvatar(
-                    foregroundImage: NetworkImage("${user?.image}"),
-                    radius: 20,
-                  )
-                : Icon(
-                    Icons.drag_handle,
-                    color: Colors.black,
-                  ),
-          ),
-        ),
-        title: Text(
-          "Principal",
-          style: GoogleFonts.sofia(
-            color: Colors.black,
-          ),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              AuthHelper.authHelper.signOut();
-              Get.offNamed('/');
-            },
-            icon: const Icon(
-              Icons.logout,
-              color: Colors.black,
-            ),
-          ),
-          IconButton(
-            onPressed: () {
-              Get.toNamed('/chat');
-            },
-            icon: Icon(
-              Icons.chat,
-              color: Colors.black,
-            ),
-          ),
-        ],
+      extendBody: true,
+      body: pages[currentIndex],
+      bottomNavigationBar: CurvedNavigationBar(
+        key: navigationKey,
+        backgroundColor: Colors.transparent,
+        index: currentIndex,
+        items: navigationItems,
+        height: 60,
+        onTap: (index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
       ),
       drawer: Drawer(
         child: Column(
@@ -76,235 +86,6 @@ class TeacherHomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      body: StreamBuilder(
-        stream: FireStoreHelper.storeHelper.getUser(),
-        builder: (context, snapShot) {
-          log("${snapShot.data}");
-          if (snapShot.hasData) {
-            return SingleChildScrollView(
-              child: Column(
-                children: [
-                  Divider(
-                    height: 2,
-                    color: Colors.black,
-                  ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: CircleAvatar(
-                          foregroundColor: Colors.blue,
-                          backgroundColor: Colors.blue,
-                          radius: 40,
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Full name :"),
-                            Text("School Name :"),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    height: 2,
-                    color: Colors.black,
-                  ),
-                  Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Text(
-                              "List of Teacher :",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Bhavna",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Sehgal",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Shushmita",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Kevalya",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Lata",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Sarita",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10),
-                            child: MaterialButton(
-                              onPressed: () {},
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Colors.grey,
-                                ),
-                                alignment: Alignment.center,
-                                height: 50,
-                                width: double.infinity,
-                                child: Text(
-                                  "Gita",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            );
-          } else if (snapShot.hasError) {
-            return const Center(
-              child: Text("no docs"),
-            );
-          } else {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
       ),
     );
   }

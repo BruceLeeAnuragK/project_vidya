@@ -53,8 +53,8 @@ class SHomeComponent extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Expanded(
-              flex: 3,
+            SizedBox(
+              height: size.height * 0.5,
               child: ListView(
                 children: [
                   Gap(50),
@@ -173,58 +173,53 @@ class SHomeComponent extends StatelessWidget {
                   Gap(20),
                   Padding(
                     padding: const EdgeInsets.only(left: 15, right: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        DropdownMenu(
-                          inputDecorationTheme: InputDecorationTheme(
-                            constraints: BoxConstraints(
-                              maxWidth: 110,
-                              maxHeight: 42,
-                            ),
-                            contentPadding: EdgeInsets.all(
-                              10,
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                              borderSide: BorderSide(
-                                color: Color(0xffFFFFFF),
-                              ),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                              borderSide: BorderSide(
-                                color: Color(0xffFFFFFF),
-                              ),
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                          ),
-                          textStyle: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                          initialSelection: dropdownValue,
-                          trailingIcon: Icon(
-                            Icons.arrow_drop_down,
-                            color: Colors.white,
-                          ),
-                          dropdownMenuEntries:
-                              stdList.map<DropdownMenuEntry<String>>(
-                            (String value) {
-                              return DropdownMenuEntry<String>(
-                                value: value,
-                                label: value,
-                              );
-                            },
-                          ).toList(),
-                          onSelected: (String? val) {
-                            dropdownValue = val!;
-                          },
+                    child: DropdownMenu(
+                      inputDecorationTheme: InputDecorationTheme(
+                        constraints: BoxConstraints(
+                          maxWidth: 110,
+                          maxHeight: 42,
                         ),
-                      ],
+                        contentPadding: EdgeInsets.all(
+                          10,
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(0xffFFFFFF),
+                          ),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide(
+                            color: Color(0xffFFFFFF),
+                          ),
+                        ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      textStyle: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                      initialSelection: dropdownValue,
+                      trailingIcon: Icon(
+                        Icons.arrow_drop_down,
+                        color: Colors.white,
+                      ),
+                      dropdownMenuEntries:
+                          stdList.map<DropdownMenuEntry<String>>(
+                        (String value) {
+                          return DropdownMenuEntry<String>(
+                            value: value,
+                            label: value,
+                          );
+                        },
+                      ).toList(),
+                      onSelected: (String? val) {
+                        dropdownValue = val!;
+                      },
                     ),
                   ),
                   Gap(20),
@@ -250,44 +245,45 @@ class SHomeComponent extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 5,
-                      crossAxisSpacing: 5,
-                      childAspectRatio: 3 / 1,
-                    ),
-                    itemCount: 9,
-                    itemBuilder: (context, index) {
-                      return MaterialButton(
-                        onPressed: () {},
-                        child: Container(
-                          height: 50,
-                          width: 151,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.white,
-                            ),
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Color(0xff4471CE),
-                                Color(0xff5A44C3),
-                              ],
-                            ),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 5,
+                    crossAxisSpacing: 5,
+                    childAspectRatio: 3 / 1,
+                  ),
+                  itemCount: 9,
+                  itemBuilder: (context, index) {
+                    return MaterialButton(
+                      onPressed: () {},
+                      child: Container(
+                        height: 50,
+                        width: 151,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Colors.white,
                           ),
-                          alignment: Alignment.center,
-                          child: Text(
-                            subList[index],
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                            ),
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Color(0xff4471CE),
+                              Color(0xff5A44C3),
+                            ],
                           ),
                         ),
-                      );
-                    }),
+                        alignment: Alignment.center,
+                        child: Text(
+                          subList[index],
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
           ],
