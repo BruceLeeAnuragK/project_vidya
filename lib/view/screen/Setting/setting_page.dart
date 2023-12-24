@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SettingPage extends StatefulWidget {
@@ -50,195 +51,137 @@ class _SettingPageState extends State<SettingPage>
     "Physics",
   ];
   List<Widget> drawerWidgets = [
-    Row(
-      children: [
-        CircleAvatar(
-          radius: 10,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
-          ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-        Column(
-          children: [
-            Text(
-              "Settings",
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              "Change your details",
-              style: GoogleFonts.poppins(
-                fontSize: 10,
-                color: Color(0xffE3E3E3),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ],
+      ),
+      title: Text(
+        "Settings",
+      ),
+      subtitle: Text(
+        "Change your details",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.white,
-          ),
-        ),
-      ],
+      ),
     ),
-    Row(
-      children: [
-        CircleAvatar(
-          radius: 10,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
-          ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-        Column(
-          children: [
-            Text(
-              "Language",
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              "Switch chosen language",
-              style: GoogleFonts.poppins(
-                fontSize: 10,
-                color: Color(0xffE3E3E3),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ],
+      ),
+      title: Text(
+        "Language",
+      ),
+      subtitle: Text(
+        "Switch chosen language",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.white,
-          ),
-        ),
-      ],
+      ),
     ),
-    Row(
-      children: [
-        CircleAvatar(
-          radius: 10,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
-          ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-        Column(
-          children: [
-            Text(
-              "Game",
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              "Cooper Christin",
-              style: GoogleFonts.poppins(
-                fontSize: 10,
-                color: Color(0xffE3E3E3),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ],
+      ),
+      title: Text(
+        "Game",
+      ),
+      subtitle: Text(
+        "Cooper Christin",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.white,
-          ),
-        ),
-      ],
+      ),
     ),
-    Row(
-      children: [
-        CircleAvatar(
-          radius: 10,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
-          ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-        Column(
-          children: [
-            Text(
-              "Image Generator",
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              "Generate Images through our AI",
-              style: GoogleFonts.poppins(
-                fontSize: 10,
-                color: Color(0xffE3E3E3),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ],
+      ),
+      title: Text(
+        "Image Generator",
+      ),
+      subtitle: Text(
+        "Generate Images through our AI",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.white,
-          ),
-        ),
-      ],
+      ),
     ),
-    Row(
-      children: [
-        CircleAvatar(
-          radius: 10,
-          child: Icon(
-            Icons.person,
-            color: Colors.white,
-          ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-        Column(
-          children: [
-            Text(
-              "Animated Videos",
-              style: GoogleFonts.poppins(
-                fontSize: 14,
-                color: Colors.white,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              "Learn through animated videos",
-              style: GoogleFonts.poppins(
-                fontSize: 10,
-                color: Color(0xffE3E3E3),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-          ],
+      ),
+      title: Text(
+        "Animated Videos",
+      ),
+      subtitle: Text(
+        "Learn through animated videos",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.arrow_forward_ios,
-            color: Colors.white,
-          ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
         ),
-      ],
+      ),
+      title: Text(
+        "Animated Videos",
+      ),
+      subtitle: Text(
+        "Learn through animated videos",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
     ),
   ];
 
@@ -305,201 +248,252 @@ class _SettingPageState extends State<SettingPage>
           ),
         ),
         child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              children: [
-                Row(
+          padding: const EdgeInsets.all(16),
+          child: ListView(
+            children: [
+              Container(
+                height: size.height * 0.45,
+                width: size.width,
+                decoration: BoxDecoration(
+                  color: Color(0xff3C2DE1),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircleAvatar(
-                      radius: 10,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Name",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      subtitle: Text(
+                        "Cooper Christin",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xff93A3FA),
+                          fontWeight: FontWeight.w300,
+                          fontSize: 10,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
                       ),
                     ),
-                    Column(
-                      children: [
-                        Text(
-                          "Settings",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.email,
+                          color: Colors.white,
                         ),
-                        Text(
-                          "Change your details",
-                          style: GoogleFonts.poppins(
-                            fontSize: 10,
-                            color: Color(0xffE3E3E3),
-                            fontWeight: FontWeight.w300,
-                          ),
+                      ),
+                      title: Text(
+                        "E-mail",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
                         ),
-                      ],
+                      ),
+                      subtitle: Text(
+                        "cooperchristin20@gmail.com",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xff93A3FA),
+                          fontWeight: FontWeight.w300,
+                          fontSize: 10,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.key_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Password",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      subtitle: Text(
+                        "Updated 2 weeks ago",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xff93A3FA),
+                          fontWeight: FontWeight.w300,
+                          fontSize: 10,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                    ),
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.smartphone_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Phone-Number",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      subtitle: Text(
+                        "+91 8466738456",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xff93A3FA),
+                          fontWeight: FontWeight.w300,
+                          fontSize: 10,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
                       ),
                     ),
                   ],
                 ),
-                Row(
+              ),
+              Gap(20),
+              Container(
+                height: size.height * 0.3,
+                width: size.width,
+                decoration: BoxDecoration(
+                  color: Color(0xff3C2DE1),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircleAvatar(
-                      radius: 10,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.star_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Scoreboard",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
                       ),
                     ),
-                    Column(
-                      children: [
-                        Text(
-                          "Language",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.rectangle_rounded,
+                          color: Colors.white,
                         ),
-                        Text(
-                          "Switch chosen language",
-                          style: GoogleFonts.poppins(
-                            fontSize: 10,
-                            color: Color(0xffE3E3E3),
-                            fontWeight: FontWeight.w300,
-                          ),
+                      ),
+                      title: Text(
+                        "New Courses",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
                         ),
-                      ],
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
                     ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.notification_important_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Study Reminder",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
                       ),
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 10,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          "Game",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        Text(
-                          "Cooper Christin",
-                          style: GoogleFonts.poppins(
-                            fontSize: 10,
-                            color: Color(0xffE3E3E3),
-                            fontWeight: FontWeight.w300,
-                          ),
-                        ),
-                      ],
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 10,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          "Image Generator",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        Text(
-                          "Generate Images through our AI",
-                          style: GoogleFonts.poppins(
-                            fontSize: 10,
-                            color: Color(0xffE3E3E3),
-                            fontWeight: FontWeight.w300,
-                          ),
-                        ),
-                      ],
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 10,
-                      child: Icon(
-                        Icons.person,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          "Animated Videos",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        Text(
-                          "Learn through animated videos",
-                          style: GoogleFonts.poppins(
-                            fontSize: 10,
-                            color: Color(0xffE3E3E3),
-                            fontWeight: FontWeight.w300,
-                          ),
-                        ),
-                      ],
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            )),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
