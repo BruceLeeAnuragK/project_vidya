@@ -46,8 +46,9 @@ class SHomeComponent extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -103,15 +104,8 @@ class SHomeComponent extends StatelessWidget {
                       height: 50,
                       width: 327,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Color(0xff4471CE),
-                            Color(0xff5A44C3),
-                          ],
-                        ),
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xff3C2DE1),
                       ),
                       child: TextFormField(
                         controller: searchController,
@@ -166,6 +160,11 @@ class SHomeComponent extends StatelessWidget {
                             ),
                           ),
                           hintText: "Search Here",
+                          hintStyle: GoogleFonts.poppins(
+                            color: Color(0xffE3E3E3),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                          ),
                         ),
                       ),
                     ),
@@ -174,6 +173,14 @@ class SHomeComponent extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 15, right: 10),
                     child: DropdownMenu(
+                      trailingIcon: Icon(
+                        Icons.keyboard_arrow_down_rounded,
+                        color: Colors.white,
+                      ),
+                      selectedTrailingIcon: Icon(
+                        Icons.keyboard_arrow_up_rounded,
+                        color: Colors.white,
+                      ),
                       inputDecorationTheme: InputDecorationTheme(
                         constraints: BoxConstraints(
                           maxWidth: 110,
@@ -204,10 +211,6 @@ class SHomeComponent extends StatelessWidget {
                         fontSize: 16,
                       ),
                       initialSelection: dropdownValue,
-                      trailingIcon: Icon(
-                        Icons.arrow_drop_down,
-                        color: Colors.white,
-                      ),
                       dropdownMenuEntries:
                           stdList.map<DropdownMenuEntry<String>>(
                         (String value) {
@@ -228,7 +231,7 @@ class SHomeComponent extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          "Select Your Sybjects : ",
+                          "Select Your Subjects : ",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -263,14 +266,7 @@ class SHomeComponent extends StatelessWidget {
                           border: Border.all(
                             color: Colors.white,
                           ),
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Color(0xff4471CE),
-                              Color(0xff5A44C3),
-                            ],
-                          ),
+                          color: Color(0xff3C2DE1),
                         ),
                         alignment: Alignment.center,
                         child: Text(

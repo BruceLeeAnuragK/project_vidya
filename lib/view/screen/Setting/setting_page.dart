@@ -399,7 +399,7 @@ class _SettingPageState extends State<SettingPage>
                   ],
                 ),
               ),
-              Gap(20),
+              Gap(10),
               Container(
                 height: size.height * 0.3,
                 width: size.width,
@@ -473,6 +473,73 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       title: Text(
                         "Study Reminder",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Gap(10),
+              Container(
+                height: size.height * 0.2,
+                width: size.width,
+                decoration: BoxDecoration(
+                  color: Color(0xff3C2DE1),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(
+                    color: Colors.white,
+                  ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.person_3_rounded,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Help Center",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                      trailing: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                    ),
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color(0xff93A3FA),
+                        child: Icon(
+                          Icons.privacy_tip_sharp,
+                          color: Colors.white,
+                        ),
+                      ),
+                      title: Text(
+                        "Privacy & Terms",
                         style: GoogleFonts.poppins(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,

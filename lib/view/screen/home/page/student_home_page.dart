@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
 
 import '../../AI/page/select_chat_page.dart';
 import '../../Register/model/user_model.dart';
@@ -31,7 +32,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
   ];
   final navigationItems = <Widget>[
     Icon(
-      Icons.home,
+      Icons.home_outlined,
       color: Color(0xff4470CD),
     ),
     Icon(
@@ -39,7 +40,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
       color: Color(0xff4470CD),
     ),
     Icon(
-      Icons.card_giftcard,
+      Icons.card_giftcard_outlined,
       color: Color(0xff4470CD),
     ),
   ];
@@ -51,7 +52,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
     final List<Widget> pages = [
       SHomeComponent(),
       SelectChatpage(),
-      SHomeComponent(),
+      BadgesPage(),
     ];
     User? user = Get.arguments;
     return Scaffold(
@@ -59,7 +60,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
       body: pages[currentIndex],
       bottomNavigationBar: CurvedNavigationBar(
         key: navigationKey,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xff4F3DA4),
         index: currentIndex,
         items: navigationItems,
         height: 60,

@@ -26,8 +26,9 @@ class IntroScreen extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Color(0xff4471CE),
-                    Color(0xff5A44C3),
+                    Color(0xff5B93E6),
+                    Color(0xff3C2DE1),
+                    Color(0xff3C2DE1),
                   ],
                 ),
               ),
@@ -39,6 +40,24 @@ class IntroScreen extends StatelessWidget {
                     children: [
                       Column(
                         children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              MaterialButton(
+                                onPressed: () {
+                                  Navigator.of(context)
+                                      .pushNamed(MyRoutes.registerPage);
+                                },
+                                child: Text(
+                                  "Skip",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+
                           Padding(
                             padding: EdgeInsets.only(
                               top: size.height * 0.11,
@@ -91,20 +110,27 @@ class IntroScreen extends StatelessWidget {
                                   const EdgeInsets.symmetric(horizontal: 3.0),
                             ),
                           ), // SmoothPageIndicator(
-                          //   onDotClicked: (int index) {},
-                          //   controller: PageController(),
-                          //   count: 3,
-                          //   effect: ExpandingDotsEffect(
-                          //     dotHeight: 10,
-                          //     dotWidth: 10,
-                          //     activeDotColor: Color(0xff4471CE),
-                          //     dotColor: Color(0xffE3E3E3),
-                          //   ),
-                          // ),
                         ],
                       ),
                       Column(
                         children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              MaterialButton(
+                                onPressed: () {
+                                  Navigator.of(context)
+                                      .pushNamed(MyRoutes.registerPage);
+                                },
+                                child: Text(
+                                  "Skip",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                           Padding(
                             padding: EdgeInsets.only(
                               top: size.height * 0.11,
@@ -165,18 +191,15 @@ class IntroScreen extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child: MaterialButton(
-                                  onPressed: () {
-                                    Navigator.of(context)
-                                        .pushNamed(MyRoutes.registerPage);
-                                  },
-                                  child: Text(
-                                    "Skip",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
+                              MaterialButton(
+                                onPressed: () {
+                                  Navigator.of(context)
+                                      .pushNamed(MyRoutes.registerPage);
+                                },
+                                child: Text(
+                                  "Next",
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               )
@@ -184,6 +207,7 @@ class IntroScreen extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.only(
+                              top: size.height * 0.125,
                               right: size.width * 0.05,
                               left: size.width * 0.05,
                             ),
@@ -196,7 +220,7 @@ class IntroScreen extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(top: size.height * 0.045),
                             child: Text(
-                              "Ask any\nQuestion",
+                              "Create your own\n\t\t\t\t\t\tstudy plan",
                               style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 22,

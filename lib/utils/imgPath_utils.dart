@@ -1,6 +1,8 @@
 class ImgPath {
   static String path = "assets/images/";
   static String btnEllipse = 'ellipse.png';
+  static String google_logo = 'google_logo.png';
+  static String facebook_logo = 'facebook_logo.png';
   static String btnEmail = 'email.png';
   static String btnAdd = 'add.png';
   static String btnBProfile = 'b_profile.png';

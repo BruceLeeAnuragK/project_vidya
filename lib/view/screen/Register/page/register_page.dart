@@ -46,8 +46,9 @@ class _RegisterPageState extends State<RegisterPage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -117,348 +118,358 @@ class _RegisterPageState extends State<RegisterPage> {
                   child: Image.asset(ImgPath.path + ImgPath.sparklegif),
                 ),
               ),
-              Column(
-                children: [
-                  Gap(60),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Sign Up",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontWeight: FontWeight.w900,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 6, bottom: 5),
-                    child: Row(
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    Gap(30),
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Enter your details below & free sign up",
+                          "Sign Up",
                           style: TextStyle(
-                            color: Color(0xffE3E3E3),
-                            fontSize: 15,
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                       ],
                     ),
-                  ),
-                  Gap(50),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20, left: 20),
-                    child: TextFormField(
-                      keyboardType: TextInputType.phone,
-                      cursorColor: Colors.white,
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                      textInputAction: TextInputAction.next,
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: size.height * 0.0046,
-                        ),
-                        label: Text(
-                          "Phone number",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Gap(32),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20, left: 20),
-                    child: TextFormField(
-                      keyboardType: TextInputType.name,
-                      textInputAction: TextInputAction.next,
-                      cursorColor: Colors.white,
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: size.height * 0.0046,
-                        ),
-                        label: Text(
-                          "Username",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Gap(32),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20, left: 20),
-                    child: TextFormField(
-                      obscureText: true,
-                      textInputAction: TextInputAction.done,
-                      cursorColor: Colors.white,
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: size.height * 0.0046,
-                        ),
-                        suffixIcon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              hide = !hide;
-                            });
-                          },
-                          icon: hide
-                              ? Icon(
-                                  Icons.visibility_outlined,
-                                  color: Colors.white,
-                                )
-                              : Icon(
-                                  Icons.visibility_off_outlined,
-                                  color: Colors.white,
-                                ),
-                        ),
-                        label: Text(
-                          "Password",
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(50),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Gap(32),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20, left: 20),
-                    child: StreamBuilder(
-                      stream: FireStoreHelper.storeHelper.getSchoolList(),
-                      builder: (context, snap) {
-                        if (snap.hasData) {
-                          DocumentSnapshot<Map<String, dynamic>>? doc =
-                              snap.data;
-                          log(doc.toString());
-                          Map<String, dynamic>? data = doc?.data();
-                          List school = data?['list'];
-                          return Padding(
-                            padding: const EdgeInsets.only(top: 10),
-                            child: Expanded(
-                              flex: 12,
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    DropdownMenu(
-                                      width: 200,
-                                      inputDecorationTheme:
-                                          InputDecorationTheme(
-                                        contentPadding: EdgeInsets.symmetric(
-                                          horizontal: 20,
-                                          vertical: size.height * 0.0046,
-                                        ),
-                                        border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                          borderSide: BorderSide(
-                                            color: Color(0xffFFFFFF),
-                                          ),
-                                        ),
-                                        enabledBorder: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(50),
-                                          borderSide: BorderSide(
-                                            color: Color(0xffFFFFFF),
-                                          ),
-                                        ),
-                                      ),
-                                      label: Text(
-                                        "Category",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      initialSelection: dropdownValue,
-                                      textStyle: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                      dropdownMenuEntries:
-                                          school.map<DropdownMenuEntry<String>>(
-                                        (e) {
-                                          return DropdownMenuEntry<String>(
-                                            value: e,
-                                            label: e,
-                                          );
-                                        },
-                                      ).toList(),
-                                      onSelected: (val) {
-                                        dropdownValue = val!;
-                                      },
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        } else {
-                          return Container();
-                        }
-                      },
-                    ),
-                  ),
-                  Gap(32),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 17, left: 17),
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          Navigator.of(context).pushReplacementNamed(
-                              MyRoutes.succcessfullyRegisteredPage);
-                        });
-                      },
-                      child: Container(
-                        height: 50,
-                        width: 327,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Color(0xffFFFFFF),
-                            width: 1,
-                          ),
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Color(0xff4471CE),
-                              Color(0xff4F3DA4),
-                            ],
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        alignment: Alignment.center,
-                        child: const Text(
-                          "CREATE ACCOUNT",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Gap(32),
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: false,
-                        checkColor: Colors.white,
-                        activeColor: Color(0xffFFFFFF),
-                        side: BorderSide(
-                          color: Color(0xffFFFFFF),
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        onChanged: (value) {},
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
+                    Padding(
+                      padding: const EdgeInsets.only(top: 6),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(""),
                           Text(
-                            "By creating an account you have to agree\nwith our terms & condition.",
+                            "Enter your details below & free sign up",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Color(0xffE3E3E3),
+                              fontSize: 15,
                             ),
                           ),
                         ],
                       ),
-                    ],
-                  ),
-                  Gap(32),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Already have an account?",
+                    ), //left right
+                    Gap(25),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: TextFormField(
+                        keyboardType: TextInputType.phone,
+                        cursorColor: Colors.white,
                         style: TextStyle(
                           color: Colors.white,
                         ),
+                        textInputAction: TextInputAction.next,
+                        decoration: InputDecoration(
+                          contentPadding: EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: size.height * 0.0046,
+                          ),
+                          label: Text(
+                            "Phone number",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                        ),
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Log in",
+                    ),
+                    Gap(32),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: TextFormField(
+                        keyboardType: TextInputType.name,
+                        textInputAction: TextInputAction.next,
+                        cursorColor: Colors.white,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                        decoration: InputDecoration(
+                          contentPadding: EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: size.height * 0.0046,
+                          ),
+                          label: Text(
+                            "Username",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Gap(32),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: TextFormField(
+                        obscureText: true,
+                        textInputAction: TextInputAction.done,
+                        cursorColor: Colors.white,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                        decoration: InputDecoration(
+                          contentPadding: EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: size.height * 0.0046,
+                          ),
+                          suffixIcon: IconButton(
+                            onPressed: () {
+                              setState(() {
+                                hide = !hide;
+                              });
+                            },
+                            icon: hide
+                                ? Icon(
+                                    Icons.visibility_outlined,
+                                    color: Colors.white,
+                                  )
+                                : Icon(
+                                    Icons.visibility_off_outlined,
+                                    color: Colors.white,
+                                  ),
+                          ),
+                          label: Text(
+                            "Password",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(50),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Gap(32),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: StreamBuilder(
+                        stream: FireStoreHelper.storeHelper.getSchoolList(),
+                        builder: (context, snap) {
+                          if (snap.hasData) {
+                            DocumentSnapshot<Map<String, dynamic>>? doc =
+                                snap.data;
+                            log(doc.toString());
+                            Map<String, dynamic>? data = doc?.data();
+                            List school = data?['list'];
+                            return Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Expanded(
+                                flex: 12,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      DropdownMenu(
+                                        width: 200,
+                                        inputDecorationTheme:
+                                            InputDecorationTheme(
+                                          contentPadding: EdgeInsets.symmetric(
+                                            horizontal: 20,
+                                            vertical: size.height * 0.0046,
+                                          ),
+                                          border: OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            borderSide: BorderSide(
+                                              color: Color(0xffFFFFFF),
+                                            ),
+                                          ),
+                                          enabledBorder: OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            borderSide: BorderSide(
+                                              color: Color(0xffFFFFFF),
+                                            ),
+                                          ),
+                                        ),
+                                        label: Text(
+                                          "Category",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        trailingIcon: Icon(
+                                          Icons.keyboard_arrow_down_rounded,
+                                          color: Colors.white,
+                                        ),
+                                        selectedTrailingIcon: Icon(
+                                          Icons.keyboard_arrow_up_rounded,
+                                          color: Colors.white,
+                                        ),
+                                        initialSelection: dropdownValue,
+                                        textStyle: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                        dropdownMenuEntries: school
+                                            .map<DropdownMenuEntry<String>>(
+                                          (e) {
+                                            return DropdownMenuEntry<String>(
+                                              value: e,
+                                              label: e,
+                                            );
+                                          },
+                                        ).toList(),
+                                        onSelected: (val) {
+                                          dropdownValue = val!;
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                          } else {
+                            return Container();
+                          }
+                        },
+                      ),
+                    ),
+                    Gap(32),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 17, left: 17),
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            Navigator.of(context).pushReplacementNamed(
+                                MyRoutes.succcessfullyRegisteredPage);
+                          });
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 327,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Color(0xffFFFFFF),
+                              width: 1,
+                            ),
+                            color: Color(0xff3C2DE1),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          alignment: Alignment.center,
+                          child: const Text(
+                            "CREATE ACCOUNT",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Checkbox(
+                            value: false,
+                            checkColor: Colors.white,
+                            activeColor: Color(0xffFFFFFF),
+                            side: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            onChanged: (value) {},
+                          ),
+                        ),
+                        Expanded(
+                          flex: 12,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text(""),
+                              Text(
+                                "By creating an account you have to agree\nwith our terms & condition.",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Gap(10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Already have an account?",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Log in",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

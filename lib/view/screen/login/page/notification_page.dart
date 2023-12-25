@@ -20,8 +20,9 @@ class NotificationsPage extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -61,14 +62,7 @@ class NotificationsPage extends StatelessWidget {
                   border: Border.all(
                     color: Colors.white,
                   ),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color(0xff4471CE),
-                      Color(0xff4F3DA4),
-                    ],
-                  ),
+                  color: Color(0xff3C2DE1),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 alignment: Alignment.center,
