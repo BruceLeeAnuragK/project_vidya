@@ -2,9 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SHomeComponent extends StatelessWidget {
+class SHomeComponent extends StatefulWidget {
   SHomeComponent({super.key});
+
+  @override
+  State<SHomeComponent> createState() => _SHomeComponentState();
+}
+
+class _SHomeComponentState extends State<SHomeComponent> {
   TextEditingController searchController = TextEditingController();
+
   List<String> stdList = <String>[
     "Std 1",
     "Std 2",
@@ -19,6 +26,7 @@ class SHomeComponent extends StatelessWidget {
     "Std 11",
     "Std 12",
   ];
+
   List<String> subList = <String>[
     "English",
     "Maths",
@@ -33,6 +41,7 @@ class SHomeComponent extends StatelessWidget {
     "Chemistry",
     "Physics",
   ];
+
   @override
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
@@ -52,13 +61,13 @@ class SHomeComponent extends StatelessWidget {
             ],
           ),
         ),
-        child: Column(
-          children: [
-            SizedBox(
-              height: size.height * 0.5,
-              child: ListView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Column(
                 children: [
-                  Gap(50),
+                  Gap(40),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -98,155 +107,150 @@ class SHomeComponent extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(15),
-                    child: Container(
-                      height: 50,
-                      width: 327,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xff3C2DE1),
-                      ),
-                      child: TextFormField(
-                        controller: searchController,
-                        decoration: InputDecoration(
-                          constraints: BoxConstraints(
-                            maxWidth: 60,
-                            minWidth: 50,
-                          ),
-                          contentPadding: EdgeInsets.all(10),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(
-                              color: Color(0xffFFFFFF).withOpacity(0.5),
-                            ),
-                          ),
-                          suffixIcon: Padding(
-                            padding: const EdgeInsets.only(
-                              bottom: 10,
-                              top: 10,
-                              right: 5,
-                            ),
-                            child: Container(
-                              height: 29,
-                              width: 35,
-                              alignment: Alignment.topCenter,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(7),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(bottom: 20),
-                                child: IconButton(
-                                  icon: Icon(
-                                    Icons.search,
-                                    color: Colors.deepPurple,
-                                  ),
-                                  onPressed: () {},
-                                ),
-                              ),
-                            ),
-                          ),
-                          hintText: "Search Here",
-                          hintStyle: GoogleFonts.poppins(
-                            color: Color(0xffE3E3E3),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
+                  Gap(10),
+                  Container(
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xff3C2DE1),
                     ),
-                  ),
-                  Gap(20),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15, right: 10),
-                    child: DropdownMenu(
-                      trailingIcon: Icon(
-                        Icons.keyboard_arrow_down_rounded,
-                        color: Colors.white,
-                      ),
-                      selectedTrailingIcon: Icon(
-                        Icons.keyboard_arrow_up_rounded,
-                        color: Colors.white,
-                      ),
-                      inputDecorationTheme: InputDecorationTheme(
+                    child: TextFormField(
+                      controller: searchController,
+                      decoration: InputDecoration(
                         constraints: BoxConstraints(
-                          maxWidth: 110,
-                          maxHeight: 42,
+                          maxWidth: 60,
+                          minWidth: 50,
                         ),
-                        contentPadding: EdgeInsets.all(
-                          10,
+                        contentPadding: EdgeInsets.all(10),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: BorderSide(
+                            color: Color(0xffFFFFFF),
+                          ),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide(
                             color: Color(0xffFFFFFF),
                           ),
                         ),
                         enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
+                            color: Color(0xffFFFFFF).withOpacity(0.5),
                           ),
                         ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        suffixIcon: Padding(
+                          padding: const EdgeInsets.only(
+                            bottom: 10,
+                            top: 10,
+                            right: 5,
+                          ),
+                          child: Container(
+                            height: 29,
+                            width: 35,
+                            alignment: Alignment.topCenter,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(7),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(bottom: 20),
+                              child: IconButton(
+                                icon: Icon(
+                                  Icons.search,
+                                  color: Colors.deepPurple,
+                                ),
+                                onPressed: () {},
+                              ),
+                            ),
+                          ),
+                        ),
+                        hintText: "Search Here",
+                        hintStyle: GoogleFonts.poppins(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
-                      textStyle: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                      initialSelection: dropdownValue,
-                      dropdownMenuEntries:
-                          stdList.map<DropdownMenuEntry<String>>(
-                        (String value) {
-                          return DropdownMenuEntry<String>(
-                            value: value,
-                            label: value,
-                          );
-                        },
-                      ).toList(),
-                      onSelected: (String? val) {
-                        dropdownValue = val!;
-                      },
                     ),
                   ),
-                  Gap(20),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Select Your Subjects : ",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
+                  Gap(30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      DropdownMenu(
+                        trailingIcon: Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: Colors.white,
+                        ),
+                        selectedTrailingIcon: Icon(
+                          Icons.keyboard_arrow_up_rounded,
+                          color: Colors.white,
+                        ),
+                        inputDecorationTheme: InputDecorationTheme(
+                          constraints: BoxConstraints(
+                            maxWidth: 110,
+                            maxHeight: 42,
+                          ),
+                          contentPadding: EdgeInsets.all(
+                            10,
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
+                            borderSide: BorderSide(
+                              color: Color(0xffFFFFFF),
+                            ),
+                          ),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                      ],
-                    ),
+                        textStyle: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                        initialSelection: dropdownValue,
+                        dropdownMenuEntries:
+                            stdList.map<DropdownMenuEntry<String>>(
+                          (String value) {
+                            return DropdownMenuEntry<String>(
+                              value: value,
+                              label: value,
+                            );
+                          },
+                        ).toList(),
+                        onSelected: (String? val) {
+                          dropdownValue = val!;
+                        },
+                      ),
+                    ],
+                  ),
+                  Gap(30),
+                  Row(
+                    children: [
+                      Text(
+                        "Select Your Subjects : ",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
+              Expanded(
+                flex: 2,
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
@@ -254,7 +258,7 @@ class SHomeComponent extends StatelessWidget {
                     crossAxisSpacing: 5,
                     childAspectRatio: 3 / 1,
                   ),
-                  itemCount: 9,
+                  itemCount: subList.length,
                   itemBuilder: (context, index) {
                     return MaterialButton(
                       onPressed: () {},
@@ -262,7 +266,7 @@ class SHomeComponent extends StatelessWidget {
                         height: 50,
                         width: 151,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(5),
                           border: Border.all(
                             color: Colors.white,
                           ),
@@ -281,8 +285,8 @@ class SHomeComponent extends StatelessWidget {
                   },
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

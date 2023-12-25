@@ -18,6 +18,7 @@ class MyRoutes {
   static String englishstopicPage = '/EnglishTopicPage';
   static String exercisePage = '/ExercisePage';
   static String loginPage = '/LoginPage';
+  static String selectLanguage = '/SelectLanguagePage';
   static String introPage = '/IntroPage';
   static String introComponent1 = '/Intro1Page';
   static String introComponent2 = '/Intro2Page';

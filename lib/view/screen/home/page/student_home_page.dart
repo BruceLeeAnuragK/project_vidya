@@ -2,10 +2,12 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
+import 'package:provider/provider.dart';
 
 import '../../AI/page/select_chat_page.dart';
 import '../../Register/model/user_model.dart';
 import '../components/Student_Component/s_home_component.dart';
+import '../controller/stud_home_navigation_bar_provider.dart';
 
 class StudentHomePage extends StatefulWidget {
   StudentHomePage({Key? key}) : super(key: key);
@@ -55,38 +57,39 @@ class _StudentHomePageState extends State<StudentHomePage> {
       BadgesPage(),
     ];
     User? user = Get.arguments;
-    return Scaffold(
-      extendBody: true,
-      body: pages[currentIndex],
-      bottomNavigationBar: CurvedNavigationBar(
-        key: navigationKey,
-        backgroundColor: Color(0xff4F3DA4),
-        index: currentIndex,
-        items: navigationItems,
-        height: 60,
-        onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-      ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                radius: 30,
-                foregroundImage: NetworkImage("${user?.image}"),
-              ),
-              accountName: Text("${user?.name ?? 'Anonymous'} "),
-              accountEmail: Visibility(
-                visible: user != null,
-                child: Text("${user?.email ?? 'n0@gmail.com'}"),
-              ),
-            ),
-          ],
+    return Consumer<StudNavigationBarProvider>(
+        builder: (context, provider, child) {
+      return Scaffold(
+        extendBody: true,
+        body: pages[provider.currentIndex],
+        bottomNavigationBar: CurvedNavigationBar(
+          key: navigationKey,
+          backgroundColor: Color(0xff3C2DE1),
+          index: currentIndex,
+          items: navigationItems,
+          height: 60,
+          onTap: (index) {
+            provider.changeCurrentIndex(index);
+          },
         ),
-      ),
-    );
+        drawer: Drawer(
+          child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                currentAccountPicture: CircleAvatar(
+                  radius: 30,
+                  foregroundImage: NetworkImage("${user?.image}"),
+                ),
+                accountName: Text("${user?.name ?? 'Anonymous'} "),
+                accountEmail: Visibility(
+                  visible: user != null,
+                  child: Text("${user?.email ?? 'n0@gmail.com'}"),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    });
   }
 }

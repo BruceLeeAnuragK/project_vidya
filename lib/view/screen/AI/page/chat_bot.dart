@@ -14,7 +14,6 @@ class _ChatBotPageState extends State<ChatBotPage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         actions: [
           IconButton(
             icon: Icon(
@@ -26,21 +25,20 @@ class _ChatBotPageState extends State<ChatBotPage> {
         ],
         leading: IconButton(
           icon: Icon(
-            Icons.arrow_back,
+            Icons.arrow_back_ios_rounded,
             color: Colors.white,
-            size: 30,
           ),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: Color(0xff4471CE),
+        backgroundColor: Color(0xff5B93E6),
         title: Text(
           "Chat AI",
           style: GoogleFonts.poppins(
             color: Colors.white,
             fontWeight: FontWeight.w700,
-            fontSize: 24,
+            fontSize: 20,
           ),
         ),
       ),
@@ -52,8 +50,9 @@ class _ChatBotPageState extends State<ChatBotPage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -69,14 +68,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color(0xff4471CE),
-                      Color(0xff5A44C3),
-                    ],
-                  ),
+                  color: Color(0xff3C2DE1),
                 ),
                 child: TextFormField(
                   obscureText: true,

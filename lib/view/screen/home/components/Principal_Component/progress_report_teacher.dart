@@ -61,13 +61,14 @@ class _ProgressReportTeacherComponentState
       appBar: AppBar(
         backgroundColor: Color(0xff5B93E6),
         leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back_ios,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            }),
+          icon: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         actions: [
           IconButton(
             onPressed: () {},

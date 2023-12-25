@@ -169,7 +169,8 @@ class LoginPage extends StatelessWidget {
                       const Gap(32),
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).pushNamed(MyRoutes.studHome);
+                          Navigator.of(context)
+                              .pushNamed(MyRoutes.selectLanguage);
                         },
                         child: Container(
                           height: size.height * 0.07,
@@ -251,7 +252,7 @@ class LoginPage extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               Navigator.of(context)
-                                  .pushNamed(MyRoutes.studHome);
+                                  .pushNamed(MyRoutes.selectLanguage);
                             },
                             child: Container(
                               height: size.height * 0.12,
@@ -268,7 +269,7 @@ class LoginPage extends StatelessWidget {
                           GestureDetector(
                             onTap: () {
                               Navigator.of(context)
-                                  .pushNamed(MyRoutes.studHome);
+                                  .pushNamed(MyRoutes.selectLanguage);
                             },
                             child: Container(
                               height: size.height * 0.15,

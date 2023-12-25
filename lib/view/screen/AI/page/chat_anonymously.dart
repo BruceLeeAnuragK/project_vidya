@@ -25,7 +25,6 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         actions: [
           IconButton(
             icon: Icon(
@@ -37,15 +36,14 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
         ],
         leading: IconButton(
           icon: Icon(
-            Icons.arrow_back,
+            Icons.arrow_back_ios_rounded,
             color: Colors.white,
-            size: 30,
           ),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: Color(0xff4471CE),
+        backgroundColor: Color(0xff5B93E6),
         title: Text(
           "Chat Anonymously",
           style: GoogleFonts.poppins(
@@ -63,8 +61,9 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -79,16 +78,17 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Color(0xff4471CE),
-                        Color(0xff5A44C3),
-                      ],
-                    ),
+                    color: Color(0xff3C2DE1),
                   ),
                   child: DropdownMenu(
+                    trailingIcon: Icon(
+                      Icons.keyboard_arrow_down_rounded,
+                      color: Colors.white,
+                    ),
+                    selectedTrailingIcon: Icon(
+                      Icons.keyboard_arrow_up_rounded,
+                      color: Colors.white,
+                    ),
                     inputDecorationTheme: InputDecorationTheme(
                       constraints: BoxConstraints(
                         maxWidth: 200,
@@ -119,10 +119,6 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
                       fontSize: 16,
                     ),
                     initialSelection: dropdownValue,
-                    trailingIcon: Icon(
-                      Icons.arrow_drop_down,
-                      color: Colors.white,
-                    ),
                     dropdownMenuEntries: stdList.map<DropdownMenuEntry<String>>(
                       (String value) {
                         return DropdownMenuEntry<String>(
@@ -148,14 +144,7 @@ class _ChatAnonymouselyPageState extends State<ChatAnonymouselyPage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color(0xff4471CE),
-                      Color(0xff5A44C3),
-                    ],
-                  ),
+                  color: Color(0xff3C2DE1),
                 ),
                 child: TextFormField(
                   obscureText: true,

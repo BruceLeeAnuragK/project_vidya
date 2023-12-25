@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/imgPath_utils.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 class SelectChatpage extends StatefulWidget {
   const SelectChatpage({super.key});
@@ -14,55 +16,38 @@ class _SelectChatpageState extends State<SelectChatpage> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(100),
-        child: AppBar(
-          backgroundColor: Color(0xff4471CE),
-          elevation: 0,
-          centerTitle: true,
-          leading: Container(
+      appBar: AppBar(
+        backgroundColor: Color(0xff5B93E6),
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_rounded,
+            color: Colors.white,
+          ),
+        ),
+        actions: [
+          Container(
             alignment: Alignment.topCenter,
             child: IconButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.of(context).pop();
               },
               icon: Icon(
-                Icons.arrow_back,
+                Icons.grid_view_rounded,
                 color: Colors.white,
               ),
             ),
           ),
-          actions: [
-            Container(
-              alignment: Alignment.topCenter,
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.grid_view_rounded,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ],
-          title: RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              text: "Choose Your Chat",
-              style: GoogleFonts.poppins(
-                  fontSize: 24,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w700),
-              children: <TextSpan>[
-                TextSpan(
-                  text: '\npartner',
-                  style: GoogleFonts.poppins(
-                    fontSize: 24,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ],
-            ),
+        ],
+        title: Text(
+          " Choose Your Chat partner",
+          style: GoogleFonts.poppins(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+            fontSize: 20,
           ),
         ),
       ),
@@ -74,8 +59,9 @@ class _SelectChatpageState extends State<SelectChatpage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xff4471CE),
-              Color(0xff5A44C3),
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
             ],
           ),
         ),
@@ -90,24 +76,21 @@ class _SelectChatpageState extends State<SelectChatpage> {
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: GestureDetector(
                 onTap: () {
-                  setState(() {});
+                  setState(() {
+                    Navigator.of(context).pushNamed(MyRoutes.chatPage);
+                  });
                 },
                 child: Container(
                   height: 50,
                   width: 327,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: Colors.white,
-                      ),
-                      gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Color(0xff4471CE),
-                            Color(0xff5A44C3),
-                          ])),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    color: Color(0xff3C2DE1),
+                  ),
                   child: Text(
                     "Chat AI",
                     style: GoogleFonts.poppins(
@@ -128,7 +111,10 @@ class _SelectChatpageState extends State<SelectChatpage> {
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: GestureDetector(
                 onTap: () {
-                  setState(() {});
+                  setState(() {
+                    Navigator.of(context)
+                        .pushNamed(MyRoutes.chatWithTeacherPage);
+                  });
                 },
                 child: Container(
                   height: 50,
@@ -139,14 +125,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                     border: Border.all(
                       color: Colors.white,
                     ),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Color(0xff4471CE),
-                        Color(0xff5A44C3),
-                      ],
-                    ),
+                    color: Color(0xff3C2DE1),
                   ),
                   child: Text(
                     "Chat with your Teacher",
@@ -168,24 +147,22 @@ class _SelectChatpageState extends State<SelectChatpage> {
               padding: const EdgeInsets.only(left: 15, right: 15),
               child: GestureDetector(
                 onTap: () {
-                  setState(() {});
+                  setState(() {
+                    Navigator.of(context)
+                        .pushNamed(MyRoutes.chatAnonymouselyPage);
+                  });
                 },
                 child: Container(
                   height: 50,
                   width: 327,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: Colors.white,
-                      ),
-                      gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Color(0xff4471CE),
-                            Color(0xff5A44C3),
-                          ])),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Colors.white,
+                    ),
+                    color: Color(0xff3C2DE1),
+                  ),
                   child: Text(
                     "Chat Anonymously",
                     style: GoogleFonts.poppins(
@@ -197,6 +174,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                 ),
               ),
             ),
+            Gap(50),
           ],
         ),
       ),

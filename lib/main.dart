@@ -26,6 +26,7 @@ import 'package:project_vidya/view/screen/home/components/Parents_Component/chil
 import 'package:project_vidya/view/screen/home/components/Principal_Component/progress_report_teacher.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
 import 'package:project_vidya/view/screen/home/controller/badges_provider.dart';
+import 'package:project_vidya/view/screen/home/controller/stud_home_navigation_bar_provider.dart';
 import 'package:project_vidya/view/screen/home/page/parents_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/principle_home_page.dart';
 import 'package:project_vidya/view/screen/home/page/student_home_page.dart';
@@ -35,6 +36,7 @@ import 'package:project_vidya/view/screen/login/page/logged_in_successfully_page
 import 'package:project_vidya/view/screen/login/page/login_page.dart';
 import 'package:project_vidya/view/screen/login/page/notification_page.dart';
 import 'package:project_vidya/view/screen/login/page/otp_verification_page.dart';
+import 'package:project_vidya/view/screen/login/page/select_language.dart';
 import 'package:project_vidya/view/screen/login/page/verification_page.dart';
 import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
 import 'package:project_vidya/view/screen/topic/page/english_topic_page.dart';
@@ -63,6 +65,9 @@ void main() async {
         ChangeNotifierProvider(
           create: (context) => BadgesProvider(),
         ),
+        ChangeNotifierProvider(
+          create: (context) => StudNavigationBarProvider(),
+        ),
       ],
       child: const MyApp(),
     ),
@@ -88,6 +93,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.introComponent3: (context) => const Intro3Screen(),
         MyRoutes.selectCategoryPage: (context) => SelectCategoryPage(),
         MyRoutes.loginPage: (context) => const LoginPage(),
+        MyRoutes.selectLanguage: (context) => const LanguagePage(),
         MyRoutes.settingPage: (context) => SettingPage(),
         MyRoutes.otpVerificationPage: (context) => const OtpVerificationPage(),
         MyRoutes.verificationPage: (context) => const VerificationPage(),
