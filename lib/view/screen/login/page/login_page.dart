@@ -62,15 +62,18 @@ class LoginPage extends StatelessWidget {
                       const Gap(32),
                       TextFormField(
                         cursorColor: Colors.white,
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                         textInputAction: TextInputAction.next,
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.symmetric(
                             horizontal: 20,
                             vertical: size.height * 0.0046,
                           ),
-                          label: const Text(
+                          label: Text(
                             "Username",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.white,
                             ),
                           ),
@@ -87,11 +90,11 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: const BorderSide(
-                                color: Colors.white,
-                                width: 3,
-                              )),
+                            borderRadius: BorderRadius.circular(30),
+                            borderSide: const BorderSide(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
                       const Gap(32),
@@ -123,7 +126,7 @@ class LoginPage extends StatelessWidget {
                           ),
                           label: Text(
                             "Password",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.white,
                             ),
                           ),
@@ -183,9 +186,9 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                           alignment: Alignment.center,
-                          child: const Text(
+                          child: Text(
                             "LOG IN",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Color(0xffF3F5F9),
                               fontSize: 20,
                             ),
@@ -198,7 +201,7 @@ class LoginPage extends StatelessWidget {
                         children: [
                           Text(
                             "Don't have an account ?",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.white,
                               fontSize: 15,
                             ),
@@ -210,7 +213,7 @@ class LoginPage extends StatelessWidget {
                             },
                             child: Text(
                               " Sign Up",
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 15,
@@ -222,7 +225,7 @@ class LoginPage extends StatelessWidget {
                         ],
                       ),
                       const Gap(20),
-                      const Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Expanded(
@@ -233,7 +236,7 @@ class LoginPage extends StatelessWidget {
                           Gap(20),
                           Text(
                             "Or Login with",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: Colors.white,
                             ),
                           ),

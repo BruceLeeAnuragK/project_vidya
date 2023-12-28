@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-
-import '../../../../utils/colour_utils.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SummaryPage extends StatelessWidget {
   const SummaryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xff5B93E6),
         centerTitle: true,
         title: Text(
           "Summary",
-          style: TextStyle(
-            fontSize: 31,
+          style: GoogleFonts.poppins(
+            fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: MyColors.appTitle,
+            color: Colors.white,
           ),
         ),
         elevation: 0,
@@ -24,42 +25,57 @@ class SummaryPage extends StatelessWidget {
             Navigator.of(context).pop();
           },
           icon: Icon(
-            Icons.arrow_back,
-            color: MyColors.btnColor,
+            Icons.arrow_back_ios_rounded,
+            color: Colors.white,
             weight: 1,
           ),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: ListView.builder(
-          itemCount: 12,
-          itemBuilder: (context, index) {
-            return Column(
-              children: [
-                const SizedBox(height: 12),
-                GestureDetector(
-                  onTap: () {},
-                  child: Container(
-                    height: 50,
-                    width: 327,
-                    decoration: BoxDecoration(
-                      color: Colors.indigoAccent,
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Topic $index",
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
+      body: Container(
+        height: size.height,
+        width: size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xff5B93E6),
+              Color(0xff3C2DE1),
+              Color(0xff3C2DE1),
+            ],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: GridView.builder(
+            itemCount: 12,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Color(0xff3d5cff),
+                    borderRadius: BorderRadius.circular(18),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Topic $index",
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
                     ),
                   ),
                 ),
-              ],
-            );
-          },
+              );
+            },
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              mainAxisSpacing: 5,
+              crossAxisSpacing: 5,
+            ),
+          ),
         ),
       ),
     );

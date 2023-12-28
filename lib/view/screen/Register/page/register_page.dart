@@ -122,7 +122,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    Gap(30),
+                    Gap(size.height * 0.1),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -458,7 +458,9 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushNamed(MyRoutes.loginPage);
+                          },
                           child: Text(
                             "Log in",
                             style: TextStyle(

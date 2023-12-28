@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ProgressReportTeacherComponent extends StatefulWidget {
-  ProgressReportTeacherComponent({super.key});
+class ProgressReportChildComponent extends StatefulWidget {
+  ProgressReportChildComponent({super.key});
 
   @override
-  State<ProgressReportTeacherComponent> createState() =>
-      _ProgressReportTeacherComponentState();
+  State<ProgressReportChildComponent> createState() =>
+      _ProgressReportChildComponentState();
 }
 
-class _ProgressReportTeacherComponentState
-    extends State<ProgressReportTeacherComponent>
-    with TickerProviderStateMixin {
+class _ProgressReportChildComponentState
+    extends State<ProgressReportChildComponent> with TickerProviderStateMixin {
   late final TabController tabController;
   @override
   void initState() {

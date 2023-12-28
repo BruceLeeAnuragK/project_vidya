@@ -71,7 +71,6 @@ class _ChatBotPageState extends State<ChatBotPage> {
                   color: Color(0xff3C2DE1),
                 ),
                 child: TextFormField(
-                  obscureText: true,
                   textInputAction: TextInputAction.done,
                   cursorColor: Colors.white,
                   style: TextStyle(

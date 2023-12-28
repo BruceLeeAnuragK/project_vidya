@@ -55,6 +55,8 @@ class OtpVerificationPage extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.next,
+                    autovalidateMode: AutovalidateMode.always,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                     ),
@@ -66,6 +68,7 @@ class OtpVerificationPage extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                     ),
@@ -77,6 +80,7 @@ class OtpVerificationPage extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.done,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                     ),

@@ -23,6 +23,7 @@ import 'package:project_vidya/view/screen/Subject/page/physics_page.dart';
 import 'package:project_vidya/view/screen/Successfull/successfully_registered_screen.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_details_page.dart';
 import 'package:project_vidya/view/screen/home/components/Parents_Component/child_progress_report.dart';
+import 'package:project_vidya/view/screen/home/components/Parents_Component/progress_report_child.dart';
 import 'package:project_vidya/view/screen/home/components/Principal_Component/progress_report_teacher.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
 import 'package:project_vidya/view/screen/home/controller/badges_provider.dart';
@@ -42,6 +43,7 @@ import 'package:project_vidya/view/screen/splash/page/splash_screen.dart';
 import 'package:project_vidya/view/screen/topic/page/english_topic_page.dart';
 import 'package:project_vidya/view/screen/topic/page/exercise_page.dart';
 import 'package:project_vidya/view/screen/topic/page/physics_topic_page.dart';
+import 'package:project_vidya/view/screen/topic/page/summary_page.dart';
 import 'package:provider/provider.dart';
 
 import 'firebase_options.dart';
@@ -85,7 +87,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: MyRoutes.loginPage,
+      initialRoute: MyRoutes.settingPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
@@ -110,6 +112,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.principalHome: (context) => PrincipalHomePage(),
         MyRoutes.progressReportTeacher: (context) =>
             ProgressReportTeacherComponent(),
+        MyRoutes.progressReportTeacher: (context) =>
+            ProgressReportChildComponent(),
         MyRoutes.parentsSubject: (context) => PSubjects(),
         MyRoutes.englishstopicPage: (context) => EnglishTopicPage(),
         MyRoutes.exercisePage: (context) => ExercisePage(),
@@ -128,6 +132,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.childProgressReportPage: (context) =>
             const ChildProgressReportPage(),
         MyRoutes.badgesPage: (context) => const BadgesPage(),
+        MyRoutes.summaryPage: (context) => const SummaryPage(),
       },
       // getPages: [
       //   GetPage(

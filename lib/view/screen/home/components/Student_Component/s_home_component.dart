@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:project_vidya/utils/route_utils.dart';
 
 class SHomeComponent extends StatefulWidget {
   SHomeComponent({super.key});
@@ -116,6 +117,8 @@ class _SHomeComponentState extends State<SHomeComponent> {
                       color: Color(0xff3C2DE1),
                     ),
                     child: TextFormField(
+                      style: TextStyle(color: Colors.white),
+                      cursorColor: Colors.white,
                       controller: searchController,
                       decoration: InputDecoration(
                         constraints: BoxConstraints(
@@ -167,8 +170,8 @@ class _SHomeComponentState extends State<SHomeComponent> {
                             ),
                           ),
                         ),
-                        hintText: "Search Here",
-                        hintStyle: GoogleFonts.poppins(
+                        labelText: "Search Here",
+                        labelStyle: GoogleFonts.poppins(
                           color: Color(0xffE3E3E3),
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
@@ -234,11 +237,11 @@ class _SHomeComponentState extends State<SHomeComponent> {
                       ),
                     ],
                   ),
-                  Gap(30),
+                  Gap(20),
                   Row(
                     children: [
                       Text(
-                        "Select Your Subjects : ",
+                        "Select Your Subjects",
                         style: GoogleFonts.poppins(
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
@@ -261,7 +264,9 @@ class _SHomeComponentState extends State<SHomeComponent> {
                   itemCount: subList.length,
                   itemBuilder: (context, index) {
                     return MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed(MyRoutes.summaryPage);
+                      },
                       child: Container(
                         height: 50,
                         width: 151,

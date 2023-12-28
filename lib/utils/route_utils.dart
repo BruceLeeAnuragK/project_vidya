@@ -9,6 +9,7 @@ class MyRoutes {
   static String chatWithTeacherPage = '/ChatWithTeacher';
   static String chatAnonymouselyPage = '/ChatAnonymousely';
   static String progressReportTeacher = '/ProgressReportTeacherComponent';
+  static String progressReportChild = '/ProgressReportChildComponent';
   static String selectChatPage = '/selectChat';
   static String selectionPage = '/Selection';
   static String settingPage = '/SettingPage';

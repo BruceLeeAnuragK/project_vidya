@@ -58,38 +58,39 @@ class _StudentHomePageState extends State<StudentHomePage> {
     ];
     User? user = Get.arguments;
     return Consumer<StudNavigationBarProvider>(
-        builder: (context, provider, child) {
-      return Scaffold(
-        extendBody: true,
-        body: pages[provider.currentIndex],
-        bottomNavigationBar: CurvedNavigationBar(
-          key: navigationKey,
-          backgroundColor: Color(0xff3C2DE1),
-          index: currentIndex,
-          items: navigationItems,
-          height: 60,
-          onTap: (index) {
-            provider.changeCurrentIndex(index);
-          },
-        ),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              UserAccountsDrawerHeader(
-                currentAccountPicture: CircleAvatar(
-                  radius: 30,
-                  foregroundImage: NetworkImage("${user?.image}"),
-                ),
-                accountName: Text("${user?.name ?? 'Anonymous'} "),
-                accountEmail: Visibility(
-                  visible: user != null,
-                  child: Text("${user?.email ?? 'n0@gmail.com'}"),
-                ),
-              ),
-            ],
+      builder: (context, provider, child) {
+        return Scaffold(
+          extendBody: true,
+          body: pages[provider.currentIndex],
+          bottomNavigationBar: CurvedNavigationBar(
+            key: navigationKey,
+            backgroundColor: Color(0xff3C2DE1),
+            index: currentIndex,
+            items: navigationItems,
+            height: 60,
+            onTap: (index) {
+              provider.changeCurrentIndex(index);
+            },
           ),
-        ),
-      );
-    });
+          drawer: Drawer(
+            child: Column(
+              children: [
+                UserAccountsDrawerHeader(
+                  currentAccountPicture: CircleAvatar(
+                    radius: 30,
+                    foregroundImage: NetworkImage("${user?.image}"),
+                  ),
+                  accountName: Text("${user?.name ?? 'Anonymous'} "),
+                  accountEmail: Visibility(
+                    visible: user != null,
+                    child: Text("${user?.email ?? 'n0@gmail.com'}"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
   }
 }
