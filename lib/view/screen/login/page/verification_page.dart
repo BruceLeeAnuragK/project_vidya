@@ -20,7 +20,7 @@ class _VerificationPageState extends State<VerificationPage> {
         child: Container(
           height: size.height,
           width: size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -35,7 +35,7 @@ class _VerificationPageState extends State<VerificationPage> {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Gap(80),
+                const Gap(80),
                 Text(
                   "Verification",
                   style: GoogleFonts.poppins(
@@ -44,7 +44,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     color: Colors.white,
                   ),
                 ),
-                Text(
+                const Text(
                   "We had sent you a link to Verify\n\t\t\t\t\t\t\tyour phone number",
                   style: TextStyle(
                     fontSize: 14,
@@ -60,30 +60,30 @@ class _VerificationPageState extends State<VerificationPage> {
                       TextFormField(
                         keyboardType: TextInputType.number,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: 60,
                             minWidth: 50,
                           ),
-                          contentPadding: EdgeInsets.all(10),
+                          contentPadding: const EdgeInsets.all(10),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -92,30 +92,30 @@ class _VerificationPageState extends State<VerificationPage> {
                       TextFormField(
                         keyboardType: TextInputType.number,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: 60,
                             minWidth: 50,
                           ),
-                          contentPadding: EdgeInsets.all(10),
+                          contentPadding: const EdgeInsets.all(10),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -124,30 +124,30 @@ class _VerificationPageState extends State<VerificationPage> {
                       TextFormField(
                         keyboardType: TextInputType.number,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: 60,
                             minWidth: 50,
                           ),
-                          contentPadding: EdgeInsets.all(10),
+                          contentPadding: const EdgeInsets.all(10),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -156,8 +156,8 @@ class _VerificationPageState extends State<VerificationPage> {
                     ],
                   ),
                 ),
-                Gap(47),
-                Text(
+                const Gap(47),
+                const Text(
                   "I did not receive a link",
                   style: TextStyle(
                     fontSize: 16,
@@ -166,7 +166,7 @@ class _VerificationPageState extends State<VerificationPage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "RESEND",
                     style: TextStyle(
                       fontSize: 18,
@@ -174,7 +174,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     ),
                   ),
                 ),
-                Gap(50),
+                const Gap(50),
                 GestureDetector(
                   onTap: () {
                     setState(() {
@@ -189,7 +189,7 @@ class _VerificationPageState extends State<VerificationPage> {
                       border: Border.all(
                         color: Colors.white,
                       ),
-                      color: Color(0xff3C2DE1),
+                      color: const Color(0xff3C2DE1),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     alignment: Alignment.center,
@@ -217,7 +217,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     ),
                   ),
                 ),
-                Gap(150),
+                const Gap(150),
               ],
             ),
           ),

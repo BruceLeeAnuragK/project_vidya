@@ -17,7 +17,7 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -33,8 +33,8 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Gap(69),
-                Text(
+                const Gap(69),
+                const Text(
                   "Lets Get Started",
                   style: TextStyle(
                     fontSize: 32,
@@ -42,9 +42,9 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                     color: Colors.white,
                   ),
                 ),
-                Gap(18),
-                Padding(
-                  padding: const EdgeInsets.all(10),
+                const Gap(18),
+                const Padding(
+                  padding: EdgeInsets.all(10),
                   child: Text(
                     "Enter Your Mobile Number for Two\n            Step Verification",
                     style: TextStyle(
@@ -53,13 +53,13 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                     ),
                   ),
                 ),
-                Gap(26),
+                const Gap(26),
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: TextFormField(
                     keyboardType: TextInputType.emailAddress,
                     cursorColor: Colors.white,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                     ),
                     decoration: InputDecoration(
@@ -67,7 +67,7 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                         horizontal: 20,
                         vertical: size.height * 0.0046,
                       ),
-                      label: Text(
+                      label: const Text(
                         "Email Address",
                         style: TextStyle(
                           color: Colors.white,
@@ -76,26 +76,26 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xffFFFFFF),
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xffFFFFFF),
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(50),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xffFFFFFF),
                         ),
                       ),
                     ),
                   ),
                 ),
-                Gap(100),
+                const Gap(100),
                 Padding(
                   padding: const EdgeInsets.only(right: 17, left: 17),
                   child: GestureDetector(
@@ -111,10 +111,10 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
                         border: Border.all(
-                          color: Color(0xffFFFFFF),
+                          color: const Color(0xffFFFFFF),
                           width: 1,
                         ),
-                        color: Color(0xff3C2DE1),
+                        color: const Color(0xff3C2DE1),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const Text(

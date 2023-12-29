@@ -32,7 +32,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
       appBar: AppBar(
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.grid_view_rounded,
               color: Colors.white,
             ),
@@ -44,7 +44,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
           )
         ],
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_rounded,
             color: Colors.white,
           ),
@@ -52,7 +52,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: Color(0xff5B93E6),
+        backgroundColor: const Color(0xff5B93E6),
         title: Text(
           "Chat Differently",
           style: GoogleFonts.poppins(
@@ -65,7 +65,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -79,7 +79,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Gap(20),
+            const Gap(20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -87,26 +87,26 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
                   width: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
-                    color: Color(0xff3C2DE1),
+                    color: const Color(0xff3C2DE1),
                   ),
                   child: DropdownMenu(
                     inputDecorationTheme: InputDecorationTheme(
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxWidth: 200,
                         maxHeight: 42,
                       ),
-                      contentPadding: EdgeInsets.all(
+                      contentPadding: const EdgeInsets.all(
                         10,
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xffFFFFFF),
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0xffFFFFFF),
                         ),
                       ),
@@ -114,13 +114,13 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                     initialSelection: dropdownValue,
-                    trailingIcon: Icon(
+                    trailingIcon: const Icon(
                       Icons.arrow_drop_down,
                       color: Colors.white,
                     ),
@@ -139,7 +139,7 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Padding(
               padding: const EdgeInsets.only(
                 right: 15,
@@ -149,12 +149,12 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                 ),
                 child: TextFormField(
                   textInputAction: TextInputAction.done,
                   cursorColor: Colors.white,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                   ),
                   decoration: InputDecoration(
@@ -166,12 +166,12 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
                       onPressed: () {
                         setState(() {});
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.send_outlined,
                         color: Colors.white,
                       ),
                     ),
-                    label: Text(
+                    label: const Text(
                       "Enter Your Message",
                       style: TextStyle(
                         color: Colors.white,
@@ -179,19 +179,19 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),

@@ -54,132 +54,132 @@ class _SettingPageState extends State<SettingPage>
   ];
   List<Widget> drawerWidgets = [
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Settings",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Change your details",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Language",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Switch chosen language",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Game",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Cooper Christin",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Image Generator",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Generate Images through our AI",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Animated Videos",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Learn through animated videos",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Animated Videos",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Learn through animated videos",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
@@ -195,9 +195,9 @@ class _SettingPageState extends State<SettingPage>
       key: _scaffoldKey,
       endDrawer: MyDrawer(),
       appBar: AppBar(
-        backgroundColor: Color(0xff5B93E6),
+        backgroundColor: const Color(0xff5B93E6),
         leading: IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.white,
             ),
@@ -211,7 +211,7 @@ class _SettingPageState extends State<SettingPage>
                 _scaffoldKey.currentState!.openEndDrawer();
               });
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.grid_view_rounded,
               color: Colors.white,
             ),
@@ -230,7 +230,7 @@ class _SettingPageState extends State<SettingPage>
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -249,7 +249,7 @@ class _SettingPageState extends State<SettingPage>
                 height: size.height * 0.45,
                 width: size.width,
                 decoration: BoxDecoration(
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(
                     color: Colors.white,
@@ -259,7 +259,7 @@ class _SettingPageState extends State<SettingPage>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.person,
@@ -277,14 +277,14 @@ class _SettingPageState extends State<SettingPage>
                       subtitle: Text(
                         "Cooper Christin",
                         style: GoogleFonts.poppins(
-                          color: Color(0xff93A3FA),
+                          color: const Color(0xff93A3FA),
                           fontWeight: FontWeight.w300,
                           fontSize: 10,
                         ),
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -292,7 +292,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.email,
@@ -310,14 +310,14 @@ class _SettingPageState extends State<SettingPage>
                       subtitle: Text(
                         "cooperchristin20@gmail.com",
                         style: GoogleFonts.poppins(
-                          color: Color(0xff93A3FA),
+                          color: const Color(0xff93A3FA),
                           fontWeight: FontWeight.w300,
                           fontSize: 10,
                         ),
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -325,7 +325,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.key_rounded,
@@ -343,14 +343,14 @@ class _SettingPageState extends State<SettingPage>
                       subtitle: Text(
                         "Updated 2 weeks ago",
                         style: GoogleFonts.poppins(
-                          color: Color(0xff93A3FA),
+                          color: const Color(0xff93A3FA),
                           fontWeight: FontWeight.w300,
                           fontSize: 10,
                         ),
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -358,7 +358,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.smartphone_rounded,
@@ -376,14 +376,14 @@ class _SettingPageState extends State<SettingPage>
                       subtitle: Text(
                         "+91 8466738456",
                         style: GoogleFonts.poppins(
-                          color: Color(0xff93A3FA),
+                          color: const Color(0xff93A3FA),
                           fontWeight: FontWeight.w300,
                           fontSize: 10,
                         ),
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -393,12 +393,12 @@ class _SettingPageState extends State<SettingPage>
                   ],
                 ),
               ),
-              Gap(10),
+              const Gap(10),
               Container(
                 height: size.height * 0.3,
                 width: size.width,
                 decoration: BoxDecoration(
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(
                     color: Colors.white,
@@ -408,7 +408,7 @@ class _SettingPageState extends State<SettingPage>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.star_rounded,
@@ -425,7 +425,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -433,7 +433,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.rectangle_rounded,
@@ -450,7 +450,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -458,7 +458,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.notification_important_rounded,
@@ -475,7 +475,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -485,12 +485,12 @@ class _SettingPageState extends State<SettingPage>
                   ],
                 ),
               ),
-              Gap(10),
+              const Gap(10),
               Container(
                 height: size.height * 0.2,
                 width: size.width,
                 decoration: BoxDecoration(
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(
                     color: Colors.white,
@@ -500,7 +500,7 @@ class _SettingPageState extends State<SettingPage>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.person_3_rounded,
@@ -517,7 +517,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,
@@ -525,7 +525,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                     ),
                     ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Color(0xff93A3FA),
                         child: Icon(
                           Icons.privacy_tip_sharp,
@@ -542,7 +542,7 @@ class _SettingPageState extends State<SettingPage>
                       ),
                       trailing: IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
                           size: 15,

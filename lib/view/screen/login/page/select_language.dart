@@ -33,7 +33,7 @@ class _LanguagePageState extends State<LanguagePage> {
           Container(
             height: size.height,
             width: size.width,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -45,12 +45,12 @@ class _LanguagePageState extends State<LanguagePage> {
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Center(
                 child: Column(
                   children: [
                     Gap(size.height * 0.1),
-                    Align(
+                    const Align(
                       alignment: Alignment.topLeft,
                       child: Text(
                         "Select Language",
@@ -66,7 +66,8 @@ class _LanguagePageState extends State<LanguagePage> {
                     ),
                     Expanded(
                       child: GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 30,
                           mainAxisSpacing: 30,
@@ -81,7 +82,7 @@ class _LanguagePageState extends State<LanguagePage> {
                             height: size.height * 0.05,
                             width: size.width * 0.05,
                             decoration: BoxDecoration(
-                              color: Color(0xff3C2DE1),
+                              color: const Color(0xff3C2DE1),
                               border: Border.all(
                                 color: Colors.white,
                               ),
@@ -90,7 +91,7 @@ class _LanguagePageState extends State<LanguagePage> {
                             alignment: Alignment.center,
                             child: Text(
                               MyLanguages[index],
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w700,

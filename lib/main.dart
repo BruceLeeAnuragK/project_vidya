@@ -107,8 +107,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.succcessfullyRegisteredPage: (context) =>
             const SuccessfullyRegistered(),
         MyRoutes.splash: (context) => const SplashScreen(),
-        MyRoutes.studHome: (context) => StudentHomePage(),
-        MyRoutes.teacherHome: (context) => TeacherHomePage(),
+        MyRoutes.studHome: (context) => const StudentHomePage(),
+        MyRoutes.teacherHome: (context) => const TeacherHomePage(),
         MyRoutes.parentsHome: (context) => ParentsHomePage(),
         MyRoutes.principalHome: (context) => PrincipalHomePage(),
         MyRoutes.progressReportTeacher: (context) =>
@@ -129,7 +129,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.physicschapterPage: (context) => PhysicsChapterPage(),
         MyRoutes.englishPage: (context) => EnglishPage(),
         MyRoutes.physicsPage: (context) => PhysicsPage(),
-        MyRoutes.childDetailPage: (context) => ChildDetailPage(),
+        MyRoutes.childDetailPage: (context) => const ChildDetailPage(),
         MyRoutes.childProgressReportPage: (context) =>
             const ChildProgressReportPage(),
         MyRoutes.badgesPage: (context) => const BadgesPage(),

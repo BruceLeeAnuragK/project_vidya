@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project_vidya/utils/route_utils.dart';
+
 import '../../Register/model/user_model.dart';
-import '../../home/components/Student_Component/s_home_component.dart';
 import '../component/PhysicsComponent/select_physic_book.dart';
 
 class PhysicsPage extends StatelessWidget {
@@ -37,17 +36,17 @@ class PhysicsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Color(0xffB8b8d2),
+        backgroundColor: const Color(0xffB8b8d2),
         title: Text(
           "Select Book : ",
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
             fontSize: 25,
-            color: Color(0xFF1F1F39),
+            color: const Color(0xFF1F1F39),
           ),
         ),
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Color(0xFF1F1F39),
           ),
@@ -59,7 +58,7 @@ class PhysicsPage extends StatelessWidget {
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_max_outlined,
@@ -93,10 +92,10 @@ class PhysicsPage extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: const TextStyle(
           color: Color(0xff3D5CFF),
         ),
-        unselectedLabelStyle: TextStyle(color: Colors.black),
+        unselectedLabelStyle: const TextStyle(color: Colors.black),
       ),
       drawer: Drawer(
         child: Column(

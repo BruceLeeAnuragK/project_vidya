@@ -13,10 +13,10 @@ class SelectionPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(
@@ -28,7 +28,7 @@ class SelectionPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -45,7 +45,7 @@ class SelectionPage extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 50,
                   width: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "Student",
                     style: TextStyle(
                       fontSize: 20,
@@ -69,7 +69,7 @@ class SelectionPage extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 50,
                   width: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "Teacher",
                     style: TextStyle(
                       fontSize: 20,
@@ -93,7 +93,7 @@ class SelectionPage extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 50,
                   width: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "Parents",
                     style: TextStyle(
                       fontSize: 20,
@@ -117,7 +117,7 @@ class SelectionPage extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 50,
                   width: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "Principle",
                     style: TextStyle(
                       fontSize: 20,
@@ -141,7 +141,7 @@ class SelectionPage extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 50,
                   width: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "Tution Teacher",
                     style: TextStyle(
                       fontSize: 20,

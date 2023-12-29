@@ -11,7 +11,7 @@ import '../../../../utils/route_utils.dart';
 import '../../Register/model/user_model.dart';
 
 class TeacherHomePage extends StatefulWidget {
-  TeacherHomePage({Key? key}) : super(key: key);
+  const TeacherHomePage({Key? key}) : super(key: key);
 
   @override
   State<TeacherHomePage> createState() => _TeacherHomePageState();
@@ -35,7 +35,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                     foregroundImage: NetworkImage("${user?.image}"),
                     radius: 20,
                   )
-                : Icon(
+                : const Icon(
                     Icons.drag_handle,
                     color: Colors.black,
                   ),
@@ -63,7 +63,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
             onPressed: () {
               Get.toNamed('/chat');
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.chat,
               color: Colors.black,
             ),
@@ -80,14 +80,14 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
             return SingleChildScrollView(
               child: Column(
                 children: [
-                  Divider(
+                  const Divider(
                     height: 2,
                     color: Colors.black,
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
                         child: CircleAvatar(
                           foregroundColor: Colors.blue,
                           backgroundColor: Colors.blue,
@@ -95,7 +95,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -108,14 +108,14 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                       ),
                     ],
                   ),
-                  Divider(
+                  const Divider(
                     height: 2,
                     color: Colors.black,
                   ),
                   Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10),
+                      const Padding(
+                        padding: EdgeInsets.all(10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -143,7 +143,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Maths",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -165,7 +165,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Science",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -187,7 +187,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "S.S.T.",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -206,12 +206,12 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  color: Color(0xff3D5CFF),
+                                  color: const Color(0xff3D5CFF),
                                 ),
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Physics",
                                   style: TextStyle(
                                     fontSize: 15,
@@ -233,7 +233,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "English",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -255,7 +255,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Hindi",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -277,7 +277,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Gujarati",
                                   style: TextStyle(
                                     fontSize: 20,
@@ -299,7 +299,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                                 alignment: Alignment.center,
                                 height: 50,
                                 width: double.infinity,
-                                child: Text(
+                                child: const Text(
                                   "Snaskrit",
                                   style: TextStyle(
                                     fontSize: 20,

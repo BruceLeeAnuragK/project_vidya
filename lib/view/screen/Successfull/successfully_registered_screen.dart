@@ -16,7 +16,7 @@ class _SuccessfullyRegisteredState extends State<SuccessfullyRegistered> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.pushNamed(context, MyRoutes.letsGetStartedPage);
     });
   }
@@ -29,7 +29,7 @@ class _SuccessfullyRegisteredState extends State<SuccessfullyRegistered> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,

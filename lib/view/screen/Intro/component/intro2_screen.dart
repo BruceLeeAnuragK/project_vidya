@@ -31,7 +31,7 @@ class _Intro2ScreenState extends State<Intro2Screen> {
                 right: size.width * 0.05,
                 left: size.width * 0.05,
               ),
-              child: Container(
+              child: SizedBox(
                 height: size.height * 0.3,
                 child: Image.asset(
                   ImgPath.path + ImgPath.intro2gif,
@@ -54,12 +54,12 @@ class _Intro2ScreenState extends State<Intro2Screen> {
               child: Text(
                 "Easy and fast learning at\n\t\t\t\t\ttime to help you\n\t\t\timprove various skills.",
                 style: GoogleFonts.poppins(
-                  color: Color(0xffE3E3E3),
+                  color: const Color(0xffE3E3E3),
                   fontSize: 16,
                 ),
               ),
             ),
-            Gap(50),
+            const Gap(50),
             DotsIndicator(
               dotsCount: 3,
               position: provider.currentPageIndex.toDouble(),
@@ -67,8 +67,8 @@ class _Intro2ScreenState extends State<Intro2Screen> {
                 provider.dotNavigationClicked(index);
               },
               decorator: DotsDecorator(
-                color: Color(0xffE3E3E3),
-                activeColor: Color(0xff4471CE),
+                color: const Color(0xffE3E3E3),
+                activeColor: const Color(0xff4471CE),
                 size: const Size.square(9.0),
                 activeSize: const Size(18.0, 9.0),
                 activeShape: RoundedRectangleBorder(

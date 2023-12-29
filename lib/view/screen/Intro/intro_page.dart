@@ -21,7 +21,7 @@ class IntroScreen extends StatelessWidget {
             body: Container(
               height: size.height,
               width: size.width,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -48,7 +48,7 @@ class IntroScreen extends StatelessWidget {
                                   Navigator.of(context)
                                       .pushNamed(MyRoutes.registerPage);
                                 },
-                                child: Text(
+                                child: const Text(
                                   "Skip",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -64,7 +64,7 @@ class IntroScreen extends StatelessWidget {
                               right: size.width * 0.05,
                               left: size.width * 0.05,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               height: size.height * 0.3,
                               child:
                                   Image.asset(ImgPath.path + ImgPath.intro1gif),
@@ -86,12 +86,12 @@ class IntroScreen extends StatelessWidget {
                             child: Text(
                               "Free courses for you to\nfind your way learning.",
                               style: GoogleFonts.poppins(
-                                color: Color(0xffE3E3E3),
+                                color: const Color(0xffE3E3E3),
                                 fontSize: 16,
                               ),
                             ),
                           ),
-                          Gap(75),
+                          const Gap(75),
                           DotsIndicator(
                             dotsCount: 3,
                             position: provider.currentPageIndex.toDouble(),
@@ -99,8 +99,8 @@ class IntroScreen extends StatelessWidget {
                               provider.dotNavigationClicked(index);
                             },
                             decorator: DotsDecorator(
-                              color: Color(0xffE3E3E3),
-                              activeColor: Color(0xff4471CE),
+                              color: const Color(0xffE3E3E3),
+                              activeColor: const Color(0xff4471CE),
                               size: const Size.square(9.0),
                               activeSize: const Size(18.0, 9.0),
                               activeShape: RoundedRectangleBorder(
@@ -122,7 +122,7 @@ class IntroScreen extends StatelessWidget {
                                   Navigator.of(context)
                                       .pushNamed(MyRoutes.registerPage);
                                 },
-                                child: Text(
+                                child: const Text(
                                   "Skip",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -137,7 +137,7 @@ class IntroScreen extends StatelessWidget {
                               right: size.width * 0.05,
                               left: size.width * 0.05,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               height: size.height * 0.3,
                               child: Image.asset(
                                 ImgPath.path + ImgPath.intro2gif,
@@ -160,12 +160,12 @@ class IntroScreen extends StatelessWidget {
                             child: Text(
                               "Easy and fast learning at\n\t\t\t\t\ttime to help you\n\t\t\timprove various skills.",
                               style: GoogleFonts.poppins(
-                                color: Color(0xffE3E3E3),
+                                color: const Color(0xffE3E3E3),
                                 fontSize: 16,
                               ),
                             ),
                           ),
-                          Gap(50),
+                          const Gap(50),
                           DotsIndicator(
                             dotsCount: 3,
                             position: provider.currentPageIndex.toDouble(),
@@ -173,8 +173,8 @@ class IntroScreen extends StatelessWidget {
                               provider.dotNavigationClicked(index);
                             },
                             decorator: DotsDecorator(
-                              color: Color(0xffE3E3E3),
-                              activeColor: Color(0xff4471CE),
+                              color: const Color(0xffE3E3E3),
+                              activeColor: const Color(0xff4471CE),
                               size: const Size.square(9.0),
                               activeSize: const Size(18.0, 9.0),
                               activeShape: RoundedRectangleBorder(
@@ -196,7 +196,7 @@ class IntroScreen extends StatelessWidget {
                                   Navigator.of(context)
                                       .pushNamed(MyRoutes.registerPage);
                                 },
-                                child: Text(
+                                child: const Text(
                                   "Next",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -211,7 +211,7 @@ class IntroScreen extends StatelessWidget {
                               right: size.width * 0.05,
                               left: size.width * 0.05,
                             ),
-                            child: Container(
+                            child: SizedBox(
                               height: size.height * 0.3,
                               child:
                                   Image.asset(ImgPath.path + ImgPath.intro3gif),
@@ -233,12 +233,12 @@ class IntroScreen extends StatelessWidget {
                             child: Text(
                               "Get answer to your very own\n\t\t\t\tquestions  with the help\n\t\t\t\t\t\t\t\t\tof your teachers.",
                               style: GoogleFonts.poppins(
-                                color: Color(0xffE3E3E3),
+                                color: const Color(0xffE3E3E3),
                                 fontSize: 16,
                               ),
                             ),
                           ),
-                          Gap(50),
+                          const Gap(50),
                           DotsIndicator(
                             dotsCount: 3,
                             position: provider.currentPageIndex.toDouble(),
@@ -246,8 +246,8 @@ class IntroScreen extends StatelessWidget {
                               provider.dotNavigationClicked(index);
                             },
                             decorator: DotsDecorator(
-                              color: Color(0xffE3E3E3),
-                              activeColor: Color(0xff4471CE),
+                              color: const Color(0xffE3E3E3),
+                              activeColor: const Color(0xff4471CE),
                               size: const Size.square(9.0),
                               activeSize: const Size(18.0, 9.0),
                               activeShape: RoundedRectangleBorder(

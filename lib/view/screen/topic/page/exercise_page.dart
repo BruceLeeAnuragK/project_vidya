@@ -60,7 +60,7 @@ class _ExercisePageState extends State<ExercisePage> {
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0xff3d5cff).withOpacity(0.3),
+                    color: const Color(0xff3d5cff).withOpacity(0.3),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
@@ -73,7 +73,7 @@ class _ExercisePageState extends State<ExercisePage> {
                             padding: const EdgeInsets.all(10),
                             child: Text(
                               "${index + 1} : ${data[topicIndex]['question']}",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -125,7 +125,7 @@ class _ExercisePageState extends State<ExercisePage> {
                                     alignment: Alignment.centerLeft,
                                     child: Text(
                                       "Answer :\n${data[topicIndex]['answer']}",
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
                                         color: Color(0xff3d5cff),

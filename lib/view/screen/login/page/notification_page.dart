@@ -15,7 +15,7 @@ class NotificationsPage extends StatelessWidget {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -28,12 +28,12 @@ class NotificationsPage extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Gap(100),
-            Container(
+            const Gap(100),
+            SizedBox(
               height: size.height * 0.3,
               child: Image.asset(ImgPath.path + ImgPath.notificationgif),
             ),
-            Gap(46),
+            const Gap(46),
             Text(
               "Notifications",
               style: GoogleFonts.poppins(
@@ -46,11 +46,11 @@ class NotificationsPage extends StatelessWidget {
               "Stay Notified about new course\nupdates, scoreboard stats and\n        new friend follows",
               style: GoogleFonts.poppins(
                 fontSize: 14,
-                color: Color(0xffE3E3E3),
+                color: const Color(0xffE3E3E3),
                 fontWeight: FontWeight.w400,
               ),
             ),
-            Gap(35),
+            const Gap(35),
             GestureDetector(
               onTap: () {
                 Navigator.of(context).pushNamed(MyRoutes.studHome);
@@ -62,7 +62,7 @@ class NotificationsPage extends StatelessWidget {
                   border: Border.all(
                     color: Colors.white,
                   ),
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 alignment: Alignment.center,
@@ -75,7 +75,7 @@ class NotificationsPage extends StatelessWidget {
                 ),
               ),
             ),
-            Gap(30),
+            const Gap(30),
             TextButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(MyRoutes.studHome);
@@ -85,7 +85,7 @@ class NotificationsPage extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
-                  color: Color(0xffE3E3E3),
+                  color: const Color(0xffE3E3E3),
                 ),
               ),
             ),

@@ -21,7 +21,7 @@ class ParentsHomePage extends StatelessWidget {
         "Std 11"
         "Std 12"
   ];
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     int currentIndex = 0;
@@ -39,7 +39,7 @@ class ParentsHomePage extends StatelessWidget {
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_max_outlined,
@@ -73,10 +73,10 @@ class ParentsHomePage extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: const TextStyle(
           color: Color(0xff3D5CFF),
         ),
-        unselectedLabelStyle: TextStyle(color: Colors.black),
+        unselectedLabelStyle: const TextStyle(color: Colors.black),
       ),
     );
   }

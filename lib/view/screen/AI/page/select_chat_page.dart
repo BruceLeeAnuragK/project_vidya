@@ -23,13 +23,13 @@ class _SelectChatpageState extends State<SelectChatpage> {
       key: _scaffoldKey,
       endDrawer: MyDrawer(),
       appBar: AppBar(
-        backgroundColor: Color(0xff5B93E6),
+        backgroundColor: const Color(0xff5B93E6),
         elevation: 0,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_rounded,
             color: Colors.white,
           ),
@@ -41,7 +41,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
               onPressed: () {
                 _scaffoldKey.currentState!.openEndDrawer();
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.grid_view_rounded,
                 color: Colors.white,
               ),
@@ -60,7 +60,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -95,7 +95,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                     border: Border.all(
                       color: Colors.white,
                     ),
-                    color: Color(0xff3C2DE1),
+                    color: const Color(0xff3C2DE1),
                   ),
                   child: Text(
                     "Chat AI",
@@ -131,7 +131,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                     border: Border.all(
                       color: Colors.white,
                     ),
-                    color: Color(0xff3C2DE1),
+                    color: const Color(0xff3C2DE1),
                   ),
                   child: Text(
                     "Chat with your Teacher",
@@ -167,7 +167,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                     border: Border.all(
                       color: Colors.white,
                     ),
-                    color: Color(0xff3C2DE1),
+                    color: const Color(0xff3C2DE1),
                   ),
                   child: Text(
                     "Chat Anonymously",
@@ -180,7 +180,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
                 ),
               ),
             ),
-            Gap(50),
+            const Gap(50),
           ],
         ),
       ),

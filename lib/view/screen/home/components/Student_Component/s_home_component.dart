@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
 class SHomeComponent extends StatefulWidget {
-  SHomeComponent({super.key});
+  const SHomeComponent({super.key});
 
   @override
   State<SHomeComponent> createState() => _SHomeComponentState();
@@ -44,132 +44,132 @@ class _SHomeComponentState extends State<SHomeComponent> {
   ];
   List<Widget> drawerWidgets = [
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Settings",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Change your details",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Language",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Switch chosen language",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Game",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Cooper Christin",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Image Generator",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Generate Images through our AI",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Animated Videos",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Learn through animated videos",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
       ),
     ),
     ListTile(
-      leading: CircleAvatar(
+      leading: const CircleAvatar(
         backgroundColor: Color(0xff93A3FA),
         child: Icon(
           Icons.person,
           color: Colors.white,
         ),
       ),
-      title: Text(
+      title: const Text(
         "Animated Videos",
       ),
-      subtitle: Text(
+      subtitle: const Text(
         "Learn through animated videos",
       ),
       trailing: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.white,
         ),
@@ -182,8 +182,8 @@ class _SHomeComponentState extends State<SHomeComponent> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       endDrawer: Drawer(
-        backgroundColor: Color(0xff5B93E6),
-        child: Container(
+        backgroundColor: const Color(0xff5B93E6),
+        child: SizedBox(
           height: size.height,
           width: size.width,
           child: ListView(
@@ -194,7 +194,7 @@ class _SHomeComponentState extends State<SHomeComponent> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -255,11 +255,11 @@ class _SHomeComponentState extends State<SHomeComponent> {
                       alignment: Alignment.center,
                       child: IconButton(
                         onPressed: () {},
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           bottom: 3,
                           right: 3,
                         ),
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.search_rounded,
                           color: Colors.blue,
                         ),
@@ -271,7 +271,7 @@ class _SHomeComponentState extends State<SHomeComponent> {
                     vertical: size.height * 0.0046,
                   ),
                   hintText: "Search Here",
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Colors.white,
                   ),
                   border: OutlineInputBorder(
@@ -300,31 +300,31 @@ class _SHomeComponentState extends State<SHomeComponent> {
               Align(
                 alignment: Alignment.centerLeft,
                 child: DropdownMenu(
-                  trailingIcon: Icon(
+                  trailingIcon: const Icon(
                     Icons.keyboard_arrow_down_rounded,
                     color: Colors.white,
                   ),
-                  selectedTrailingIcon: Icon(
+                  selectedTrailingIcon: const Icon(
                     Icons.keyboard_arrow_up_rounded,
                     color: Colors.white,
                   ),
                   inputDecorationTheme: InputDecorationTheme(
-                    constraints: BoxConstraints(
+                    constraints: const BoxConstraints(
                       maxWidth: 110,
                       maxHeight: 42,
                     ),
-                    contentPadding: EdgeInsets.all(
+                    contentPadding: const EdgeInsets.all(
                       10,
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
@@ -332,7 +332,7 @@ class _SHomeComponentState extends State<SHomeComponent> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -368,7 +368,7 @@ class _SHomeComponentState extends State<SHomeComponent> {
               Expanded(
                 flex: 2,
                 child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisSpacing: 5,
                     crossAxisSpacing: 5,
@@ -388,12 +388,12 @@ class _SHomeComponentState extends State<SHomeComponent> {
                           border: Border.all(
                             color: Colors.white,
                           ),
-                          color: Color(0xff3C2DE1),
+                          color: const Color(0xff3C2DE1),
                         ),
                         alignment: Alignment.center,
                         child: Text(
                           subList[index],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 15,
                             color: Colors.white,
                           ),

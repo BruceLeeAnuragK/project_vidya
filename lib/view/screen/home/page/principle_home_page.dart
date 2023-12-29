@@ -32,15 +32,15 @@ class _PrincipalHomePageState extends State<PrincipalHomePage> {
     "Std 12",
   ];
   final navigationItems = <Widget>[
-    Icon(
+    const Icon(
       Icons.home,
       color: Color(0xff4470CD),
     ),
-    Icon(
+    const Icon(
       Icons.chat_outlined,
       color: Color(0xff4470CD),
     ),
-    Icon(
+    const Icon(
       Icons.card_giftcard,
       color: Color(0xff4470CD),
     ),
@@ -52,8 +52,8 @@ class _PrincipalHomePageState extends State<PrincipalHomePage> {
 
     final List<Widget> pages = [
       PriHomeComponent(),
-      SelectChatpage(),
-      SHomeComponent(),
+      const SelectChatpage(),
+      const SHomeComponent(),
     ];
     User? user = Get.arguments;
     return Scaffold(

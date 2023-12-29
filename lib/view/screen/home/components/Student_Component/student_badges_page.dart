@@ -55,7 +55,7 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
           endDrawer: MyDrawer(),
           appBar: AppBar(
             leading: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.arrow_back_ios_rounded,
                 color: Colors.white,
               ),
@@ -65,7 +65,7 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
             ),
             actions: [
               IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.grid_view_rounded,
                   color: Colors.white,
                 ),
@@ -76,9 +76,9 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                 },
               )
             ],
-            backgroundColor: Color(0xff5B93E6),
+            backgroundColor: const Color(0xff5B93E6),
             title: TabBar(
-              indicatorColor: Color(0xff3C2DE1),
+              indicatorColor: const Color(0xff3C2DE1),
               labelColor: Colors.white,
               indicatorSize: TabBarIndicatorSize.label,
               controller: tabController,
@@ -159,14 +159,14 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
-                            BoxShadow(
+                            const BoxShadow(
                               color: Colors.white,
                               blurRadius: 0,
                               spreadRadius: 0,
                               offset: Offset(1, -1),
                             )
                           ],
-                          color: Color(0xff3C2DE1),
+                          color: const Color(0xff3C2DE1),
                         ),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
@@ -236,14 +236,14 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
                           boxShadow: [
-                            BoxShadow(
+                            const BoxShadow(
                               color: Colors.white,
                               blurRadius: 0,
                               spreadRadius: 0,
                               offset: Offset(1, -1),
                             )
                           ],
-                          color: Color(0xff3C2DE1),
+                          color: const Color(0xff3C2DE1),
                         ),
                         child: Container(
                           height: size.height * 0.1,

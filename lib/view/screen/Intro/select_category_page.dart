@@ -67,7 +67,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Color(0xff3d5cff),
+                  color: const Color(0xff3d5cff),
                   border: student
                       ? Border.all(
                           color: Colors.black.withOpacity(0.5),
@@ -102,7 +102,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Color(0xff3d5cff),
+                  color: const Color(0xff3d5cff),
                   border: teacher
                       ? Border.all(
                           color: Colors.black.withOpacity(0.5),
@@ -143,7 +143,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                           width: 2,
                         )
                       : null,
-                  color: Color(0xff3d5cff),
+                  color: const Color(0xff3d5cff),
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
@@ -178,7 +178,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                           width: 2,
                         )
                       : null,
-                  color: Color(0xff3d5cff),
+                  color: const Color(0xff3d5cff),
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
@@ -207,7 +207,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                 height: 50,
                 width: 327,
                 decoration: BoxDecoration(
-                  color: Color(0xff3d5cff),
+                  color: const Color(0xff3d5cff),
                   border: principal
                       ? Border.all(
                           color: Colors.black.withOpacity(0.5),
@@ -235,7 +235,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                   height: 50,
                   width: 327,
                   decoration: BoxDecoration(
-                    color: Color(0xff3d5cff),
+                    color: const Color(0xff3d5cff),
                     borderRadius: BorderRadius.circular(18),
                   ),
                   alignment: Alignment.center,

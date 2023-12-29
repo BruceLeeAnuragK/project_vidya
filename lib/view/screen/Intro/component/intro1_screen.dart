@@ -24,7 +24,7 @@ class _Intro1ScreenState extends State<Intro1Screen> {
         body: Container(
           height: size.height,
           width: size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -65,12 +65,12 @@ class _Intro1ScreenState extends State<Intro1Screen> {
                     child: Text(
                       "Free courses for you to\nfind your way learning.",
                       style: GoogleFonts.poppins(
-                        color: Color(0xffE3E3E3),
+                        color: const Color(0xffE3E3E3),
                         fontSize: 16,
                       ),
                     ),
                   ),
-                  Gap(75),
+                  const Gap(75),
                   DotsIndicator(
                     dotsCount: 3,
                     position: provider.currentPageIndex.toDouble(),
@@ -78,8 +78,8 @@ class _Intro1ScreenState extends State<Intro1Screen> {
                       provider.dotNavigationClicked(index);
                     },
                     decorator: DotsDecorator(
-                      color: Color(0xffE3E3E3),
-                      activeColor: Color(0xff4471CE),
+                      color: const Color(0xffE3E3E3),
+                      activeColor: const Color(0xff4471CE),
                       size: const Size.square(9.0),
                       activeSize: const Size(18.0, 9.0),
                       activeShape: RoundedRectangleBorder(

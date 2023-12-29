@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../utils/route_utils.dart';
 
@@ -28,7 +26,7 @@ class PSubjects extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "List Of Subjects :",
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -39,7 +37,7 @@ class PSubjects extends StatelessWidget {
           onPressed: () {
             Get.back();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_sharp,
             color: Color(0xff3D5CFF),
           ),
@@ -47,8 +45,8 @@ class PSubjects extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(15),
+          const Padding(
+            padding: EdgeInsets.all(15),
             child: Row(
               children: [
                 Text(
@@ -70,12 +68,12 @@ class PSubjects extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3D5CFF),
+                      color: const Color(0xff3D5CFF),
                     ),
                     alignment: Alignment.center,
                     height: 50,
                     width: double.infinity,
-                    child: Text(
+                    child: const Text(
                       "Maths",
                       style: TextStyle(
                         fontSize: 15,
@@ -92,12 +90,12 @@ class PSubjects extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3D5CFF),
+                      color: const Color(0xff3D5CFF),
                     ),
                     alignment: Alignment.center,
                     height: 50,
                     width: double.infinity,
-                    child: Text(
+                    child: const Text(
                       "Biology",
                       style: TextStyle(
                         fontSize: 15,
@@ -114,12 +112,12 @@ class PSubjects extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3D5CFF),
+                      color: const Color(0xff3D5CFF),
                     ),
                     alignment: Alignment.center,
                     height: 50,
                     width: double.infinity,
-                    child: Text(
+                    child: const Text(
                       "Computer",
                       style: TextStyle(
                         fontSize: 15,
@@ -138,12 +136,12 @@ class PSubjects extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3D5CFF),
+                      color: const Color(0xff3D5CFF),
                     ),
                     alignment: Alignment.center,
                     height: 50,
                     width: double.infinity,
-                    child: Text(
+                    child: const Text(
                       "Physics",
                       style: TextStyle(
                         fontSize: 15,
@@ -160,12 +158,12 @@ class PSubjects extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3D5CFF),
+                      color: const Color(0xff3D5CFF),
                     ),
                     alignment: Alignment.center,
                     height: 50,
                     width: double.infinity,
-                    child: Text(
+                    child: const Text(
                       "Chemistry",
                       style: TextStyle(
                         fontSize: 15,
@@ -177,7 +175,7 @@ class PSubjects extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Padding(
@@ -189,12 +187,12 @@ class PSubjects extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xff3D5CFF),
+                  color: const Color(0xff3D5CFF),
                 ),
                 alignment: Alignment.center,
                 height: 50,
                 width: double.infinity,
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
@@ -208,7 +206,7 @@ class PSubjects extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Icon(
                         Icons.navigate_next,
                         color: Colors.black,

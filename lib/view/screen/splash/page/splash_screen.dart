@@ -1,9 +1,6 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/imgPath_utils.dart';
-import 'package:project_vidya/view/screen/Register/page/register_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

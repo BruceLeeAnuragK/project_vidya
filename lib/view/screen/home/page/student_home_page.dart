@@ -11,7 +11,7 @@ import '../components/Student_Component/s_home_component.dart';
 import '../controller/stud_home_navigation_bar_provider.dart';
 
 class StudentHomePage extends StatefulWidget {
-  StudentHomePage({Key? key}) : super(key: key);
+  const StudentHomePage({Key? key}) : super(key: key);
 
   @override
   State<StudentHomePage> createState() => _StudentHomePageState();
@@ -36,15 +36,15 @@ class _StudentHomePageState extends State<StudentHomePage> {
     "Std 12",
   ];
   final navigationItems = <Widget>[
-    Icon(
+    const Icon(
       Icons.home_outlined,
       color: Color(0xff4470CD),
     ),
-    Icon(
+    const Icon(
       Icons.chat_outlined,
       color: Color(0xff4470CD),
     ),
-    Icon(
+    const Icon(
       Icons.card_giftcard_outlined,
       color: Color(0xff4470CD),
     ),
@@ -55,9 +55,9 @@ class _StudentHomePageState extends State<StudentHomePage> {
     int currentIndex = 0;
 
     final List<Widget> pages = [
-      SHomeComponent(),
-      SelectChatpage(),
-      BadgesPage(),
+      const SHomeComponent(),
+      const SelectChatpage(),
+      const BadgesPage(),
     ];
     User? user = Get.arguments;
     return Consumer<StudNavigationBarProvider>(
@@ -69,7 +69,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
           body: pages[provider.currentIndex],
           bottomNavigationBar: CurvedNavigationBar(
             key: navigationKey,
-            backgroundColor: Color(0xff3C2DE1),
+            backgroundColor: const Color(0xff3C2DE1),
             index: currentIndex,
             items: navigationItems,
             height: 60,

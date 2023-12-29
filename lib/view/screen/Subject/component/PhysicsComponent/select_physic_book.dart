@@ -21,7 +21,7 @@ class SelectPhysicsComponent extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 2 / 3,
               mainAxisSpacing: 15,
@@ -34,7 +34,7 @@ class SelectPhysicsComponent extends StatelessWidget {
             child: Container(
               height: 200,
               decoration: BoxDecoration(
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     offset: Offset(5, 5),
                     color: Colors.grey,

@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                       Text(
                         "Enter your details below & get better experience",
                         style: GoogleFonts.poppins(
-                          color: Color(0xffE3E3E3),
+                          color: const Color(0xffE3E3E3),
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
                         ),
@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                       const Gap(32),
                       TextFormField(
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         textInputAction: TextInputAction.next,
@@ -108,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                         obscureText: hide,
                         textInputAction: TextInputAction.done,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
@@ -123,11 +123,11 @@ class _LoginPageState extends State<LoginPage> {
                               });
                             },
                             icon: hide
-                                ? Icon(
+                                ? const Icon(
                                     Icons.visibility_outlined,
                                     color: Colors.white,
                                   )
-                                : Icon(
+                                : const Icon(
                                     Icons.visibility_off_outlined,
                                     color: Colors.white,
                                   ),
@@ -140,19 +140,19 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -170,7 +170,7 @@ class _LoginPageState extends State<LoginPage> {
                                 style: GoogleFonts.poppins(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xffE3E3E3),
+                                  color: const Color(0xffE3E3E3),
                                 ),
                               ),
                             ),
@@ -188,16 +188,16 @@ class _LoginPageState extends State<LoginPage> {
                           width: size.width * 0.9,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xff3C2DE1),
+                            color: const Color(0xff3C2DE1),
                             border: Border.all(
-                              color: Color(0xffE3E3E3),
+                              color: const Color(0xffE3E3E3),
                             ),
                           ),
                           alignment: Alignment.center,
                           child: Text(
                             "LOG IN",
                             style: GoogleFonts.poppins(
-                              color: Color(0xffF3F5F9),
+                              color: const Color(0xffF3F5F9),
                               fontSize: 20,
                             ),
                           ),
@@ -236,20 +236,20 @@ class _LoginPageState extends State<LoginPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Expanded(
+                          const Expanded(
                             child: Divider(
                               color: Colors.white,
                             ),
                           ),
-                          Gap(20),
+                          const Gap(20),
                           Text(
                             "Or Login with",
                             style: GoogleFonts.poppins(
                               color: Colors.white,
                             ),
                           ),
-                          Gap(20),
-                          Expanded(
+                          const Gap(20),
+                          const Expanded(
                             child: Divider(
                               color: Colors.white,
                             ),
@@ -276,7 +276,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          Gap(20),
+                          const Gap(20),
                           GestureDetector(
                             onTap: () {
                               Navigator.of(context)

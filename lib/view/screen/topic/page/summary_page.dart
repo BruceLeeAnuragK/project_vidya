@@ -9,7 +9,7 @@ class SummaryPage extends StatelessWidget {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff5B93E6),
+        backgroundColor: const Color(0xff5B93E6),
         centerTitle: true,
         title: Text(
           "Summary",
@@ -24,7 +24,7 @@ class SummaryPage extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_rounded,
             color: Colors.white,
             weight: 1,
@@ -34,7 +34,7 @@ class SummaryPage extends StatelessWidget {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -56,7 +56,7 @@ class SummaryPage extends StatelessWidget {
                   height: 200,
                   width: 200,
                   decoration: BoxDecoration(
-                    color: Color(0xff3d5cff),
+                    color: const Color(0xff3d5cff),
                     borderRadius: BorderRadius.circular(18),
                   ),
                   alignment: Alignment.center,

@@ -47,7 +47,7 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -63,7 +63,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               left: 200,
               top: 190,
-              child: Container(
+              child: SizedBox(
                 height: 25,
                 width: 25,
                 child: Image.asset(ImgPath.path + ImgPath.sparklegif),
@@ -72,7 +72,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 160,
               right: 337,
-              child: Container(
+              child: SizedBox(
                 height: 40,
                 width: 40,
                 child: Image.asset(ImgPath.path + ImgPath.sparklegif),
@@ -81,7 +81,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 50,
               left: 150,
-              child: Container(
+              child: SizedBox(
                 height: 40,
                 width: 40,
                 child: Image.asset(ImgPath.path + ImgPath.sparklegif),
@@ -90,7 +90,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 100,
               left: 330,
-              child: Container(
+              child: SizedBox(
                 height: 50,
                 width: 50,
                 child: Image.asset(
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 285,
               left: 50,
-              child: Container(
+              child: SizedBox(
                 height: 30,
                 width: 30,
                 child: Image.asset(
@@ -112,7 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 350,
               left: 330,
-              child: Container(
+              child: SizedBox(
                 height: 50,
                 width: 50,
                 child: Image.asset(
@@ -123,7 +123,7 @@ class _RegisterPageState extends State<RegisterPage> {
             Positioned(
               top: 660,
               left: 125,
-              child: Container(
+              child: SizedBox(
                 height: 50,
                 width: 50,
                 child: Image.asset(
@@ -140,7 +140,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       Gap(
                         size.height * 0.1,
                       ),
-                      Text(
+                      const Text(
                         "Sign Up",
                         style: TextStyle(
                           color: Colors.white,
@@ -148,7 +148,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           fontWeight: FontWeight.w900,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Enter your details below & free sign up",
                         style: TextStyle(
                           color: Color(0xffE3E3E3),
@@ -161,7 +161,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       TextFormField(
                         keyboardType: TextInputType.phone,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         textInputAction: TextInputAction.next,
@@ -170,7 +170,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             horizontal: 20,
                             vertical: size.height * 0.0046,
                           ),
-                          label: Text(
+                          label: const Text(
                             "Phone number",
                             style: TextStyle(
                               color: Colors.white,
@@ -178,19 +178,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -203,7 +203,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         keyboardType: TextInputType.name,
                         textInputAction: TextInputAction.next,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
@@ -211,7 +211,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             horizontal: 20,
                             vertical: size.height * 0.0046,
                           ),
-                          label: Text(
+                          label: const Text(
                             "Username",
                             style: TextStyle(
                               color: Colors.white,
@@ -219,19 +219,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -244,7 +244,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         obscureText: hide,
                         textInputAction: TextInputAction.done,
                         cursorColor: Colors.white,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                         decoration: InputDecoration(
@@ -259,16 +259,16 @@ class _RegisterPageState extends State<RegisterPage> {
                               });
                             },
                             icon: hide
-                                ? Icon(
+                                ? const Icon(
                                     Icons.visibility_outlined,
                                     color: Colors.white,
                                   )
-                                : Icon(
+                                : const Icon(
                                     Icons.visibility_off_outlined,
                                     color: Colors.white,
                                   ),
                           ),
-                          label: Text(
+                          label: const Text(
                             "Password",
                             style: TextStyle(
                               color: Colors.white,
@@ -276,19 +276,19 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0xffFFFFFF),
                             ),
                           ),
@@ -312,33 +312,33 @@ class _RegisterPageState extends State<RegisterPage> {
                                 ),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(50),
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xffFFFFFF),
                                   ),
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(50),
-                                  borderSide: BorderSide(
+                                  borderSide: const BorderSide(
                                     color: Color(0xffFFFFFF),
                                   ),
                                 ),
                               ),
                               label: Text(
                                 categoryList[0],
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
-                              trailingIcon: Icon(
+                              trailingIcon: const Icon(
                                 Icons.keyboard_arrow_down_rounded,
                                 color: Colors.white,
                               ),
-                              selectedTrailingIcon: Icon(
+                              selectedTrailingIcon: const Icon(
                                 Icons.keyboard_arrow_up_rounded,
                                 color: Colors.white,
                               ),
                               initialSelection: dropdownValue,
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 color: Colors.white,
                               ),
                               dropdownMenuEntries:
@@ -372,9 +372,9 @@ class _RegisterPageState extends State<RegisterPage> {
                           width: size.width * 0.9,
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Color(0xffFFFFFF),
+                              color: const Color(0xffFFFFFF),
                             ),
-                            color: Color(0xff3C2DE1),
+                            color: const Color(0xff3C2DE1),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           alignment: Alignment.center,
@@ -395,7 +395,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               value: check1,
                               // checkColor: Colors.white,
                               // activeColor: Color(0xffFFFFFF),
-                              side: BorderSide(
+                              side: const BorderSide(
                                 color: Color(0xffFFFFFF),
                               ),
 
@@ -418,7 +418,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 Gap(
                                   size.height * 0.02,
                                 ),
-                                Text(
+                                const Text(
                                   "By creating an account you have to agree\nwith our terms & condition.",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -435,7 +435,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             "Already have an account?",
                             style: TextStyle(
                               color: Colors.white,
@@ -446,7 +446,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               Navigator.of(context)
                                   .pushNamed(MyRoutes.loginPage);
                             },
-                            child: Text(
+                            child: const Text(
                               "Log in",
                               style: TextStyle(
                                 color: Colors.white,

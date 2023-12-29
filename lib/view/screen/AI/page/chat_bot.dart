@@ -20,7 +20,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
       appBar: AppBar(
         actions: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.grid_view_rounded,
               color: Colors.white,
             ),
@@ -32,7 +32,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
           )
         ],
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios_rounded,
             color: Colors.white,
           ),
@@ -40,7 +40,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
             Navigator.pop(context);
           },
         ),
-        backgroundColor: Color(0xff5B93E6),
+        backgroundColor: const Color(0xff5B93E6),
         title: Text(
           "Chat AI",
           style: GoogleFonts.poppins(
@@ -53,7 +53,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
       body: Container(
         height: size.height,
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -76,12 +76,12 @@ class _ChatBotPageState extends State<ChatBotPage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xff3C2DE1),
+                  color: const Color(0xff3C2DE1),
                 ),
                 child: TextFormField(
                   textInputAction: TextInputAction.done,
                   cursorColor: Colors.white,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                   ),
                   decoration: InputDecoration(
@@ -93,12 +93,12 @@ class _ChatBotPageState extends State<ChatBotPage> {
                       onPressed: () {
                         setState(() {});
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.send_outlined,
                         color: Colors.white,
                       ),
                     ),
-                    label: Text(
+                    label: const Text(
                       "Enter Your Prompt",
                       style: TextStyle(
                         color: Colors.white,
@@ -106,19 +106,19 @@ class _ChatBotPageState extends State<ChatBotPage> {
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffFFFFFF),
                       ),
                     ),
