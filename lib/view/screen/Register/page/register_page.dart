@@ -1,9 +1,7 @@
 import 'dart:developer';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:project_vidya/helper/firestore_helper.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
 import '../../../../utils/imgPath_utils.dart';
@@ -17,7 +15,7 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
   bool hide = true;
-
+  bool check1 = false;
   List<String> stdList = [
     "Std 1",
     "Std 2",
@@ -31,6 +29,14 @@ class _RegisterPageState extends State<RegisterPage> {
     "Std 10",
     "Std 11",
     "Std 12",
+  ];
+  List<String> categoryList = <String>[
+    "Student",
+    "Teacher",
+    "Tution Teacher",
+    "Parent",
+    "Principal",
+    "Guest",
   ];
 
   @override
@@ -52,109 +58,107 @@ class _RegisterPageState extends State<RegisterPage> {
             ],
           ),
         ),
-        child: SingleChildScrollView(
-          child: Stack(
-            children: [
-              Positioned(
-                left: 200,
-                top: 190,
-                child: Container(
-                  height: 25,
-                  width: 25,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+        child: Stack(
+          children: [
+            Positioned(
+              left: 200,
+              top: 190,
+              child: Container(
+                height: 25,
+                width: 25,
+                child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+              ),
+            ),
+            Positioned(
+              top: 160,
+              right: 337,
+              child: Container(
+                height: 40,
+                width: 40,
+                child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+              ),
+            ),
+            Positioned(
+              top: 50,
+              left: 150,
+              child: Container(
+                height: 40,
+                width: 40,
+                child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+              ),
+            ),
+            Positioned(
+              top: 100,
+              left: 330,
+              child: Container(
+                height: 50,
+                width: 50,
+                child: Image.asset(
+                  ImgPath.path + ImgPath.sparklegif,
                 ),
               ),
-              Positioned(
-                top: 160,
-                right: 337,
-                child: Container(
-                  height: 40,
-                  width: 40,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+            ),
+            Positioned(
+              top: 285,
+              left: 50,
+              child: Container(
+                height: 30,
+                width: 30,
+                child: Image.asset(
+                  ImgPath.path + ImgPath.sparklegif,
                 ),
               ),
-              Positioned(
-                top: 50,
-                left: 150,
-                child: Container(
-                  height: 40,
-                  width: 40,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+            ),
+            Positioned(
+              top: 350,
+              left: 330,
+              child: Container(
+                height: 50,
+                width: 50,
+                child: Image.asset(
+                  ImgPath.path + ImgPath.sparklegif,
                 ),
               ),
-              Positioned(
-                top: 100,
-                left: 330,
-                child: Container(
-                  height: 50,
-                  width: 50,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
+            ),
+            Positioned(
+              top: 660,
+              left: 125,
+              child: Container(
+                height: 50,
+                width: 50,
+                child: Image.asset(
+                  ImgPath.path + ImgPath.sparklegif,
                 ),
               ),
-              Positioned(
-                top: 285,
-                left: 50,
-                child: Container(
-                  height: 30,
-                  width: 30,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
-                ),
-              ),
-              Positioned(
-                top: 350,
-                left: 330,
-                child: Container(
-                  height: 50,
-                  width: 50,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
-                ),
-              ),
-              Positioned(
-                top: 660,
-                left: 125,
-                child: Container(
-                  height: 50,
-                  width: 50,
-                  child: Image.asset(ImgPath.path + ImgPath.sparklegif),
-                ),
-              ),
-              Padding(
+            ),
+            SingleChildScrollView(
+              child: Padding(
                 padding: const EdgeInsets.all(16),
-                child: Column(
-                  children: [
-                    Gap(size.height * 0.1),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Sign Up",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 6),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Enter your details below & free sign up",
-                            style: TextStyle(
-                              color: Color(0xffE3E3E3),
-                              fontSize: 15,
-                            ),
-                          ),
-                        ],
+                child: Center(
+                  child: Column(
+                    children: [
+                      Gap(
+                        size.height * 0.1,
                       ),
-                    ), //left right
-                    Gap(25),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: TextFormField(
+                      Text(
+                        "Sign Up",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 40,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      Text(
+                        "Enter your details below & free sign up",
+                        style: TextStyle(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 15,
+                        ),
+                      ), //left right
+                      Gap(
+                        size.height * 0.05,
+                      ),
+                      TextFormField(
                         keyboardType: TextInputType.phone,
                         cursorColor: Colors.white,
                         style: TextStyle(
@@ -192,11 +196,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                       ),
-                    ),
-                    Gap(32),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: TextFormField(
+                      Gap(
+                        size.height * 0.03,
+                      ),
+                      TextFormField(
                         keyboardType: TextInputType.name,
                         textInputAction: TextInputAction.next,
                         cursorColor: Colors.white,
@@ -234,12 +237,11 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                       ),
-                    ),
-                    Gap(32),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: TextFormField(
-                        obscureText: true,
+                      Gap(
+                        size.height * 0.03,
+                      ),
+                      TextFormField(
+                        obscureText: hide,
                         textInputAction: TextInputAction.done,
                         cursorColor: Colors.white,
                         style: TextStyle(
@@ -292,98 +294,73 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                       ),
-                    ),
-                    Gap(32),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: StreamBuilder(
-                        stream: FireStoreHelper.storeHelper.getSchoolList(),
-                        builder: (context, snap) {
-                          if (snap.hasData) {
-                            DocumentSnapshot<Map<String, dynamic>>? doc =
-                                snap.data;
-                            log(doc.toString());
-                            Map<String, dynamic>? data = doc?.data();
-                            List school = data?['list'];
-                            return Padding(
-                              padding: const EdgeInsets.only(top: 10),
-                              child: Expanded(
-                                flex: 12,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      DropdownMenu(
-                                        width: 200,
-                                        inputDecorationTheme:
-                                            InputDecorationTheme(
-                                          contentPadding: EdgeInsets.symmetric(
-                                            horizontal: 20,
-                                            vertical: size.height * 0.0046,
-                                          ),
-                                          border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(50),
-                                            borderSide: BorderSide(
-                                              color: Color(0xffFFFFFF),
-                                            ),
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(50),
-                                            borderSide: BorderSide(
-                                              color: Color(0xffFFFFFF),
-                                            ),
-                                          ),
-                                        ),
-                                        label: Text(
-                                          "Category",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        trailingIcon: Icon(
-                                          Icons.keyboard_arrow_down_rounded,
-                                          color: Colors.white,
-                                        ),
-                                        selectedTrailingIcon: Icon(
-                                          Icons.keyboard_arrow_up_rounded,
-                                          color: Colors.white,
-                                        ),
-                                        initialSelection: dropdownValue,
-                                        textStyle: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                        dropdownMenuEntries: school
-                                            .map<DropdownMenuEntry<String>>(
-                                          (e) {
-                                            return DropdownMenuEntry<String>(
-                                              value: e,
-                                              label: e,
-                                            );
-                                          },
-                                        ).toList(),
-                                        onSelected: (val) {
-                                          dropdownValue = val!;
-                                        },
-                                      ),
-                                    ],
+                      Gap(
+                        size.height * 0.05,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            DropdownMenu(
+                              width: 200,
+                              inputDecorationTheme: InputDecorationTheme(
+                                contentPadding: EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: size.height * 0.0046,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(50),
+                                  borderSide: BorderSide(
+                                    color: Color(0xffFFFFFF),
+                                  ),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(50),
+                                  borderSide: BorderSide(
+                                    color: Color(0xffFFFFFF),
                                   ),
                                 ),
                               ),
-                            );
-                          } else {
-                            return Container();
-                          }
-                        },
+                              label: Text(
+                                categoryList[0],
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                              trailingIcon: Icon(
+                                Icons.keyboard_arrow_down_rounded,
+                                color: Colors.white,
+                              ),
+                              selectedTrailingIcon: Icon(
+                                Icons.keyboard_arrow_up_rounded,
+                                color: Colors.white,
+                              ),
+                              initialSelection: dropdownValue,
+                              textStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                              dropdownMenuEntries:
+                                  categoryList.map<DropdownMenuEntry<String>>(
+                                (String value) {
+                                  return DropdownMenuEntry<String>(
+                                    value: value,
+                                    label: value,
+                                  );
+                                },
+                              ).toList(),
+                              onSelected: (val) {
+                                dropdownValue = val!;
+                              },
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    Gap(32),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 17, left: 17),
-                      child: GestureDetector(
+                      Gap(
+                        size.height * 0.05,
+                      ),
+                      GestureDetector(
                         onTap: () {
                           setState(() {
                             Navigator.of(context).pushReplacementNamed(
@@ -391,12 +368,11 @@ class _RegisterPageState extends State<RegisterPage> {
                           });
                         },
                         child: Container(
-                          height: 50,
-                          width: 327,
+                          height: size.height * 0.07,
+                          width: size.width * 0.9,
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Color(0xffFFFFFF),
-                              width: 1,
                             ),
                             color: Color(0xff3C2DE1),
                             borderRadius: BorderRadius.circular(10),
@@ -411,70 +387,82 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                       ),
-                    ),
-
-                    Row(
-                      children: [
-                        Expanded(
-                          flex: 1,
-                          child: Checkbox(
-                            value: false,
-                            checkColor: Colors.white,
-                            activeColor: Color(0xffFFFFFF),
-                            side: BorderSide(
-                              color: Color(0xffFFFFFF),
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5),
-                            ),
-                            onChanged: (value) {},
-                          ),
-                        ),
-                        Expanded(
-                          flex: 12,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(""),
-                              Text(
-                                "By creating an account you have to agree\nwith our terms & condition.",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Checkbox(
+                              value: check1,
+                              // checkColor: Colors.white,
+                              // activeColor: Color(0xffFFFFFF),
+                              side: BorderSide(
+                                color: Color(0xffFFFFFF),
                               ),
-                            ],
+
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              onChanged: (value) {
+                                setState(() {
+                                  check1 = !check1;
+                                  log(value.toString());
+                                });
+                              },
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                    Gap(10),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Already have an account?",
-                          style: TextStyle(
-                            color: Colors.white,
+                          Expanded(
+                            flex: 12,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Gap(
+                                  size.height * 0.02,
+                                ),
+                                Text(
+                                  "By creating an account you have to agree\nwith our terms & condition.",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            Navigator.of(context).pushNamed(MyRoutes.loginPage);
-                          },
-                          child: Text(
-                            "Log in",
+                        ],
+                      ),
+                      Gap(
+                        size.height * 0.02,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Already have an account?",
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ],
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .pushNamed(MyRoutes.loginPage);
+                            },
+                            child: Text(
+                              "Log in",
+                              style: TextStyle(
+                                color: Colors.white,
+                                decoration: TextDecoration.underline,
+                                decorationColor: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

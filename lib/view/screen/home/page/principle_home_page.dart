@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../component/drawer_component.dart';
 import '../../AI/page/select_chat_page.dart';
 import '../../Register/model/user_model.dart';
 import '../components/Principal_Component/pri_home_component.dart';
@@ -56,6 +57,7 @@ class _PrincipalHomePageState extends State<PrincipalHomePage> {
     ];
     User? user = Get.arguments;
     return Scaffold(
+      endDrawer: MyDrawer(),
       extendBody: true,
       body: pages[currentIndex],
       bottomNavigationBar: CurvedNavigationBar(
@@ -69,23 +71,6 @@ class _PrincipalHomePageState extends State<PrincipalHomePage> {
             currentIndex = index;
           });
         },
-      ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                radius: 30,
-                foregroundImage: NetworkImage("${user?.image}"),
-              ),
-              accountName: Text("${user?.name ?? 'Anonymous'} "),
-              accountEmail: Visibility(
-                visible: user != null,
-                child: Text("${user?.email ?? 'n0@gmail.com'}"),
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

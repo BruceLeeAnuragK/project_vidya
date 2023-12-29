@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProgressReportTeacherComponent extends StatefulWidget {
@@ -122,7 +123,7 @@ class _ProgressReportTeacherComponentState
           style: GoogleFonts.poppins(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontSize: 24,
           ),
         ),
       ),
@@ -147,157 +148,119 @@ class _ProgressReportTeacherComponentState
             children: [
               Column(
                 children: [
-                  Expanded(
-                    child: Image.network(
-                        "https://s3-alpha-sig.figma.com/img/e532/9379/967b37706befd26d8e6f1bf23bb0d953?Expires=1704067200&Signature=FB6LaGyFNktnV0i-qIb6mF1f9Pw28yY68Kx3jSruRydLWoZJq-bZbECv5pnff~0iYL5WteWFukkYpS5RFZM9gQ43n5lixk-qychYhpj-OVl3U3OYyhoEyVf7TOqbkk5cU-ChQ5lTDVWQGPvKQOne5bFOu8PgpDvDK5bCaRpy63gehAn3PWyhZm6BJ5NASyUTo53vQQ0Nwxhd~~5Wtx2LTmZJCJwdfjNIqLdy67UH4MFQk7suOyXm3GeGmqckv2KYJsuXaYOONdwUC0kLM3z1SzR4I~cyPmOqmPFwuZ-64iO~HMB6JRkvZuDeCYHQZMgtONcxwButklRxvPm89~qeKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                  Image.network(
+                      "https://s3-alpha-sig.figma.com/img/e532/9379/967b37706befd26d8e6f1bf23bb0d953?Expires=1704067200&Signature=FB6LaGyFNktnV0i-qIb6mF1f9Pw28yY68Kx3jSruRydLWoZJq-bZbECv5pnff~0iYL5WteWFukkYpS5RFZM9gQ43n5lixk-qychYhpj-OVl3U3OYyhoEyVf7TOqbkk5cU-ChQ5lTDVWQGPvKQOne5bFOu8PgpDvDK5bCaRpy63gehAn3PWyhZm6BJ5NASyUTo53vQQ0Nwxhd~~5Wtx2LTmZJCJwdfjNIqLdy67UH4MFQk7suOyXm3GeGmqckv2KYJsuXaYOONdwUC0kLM3z1SzR4I~cyPmOqmPFwuZ-64iO~HMB6JRkvZuDeCYHQZMgtONcxwButklRxvPm89~qeKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Description Weekly",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Description Monthly",
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Lorem ipsum dolor sit amet consectetur.\nEt venenatis vitae mi lobortisvarius non.\nArcu ut urna id aenean duis semper.\nVitae posuere vestibulum eget tristique.\nTincidunt elit quis amet a sagittis.",
-                                    style: GoogleFonts.poppins(
-                                      color: Color(0xffE3E3E3),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Lorem ipsum dolor sit amet consectetur. Et venenatis vitae mi lobortis varius non. Arcu ut urna id aenean duis semper vulputate in posuere. Vitae posuere vestibulum eget tristique. Tincidunt elit quis amet a sagittis.",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
                         ),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Focus Point",
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Lorem ipsum dolor sit amet consectetur.\nEt venenatis vitae mi lobortis varius non.\nArcu ut urna id aenean duis semper.\nVitae posuere vestibulum eget tristique.\nTincidunt elit quis amet a sagittis.",
-                                    style: GoogleFonts.poppins(
-                                      color: Color(0xffE3E3E3),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                      ),
+                    ],
+                  ),
+                  Gap(10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Focus Point",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Lorem ipsum dolor sit amet consectetur. Et venenatis vitae mi lobortis varius non. Arcu ut urna id aenean duis semper vulputate in posuere. Vitae posuere vestibulum eget tristique. Tincidunt elit quis amet a sagittis.",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
               Column(
                 children: [
-                  Expanded(
-                    child: Image.network(
-                        "https://s3-alpha-sig.figma.com/img/e532/9379/967b37706befd26d8e6f1bf23bb0d953?Expires=1704067200&Signature=FB6LaGyFNktnV0i-qIb6mF1f9Pw28yY68Kx3jSruRydLWoZJq-bZbECv5pnff~0iYL5WteWFukkYpS5RFZM9gQ43n5lixk-qychYhpj-OVl3U3OYyhoEyVf7TOqbkk5cU-ChQ5lTDVWQGPvKQOne5bFOu8PgpDvDK5bCaRpy63gehAn3PWyhZm6BJ5NASyUTo53vQQ0Nwxhd~~5Wtx2LTmZJCJwdfjNIqLdy67UH4MFQk7suOyXm3GeGmqckv2KYJsuXaYOONdwUC0kLM3z1SzR4I~cyPmOqmPFwuZ-64iO~HMB6JRkvZuDeCYHQZMgtONcxwButklRxvPm89~qeKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                  Image.network(
+                      "https://s3-alpha-sig.figma.com/img/e532/9379/967b37706befd26d8e6f1bf23bb0d953?Expires=1704067200&Signature=FB6LaGyFNktnV0i-qIb6mF1f9Pw28yY68Kx3jSruRydLWoZJq-bZbECv5pnff~0iYL5WteWFukkYpS5RFZM9gQ43n5lixk-qychYhpj-OVl3U3OYyhoEyVf7TOqbkk5cU-ChQ5lTDVWQGPvKQOne5bFOu8PgpDvDK5bCaRpy63gehAn3PWyhZm6BJ5NASyUTo53vQQ0Nwxhd~~5Wtx2LTmZJCJwdfjNIqLdy67UH4MFQk7suOyXm3GeGmqckv2KYJsuXaYOONdwUC0kLM3z1SzR4I~cyPmOqmPFwuZ-64iO~HMB6JRkvZuDeCYHQZMgtONcxwButklRxvPm89~qeKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Description Monthly",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Description Monthly",
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Lorem ipsum dolor sit amet consectetur.\nEt venenatis vitae mi lobortisvarius non.\nArcu ut urna id aenean duis semper.\nVitae posuere vestibulum eget tristique.\nTincidunt elit quis amet a sagittis.",
-                                    style: GoogleFonts.poppins(
-                                      color: Color(0xffE3E3E3),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Lorem ipsum dolor sit amet consectetur. Et venenatis vitae mi lobortis varius non. Arcu ut urna id aenean duis semper vulputate in posuere. Vitae posuere vestibulum eget tristique. Tincidunt elit quis amet a sagittis.",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
                         ),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Focus Point",
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Lorem ipsum dolor sit amet consectetur.\nEt venenatis vitae mi lobortis varius non.\nArcu ut urna id aenean duis semper.\nVitae posuere vestibulum eget tristique.\nTincidunt elit quis amet a sagittis.",
-                                    style: GoogleFonts.poppins(
-                                      color: Color(0xffE3E3E3),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                      ),
+                    ],
+                  ),
+                  Gap(10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Focus Point",
+                        style: GoogleFonts.poppins(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Lorem ipsum dolor sit amet consectetur. Et venenatis vitae mi lobortis varius non. Arcu ut urna id aenean duis semper vulputate in posuere. Vitae posuere vestibulum eget tristique. Tincidunt elit quis amet a sagittis.",
+                        style: GoogleFonts.poppins(
+                          color: Color(0xffE3E3E3),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -308,153 +271,3 @@ class _ProgressReportTeacherComponentState
     );
   }
 }
-// Column(
-// children: [
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// height: 50,
-// width: 151,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// border: Border.all(
-// color: Colors.white,
-// ),
-// gradient: LinearGradient(
-// begin: Alignment.topCenter,
-// end: Alignment.bottomCenter,
-// colors: [
-// Color(0xff4471CE),
-// Color(0xff5A44C3),
-// ],
-// ),
-// ),
-// alignment: Alignment.center,
-// child: Text(
-// "Maths",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {
-// Get.toNamed(MyRoutes.englishPage);
-// },
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "English",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Biology",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Computer",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {
-// Get.toNamed(MyRoutes.physicsPage);
-// },
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Physics",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Chemistry",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// ],
-// ),

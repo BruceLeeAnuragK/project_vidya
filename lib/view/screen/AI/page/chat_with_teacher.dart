@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../component/drawer_component.dart';
+
 class ChatWithTeacherPage extends StatefulWidget {
   const ChatWithTeacherPage({super.key});
 
@@ -17,6 +19,7 @@ List<String> stdList = <String>[
   "Rahul Singh",
   "Yogesh Pathak",
 ];
+GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
 class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
   @override
@@ -24,6 +27,8 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
     String dropdownValue = stdList.first;
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -31,7 +36,11 @@ class _ChatWithTeacherPageState extends State<ChatWithTeacherPage> {
               Icons.grid_view_rounded,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _scaffoldKey.currentState?.openEndDrawer();
+              });
+            },
           )
         ],
         leading: IconButton(

@@ -4,6 +4,8 @@ import 'package:project_vidya/utils/imgPath_utils.dart';
 import 'package:project_vidya/view/screen/home/controller/badges_provider.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../../component/drawer_component.dart';
+
 class BadgesPage extends StatefulWidget {
   const BadgesPage({super.key});
 
@@ -11,12 +13,14 @@ class BadgesPage extends StatefulWidget {
   State<BadgesPage> createState() => _BadgesPageState();
 }
 
+GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
 class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
   late final TabController tabController;
   void initState() {
     // TODO: implement initState
     super.initState();
-    tabController = TabController(length: 3, vsync: this);
+    tabController = TabController(length: 2, vsync: this);
   }
 
   @override
@@ -47,6 +51,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
     return Consumer<BadgesProvider>(
       builder: (context, provider, child) {
         return Scaffold(
+          key: _scaffoldKey,
+          endDrawer: MyDrawer(),
           appBar: AppBar(
             leading: IconButton(
               icon: Icon(
@@ -63,7 +69,11 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                   Icons.grid_view_rounded,
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    _scaffoldKey.currentState!.openEndDrawer();
+                  });
+                },
               )
             ],
             backgroundColor: Color(0xff5B93E6),
@@ -76,8 +86,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                 Padding(
                   padding: const EdgeInsets.all(4),
                   child: Container(
-                    height: 47,
-                    width: 147,
+                    height: size.height * 0.07,
+                    width: size.width * 0.2,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -95,8 +105,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                 Padding(
                   padding: const EdgeInsets.all(4),
                   child: Container(
-                    height: 47,
-                    width: 147,
+                    height: size.height * 0.07,
+                    width: size.width * 0.2,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -129,7 +139,7 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(16),
               child: TabBarView(
                 controller: tabController,
                 children: [
@@ -144,8 +154,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                       ),
                       itemCount: badgesItem.length,
                       itemBuilder: (context, index) => Container(
-                        height: 150,
-                        width: 150,
+                        height: size.height * 0.2,
+                        width: size.width * 0.2,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
@@ -166,8 +176,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                                 top: 10,
                               ),
                               child: Container(
-                                height: 60,
-                                width: 60,
+                                height: size.height * 0.08,
+                                width: size.width * 0.2,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     fit: BoxFit.cover,
@@ -220,8 +230,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                       ),
                       itemCount: badgesItem.length,
                       itemBuilder: (context, index) => Container(
-                        height: 150,
-                        width: 150,
+                        height: size.height * 0.2,
+                        width: size.width * 0.2,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
@@ -236,8 +246,8 @@ class _BadgesPageState extends State<BadgesPage> with TickerProviderStateMixin {
                           color: Color(0xff3C2DE1),
                         ),
                         child: Container(
-                          height: 100,
-                          width: 100,
+                          height: size.height * 0.1,
+                          width: size.width * 0.3,
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               fit: BoxFit.cover,

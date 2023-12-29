@@ -28,6 +28,7 @@ class MyRoutes {
   static String physicschapterPage = '/PhysicsChapterPage';
   static String englishchapterPage = '/EnglishChapterPage';
   static String englishPage = '/EnglishPage';
+  static String gamePages = '/GamePages';
 ////////////////////////////////////////////////////////////////////////////////
   static String childDetailPage = '/childDetailPage';
   static String childProgressReportPage = '/childProgressReportPage';

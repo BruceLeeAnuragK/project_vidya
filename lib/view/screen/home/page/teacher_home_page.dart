@@ -4,13 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../component/drawer_component.dart';
 import '../../../../helper/auth_helper.dart';
 import '../../../../helper/firestore_helper.dart';
 import '../../../../utils/route_utils.dart';
 import '../../Register/model/user_model.dart';
 
-class TeacherHomePage extends StatelessWidget {
+class TeacherHomePage extends StatefulWidget {
   TeacherHomePage({Key? key}) : super(key: key);
+
+  @override
+  State<TeacherHomePage> createState() => _TeacherHomePageState();
+}
+
+GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+class _TeacherHomePageState extends State<TeacherHomePage> {
   @override
   Widget build(BuildContext context) {
     User? user = Get.arguments;
@@ -61,23 +70,8 @@ class TeacherHomePage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                radius: 30,
-                foregroundImage: NetworkImage("${user?.image}"),
-              ),
-              accountName: Text("${user?.name ?? 'Anonymous'} "),
-              accountEmail: Visibility(
-                visible: user != null,
-                child: Text("${user?.email ?? 'n0@gmail.com'}"),
-              ),
-            ),
-          ],
-        ),
-      ),
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
       body: StreamBuilder(
         stream: FireStoreHelper.storeHelper.getUser(),
         builder: (context, snapShot) {

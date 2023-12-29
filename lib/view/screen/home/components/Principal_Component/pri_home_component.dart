@@ -73,7 +73,7 @@ class _PriHomeComponentState extends State<PriHomeComponent> {
           style: GoogleFonts.poppins(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontSize: 24,
           ),
         ),
       ),
@@ -139,10 +139,6 @@ class _PriHomeComponentState extends State<PriHomeComponent> {
                           ),
                         ],
                       ),
-                    ),
-                    VerticalDivider(
-                      color: Colors.white,
-                      thickness: 1,
                     ),
                     Expanded(
                       child: Column(
@@ -332,8 +328,8 @@ class _PriHomeComponentState extends State<PriHomeComponent> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      Navigator.of(context)
-                          .pushReplacementNamed(MyRoutes.progressReportTeacher);
+                      Navigator.of(context).pushReplacementNamed(
+                          MyRoutes.succcessfullyRegisteredPage);
                     });
                   },
                   child: Container(
@@ -344,7 +340,14 @@ class _PriHomeComponentState extends State<PriHomeComponent> {
                         color: Color(0xffFFFFFF),
                         width: 1,
                       ),
-                      color: Color(0xff3C2DE1),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Color(0xff4471CE),
+                          Color(0xff4F3DA4),
+                        ],
+                      ),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     alignment: Alignment.center,

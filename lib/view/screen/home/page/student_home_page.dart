@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:project_vidya/component/drawer_component.dart';
 import 'package:project_vidya/view/screen/home/components/Student_Component/student_badges_page.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +16,8 @@ class StudentHomePage extends StatefulWidget {
   @override
   State<StudentHomePage> createState() => _StudentHomePageState();
 }
+
+GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
 class _StudentHomePageState extends State<StudentHomePage> {
   final navigationKey = GlobalKey<CurvedNavigationBarState>();
@@ -61,6 +64,8 @@ class _StudentHomePageState extends State<StudentHomePage> {
       builder: (context, provider, child) {
         return Scaffold(
           extendBody: true,
+          key: _scaffoldKey,
+          endDrawer: MyDrawer(),
           body: pages[provider.currentIndex],
           bottomNavigationBar: CurvedNavigationBar(
             key: navigationKey,
@@ -71,23 +76,6 @@ class _StudentHomePageState extends State<StudentHomePage> {
             onTap: (index) {
               provider.changeCurrentIndex(index);
             },
-          ),
-          drawer: Drawer(
-            child: Column(
-              children: [
-                UserAccountsDrawerHeader(
-                  currentAccountPicture: CircleAvatar(
-                    radius: 30,
-                    foregroundImage: NetworkImage("${user?.image}"),
-                  ),
-                  accountName: Text("${user?.name ?? 'Anonymous'} "),
-                  accountEmail: Visibility(
-                    visible: user != null,
-                    child: Text("${user?.email ?? 'n0@gmail.com'}"),
-                  ),
-                ),
-              ],
-            ),
           ),
         );
       },

@@ -4,12 +4,18 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/imgPath_utils.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+bool hide = true;
+
+class _LoginPageState extends State<LoginPage> {
+  @override
   Widget build(BuildContext context) {
-    bool hide = true;
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Stack(
@@ -99,7 +105,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       const Gap(32),
                       TextFormField(
-                        obscureText: true,
+                        obscureText: hide,
                         textInputAction: TextInputAction.done,
                         cursorColor: Colors.white,
                         style: TextStyle(
@@ -112,7 +118,9 @@ class LoginPage extends StatelessWidget {
                           ),
                           suffixIcon: IconButton(
                             onPressed: () {
-                              hide = !hide;
+                              setState(() {
+                                hide = !hide;
+                              });
                             },
                             icon: hide
                                 ? Icon(

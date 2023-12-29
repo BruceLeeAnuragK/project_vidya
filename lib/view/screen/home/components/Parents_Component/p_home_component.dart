@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:project_vidya/utils/route_utils.dart';
+import 'package:gap/gap.dart';
 
 class PHomeComponent extends StatelessWidget {
   PHomeComponent({super.key});
@@ -24,134 +22,187 @@ class PHomeComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
 
+    var s = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Details of your Child :",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
-        leading: IconButton(
-          onPressed: () {
-            Get.back();
-          },
-          icon: Icon(
-            Icons.arrow_back_sharp,
-            color: Color(0xff3D5CFF),
-          ),
-        ),
+        elevation: 0,
       ),
-      body: Column(
+      body: Stack(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  width: 2,
-                  color: Colors.grey,
-                ),
-              ),
-              width: double.infinity,
-              child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Name : ",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
-                        ),
-                        Text("Cooper cristin"),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "School Name : ",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
-                        ),
-                        Text("Brilliant English Academy"),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "GR.ID : ",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
-                        ),
-                        Text("216"),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Standard : ",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
-                        ),
-                        Text("12th Science"),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
+          Container(
+            height: s.height,
+            width: s.width,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0xff5B93E6),
+                    Color(0xff3C2DE1),
+                    Color(0xff3C2DE1),
+                  ]),
             ),
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: MaterialButton(
-              onPressed: () {
-                Get.toNamed(MyRoutes.parentsSubject);
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Color(0xff3D5CFF),
-                ),
-                alignment: Alignment.center,
-                height: 50,
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 50,
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Text(
+                    "Details of Your Child",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
                     ),
-                    Text(
-                      "Continue to Get",
-                      style: TextStyle(
-                        fontSize: 15,
+                  ),
+                  Gap(30),
+                  Container(
+                    height: s.height * 0.20,
+                    width: s.width,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(5),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Gap(
+                                  s.height * 0.007,
+                                ),
+                                Text(
+                                  "Name",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.007,
+                                ),
+                                Text(
+                                  "School Name",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.007,
+                                ),
+                                Text(
+                                  "GR ID",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.007,
+                                ),
+                                Text(
+                                  "Standard",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        VerticalDivider(
+                          color: Colors.white,
+                          thickness: 2,
+                        ),
+                        Expanded(
+                          flex: 4,
+                          child: Padding(
+                            padding: const EdgeInsets.all(5),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Gap(
+                                  s.height * 0.015,
+                                ),
+                                Text(
+                                  "Mark Methew",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.015,
+                                ),
+                                Text(
+                                  "Brilliant English School",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.015,
+                                ),
+                                Text(
+                                  "1586",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                                Gap(
+                                  s.height * 0.015,
+                                ),
+                                Text(
+                                  "12 Science",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                  Gap(s.height * 0.15),
+                  Container(
+                    height: s.height * 0.07,
+                    width: s.width * 0.9,
+                    decoration: BoxDecoration(
+                      color: Color(0xff3C2DE1),
+                      border: Border.all(
                         color: Colors.white,
                       ),
+                      borderRadius: BorderRadius.circular(18),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(
-                        Icons.navigate_next,
-                        color: Colors.black,
+                    alignment: Alignment.center,
+                    child: Text(
+                      "CONTINUE",
+                      style: TextStyle(
+                        color: Color(0xffF3F5F9),
+                        fontSize: 20,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),

@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../component/drawer_component.dart';
+
 class ChatBotPage extends StatefulWidget {
   const ChatBotPage({super.key});
 
   @override
   State<ChatBotPage> createState() => _ChatBotPageState();
 }
+
+GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
 class _ChatBotPageState extends State<ChatBotPage> {
   @override
@@ -20,7 +24,11 @@ class _ChatBotPageState extends State<ChatBotPage> {
               Icons.grid_view_rounded,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _scaffoldKey.currentState?.openEndDrawer();
+              });
+            },
           )
         ],
         leading: IconButton(
@@ -121,6 +129,8 @@ class _ChatBotPageState extends State<ChatBotPage> {
           ],
         ),
       ),
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
     );
   }
 }

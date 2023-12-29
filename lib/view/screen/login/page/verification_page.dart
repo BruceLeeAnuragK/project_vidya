@@ -35,21 +35,7 @@ class _VerificationPageState extends State<VerificationPage> {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Skip",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                Gap(15),
+                Gap(80),
                 Text(
                   "Verification",
                   style: GoogleFonts.poppins(
@@ -59,7 +45,7 @@ class _VerificationPageState extends State<VerificationPage> {
                   ),
                 ),
                 Text(
-                  "We had sent you a link to Verify\n\t\t\t\t\t\t\tyour Email Address",
+                  "We had sent you a link to Verify\n\t\t\t\t\t\t\tyour phone number",
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.white,

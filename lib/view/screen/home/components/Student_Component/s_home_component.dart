@@ -42,12 +42,155 @@ class _SHomeComponentState extends State<SHomeComponent> {
     "Chemistry",
     "Physics",
   ];
-
+  List<Widget> drawerWidgets = [
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Settings",
+      ),
+      subtitle: Text(
+        "Change your details",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Language",
+      ),
+      subtitle: Text(
+        "Switch chosen language",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Game",
+      ),
+      subtitle: Text(
+        "Cooper Christin",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Image Generator",
+      ),
+      subtitle: Text(
+        "Generate Images through our AI",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Animated Videos",
+      ),
+      subtitle: Text(
+        "Learn through animated videos",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+    ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Color(0xff93A3FA),
+        child: Icon(
+          Icons.person,
+          color: Colors.white,
+        ),
+      ),
+      title: Text(
+        "Animated Videos",
+      ),
+      subtitle: Text(
+        "Learn through animated videos",
+      ),
+      trailing: IconButton(
+        onPressed: () {},
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: Colors.white,
+        ),
+      ),
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      endDrawer: Drawer(
+        backgroundColor: Color(0xff5B93E6),
+        child: Container(
+          height: size.height,
+          width: size.width,
+          child: ListView(
+            children: <Widget>[...drawerWidgets],
+          ),
+        ),
+      ),
       body: Container(
         height: size.height,
         width: size.width,
@@ -66,191 +209,161 @@ class _SHomeComponentState extends State<SHomeComponent> {
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
-              Column(
-                children: [
-                  Gap(40),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Hi,Cristin",
-                        style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: Colors.white,
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "What would you like to learn today?",
-                            style: GoogleFonts.roboto(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Search below",
-                            style: GoogleFonts.roboto(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Gap(10),
-                  Container(
-                    height: 50,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color(0xff3C2DE1),
+              Gap(
+                size.height * 0.05,
+              ),
+              Text(
+                "Hi,Cristin",
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "What would you like to learn today?",
+                style: GoogleFonts.roboto(
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "Search below",
+                style: GoogleFonts.roboto(
+                  color: Colors.white,
+                ),
+              ),
+              Gap(
+                size.height * 0.03,
+              ),
+              TextFormField(
+                cursorColor: Colors.white,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  suffixIcon: Padding(
+                    padding: const EdgeInsets.only(
+                      top: 10,
+                      right: 20,
+                      bottom: 10,
                     ),
-                    child: TextFormField(
-                      style: TextStyle(color: Colors.white),
-                      cursorColor: Colors.white,
-                      controller: searchController,
-                      decoration: InputDecoration(
-                        constraints: BoxConstraints(
-                          maxWidth: 60,
-                          minWidth: 50,
+                    child: Container(
+                      height: size.height * 0.01,
+                      width: size.width * 0.03,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(3),
+                      ),
+                      alignment: Alignment.center,
+                      child: IconButton(
+                        onPressed: () {},
+                        padding: EdgeInsets.only(
+                          bottom: 3,
+                          right: 3,
                         ),
-                        contentPadding: EdgeInsets.all(10),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(
-                            color: Color(0xffFFFFFF).withOpacity(0.5),
-                          ),
-                        ),
-                        suffixIcon: Padding(
-                          padding: const EdgeInsets.only(
-                            bottom: 10,
-                            top: 10,
-                            right: 5,
-                          ),
-                          child: Container(
-                            height: 29,
-                            width: 35,
-                            alignment: Alignment.topCenter,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(7),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(bottom: 20),
-                              child: IconButton(
-                                icon: Icon(
-                                  Icons.search,
-                                  color: Colors.deepPurple,
-                                ),
-                                onPressed: () {},
-                              ),
-                            ),
-                          ),
-                        ),
-                        labelText: "Search Here",
-                        labelStyle: GoogleFonts.poppins(
-                          color: Color(0xffE3E3E3),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
+                        icon: Icon(
+                          Icons.search_rounded,
+                          color: Colors.blue,
                         ),
                       ),
                     ),
                   ),
-                  Gap(30),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      DropdownMenu(
-                        trailingIcon: Icon(
-                          Icons.keyboard_arrow_down_rounded,
-                          color: Colors.white,
-                        ),
-                        selectedTrailingIcon: Icon(
-                          Icons.keyboard_arrow_up_rounded,
-                          color: Colors.white,
-                        ),
-                        inputDecorationTheme: InputDecorationTheme(
-                          constraints: BoxConstraints(
-                            maxWidth: 110,
-                            maxHeight: 42,
-                          ),
-                          contentPadding: EdgeInsets.all(
-                            10,
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide(
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            borderSide: BorderSide(
-                              color: Color(0xffFFFFFF),
-                            ),
-                          ),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                        ),
-                        textStyle: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
-                        initialSelection: dropdownValue,
-                        dropdownMenuEntries:
-                            stdList.map<DropdownMenuEntry<String>>(
-                          (String value) {
-                            return DropdownMenuEntry<String>(
-                              value: value,
-                              label: value,
-                            );
-                          },
-                        ).toList(),
-                        onSelected: (String? val) {
-                          dropdownValue = val!;
-                        },
-                      ),
-                    ],
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: size.height * 0.0046,
                   ),
-                  Gap(20),
-                  Row(
-                    children: [
-                      Text(
-                        "Select Your Subjects",
-                        style: GoogleFonts.poppins(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
+                  hintText: "Search Here",
+                  hintStyle: TextStyle(
+                    color: Colors.white,
                   ),
-                ],
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(
+                      color: Colors.white,
+                    ),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(
+                      color: Colors.white,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: const BorderSide(
+                        color: Colors.white,
+                        width: 3,
+                      )),
+                ),
+              ),
+              Gap(
+                size.height * 0.03,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: DropdownMenu(
+                  trailingIcon: Icon(
+                    Icons.keyboard_arrow_down_rounded,
+                    color: Colors.white,
+                  ),
+                  selectedTrailingIcon: Icon(
+                    Icons.keyboard_arrow_up_rounded,
+                    color: Colors.white,
+                  ),
+                  inputDecorationTheme: InputDecorationTheme(
+                    constraints: BoxConstraints(
+                      maxWidth: 110,
+                      maxHeight: 42,
+                    ),
+                    contentPadding: EdgeInsets.all(
+                      10,
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                  initialSelection: dropdownValue,
+                  dropdownMenuEntries: stdList.map<DropdownMenuEntry<String>>(
+                    (String value) {
+                      return DropdownMenuEntry<String>(
+                        value: value,
+                        label: value,
+                      );
+                    },
+                  ).toList(),
+                  onSelected: (String? val) {
+                    dropdownValue = val!;
+                  },
+                ),
+              ),
+              Gap(
+                size.height * 0.02,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Select Your Subject ",
+                  style: GoogleFonts.poppins(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 16,
+                  ),
+                ),
               ),
               Expanded(
                 flex: 2,
@@ -297,153 +410,3 @@ class _SHomeComponentState extends State<SHomeComponent> {
     );
   }
 }
-// Column(
-// children: [
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// height: 50,
-// width: 151,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// border: Border.all(
-// color: Colors.white,
-// ),
-// gradient: LinearGradient(
-// begin: Alignment.topCenter,
-// end: Alignment.bottomCenter,
-// colors: [
-// Color(0xff4471CE),
-// Color(0xff5A44C3),
-// ],
-// ),
-// ),
-// alignment: Alignment.center,
-// child: Text(
-// "Maths",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {
-// Get.toNamed(MyRoutes.englishPage);
-// },
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "English",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Biology",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Computer",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {
-// Get.toNamed(MyRoutes.physicsPage);
-// },
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Physics",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// Padding(
-// padding: const EdgeInsets.all(10),
-// child: MaterialButton(
-// onPressed: () {},
-// child: Container(
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(10),
-// color: Color(0xff3D5CFF),
-// ),
-// alignment: Alignment.center,
-// height: 50,
-// width: double.infinity,
-// child: Text(
-// "Chemistry",
-// style: TextStyle(
-// fontSize: 15,
-// color: Colors.white,
-// ),
-// ),
-// ),
-// ),
-// ),
-// ],
-// ),

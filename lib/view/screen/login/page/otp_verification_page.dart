@@ -14,7 +14,7 @@ class OtpVerificationPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.white,
         title: Text(
-          "Verification :",
+          "Verification ",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,

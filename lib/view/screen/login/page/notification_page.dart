@@ -77,7 +77,9 @@ class NotificationsPage extends StatelessWidget {
             ),
             Gap(30),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(MyRoutes.studHome);
+              },
               child: Text(
                 "Skip",
                 style: GoogleFonts.poppins(

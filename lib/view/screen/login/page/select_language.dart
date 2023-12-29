@@ -12,7 +12,7 @@ class LanguagePage extends StatefulWidget {
 class _LanguagePageState extends State<LanguagePage> {
   @override
   Widget build(BuildContext context) {
-    Size s = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
     List MyLanguages = [
       "English",
       "ગુજરાતી",
@@ -31,8 +31,8 @@ class _LanguagePageState extends State<LanguagePage> {
       body: Stack(
         children: [
           Container(
-            height: s.height,
-            width: s.width,
+            height: size.height,
+            width: size.width,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
@@ -49,7 +49,7 @@ class _LanguagePageState extends State<LanguagePage> {
               child: Center(
                 child: Column(
                   children: [
-                    Gap(50),
+                    Gap(size.height * 0.1),
                     Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -60,6 +60,9 @@ class _LanguagePageState extends State<LanguagePage> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),
+                    ),
+                    Gap(
+                      size.height * 0.02,
                     ),
                     Expanded(
                       child: GridView.builder(
@@ -75,8 +78,8 @@ class _LanguagePageState extends State<LanguagePage> {
                             Navigator.of(context).pushNamed(MyRoutes.studHome);
                           },
                           child: Container(
-                            height: s.height * 0.05,
-                            width: s.width * 0.05,
+                            height: size.height * 0.05,
+                            width: size.width * 0.05,
                             decoration: BoxDecoration(
                               color: Color(0xff3C2DE1),
                               border: Border.all(

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../../../../component/drawer_component.dart';
 import '../../Register/model/user_model.dart';
 import '../components/Parents_Component/p_home_component.dart';
-import '../components/Student_Component/s_home_component.dart';
 
 class ParentsHomePage extends StatelessWidget {
   ParentsHomePage({Key? key}) : super(key: key);
@@ -21,6 +21,7 @@ class ParentsHomePage extends StatelessWidget {
         "Std 11"
         "Std 12"
   ];
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     int currentIndex = 0;
@@ -33,6 +34,8 @@ class ParentsHomePage extends StatelessWidget {
     ];
     User? user = Get.arguments;
     return Scaffold(
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
@@ -74,23 +77,6 @@ class ParentsHomePage extends StatelessWidget {
           color: Color(0xff3D5CFF),
         ),
         unselectedLabelStyle: TextStyle(color: Colors.black),
-      ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
-                radius: 30,
-                foregroundImage: NetworkImage("${user?.image}"),
-              ),
-              accountName: Text("${user?.name ?? 'Anonymous'} "),
-              accountEmail: Visibility(
-                visible: user != null,
-                child: Text("${user?.email ?? 'n0@gmail.com'}"),
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }

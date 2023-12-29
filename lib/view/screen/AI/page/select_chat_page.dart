@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/imgPath_utils.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
+import '../../../../component/drawer_component.dart';
+
 class SelectChatpage extends StatefulWidget {
   const SelectChatpage({super.key});
 
@@ -12,10 +14,14 @@ class SelectChatpage extends StatefulWidget {
 }
 
 class _SelectChatpageState extends State<SelectChatpage> {
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
       appBar: AppBar(
         backgroundColor: Color(0xff5B93E6),
         elevation: 0,
@@ -33,7 +39,7 @@ class _SelectChatpageState extends State<SelectChatpage> {
             alignment: Alignment.topCenter,
             child: IconButton(
               onPressed: () {
-                Navigator.of(context).pop();
+                _scaffoldKey.currentState!.openEndDrawer();
               },
               icon: Icon(
                 Icons.grid_view_rounded,

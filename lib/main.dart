@@ -5,6 +5,7 @@ import 'package:project_vidya/utils/route_utils.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_anonymously.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_bot.dart';
 import 'package:project_vidya/view/screen/AI/page/chat_with_teacher.dart';
+import 'package:project_vidya/view/screen/AI/page/game_pages_screen.dart';
 import 'package:project_vidya/view/screen/AI/page/select_chat_page.dart';
 import 'package:project_vidya/view/screen/Chapters/english_chapter_page.dart';
 import 'package:project_vidya/view/screen/Chapters/physics_chapter_page.dart';
@@ -87,7 +88,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: MyRoutes.settingPage,
+      initialRoute: MyRoutes.introPage,
       routes: {
         MyRoutes.introPage: (context) => const IntroScreen(),
         MyRoutes.introComponent1: (context) => const Intro1Screen(),
@@ -133,6 +134,7 @@ class MyApp extends StatelessWidget {
             const ChildProgressReportPage(),
         MyRoutes.badgesPage: (context) => const BadgesPage(),
         MyRoutes.summaryPage: (context) => const SummaryPage(),
+        MyRoutes.gamePages: (context) => const GamePagesScreen(),
       },
       // getPages: [
       //   GetPage(

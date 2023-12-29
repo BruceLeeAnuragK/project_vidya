@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../component/drawer_component.dart';
+
 class SettingPage extends StatefulWidget {
   SettingPage({super.key});
 
@@ -184,22 +186,14 @@ class _SettingPageState extends State<SettingPage>
       ),
     ),
   ];
-
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     String dropdownValue = stdList.first;
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      endDrawer: Drawer(
-        backgroundColor: Color(0xff5B93E6),
-        child: Container(
-          height: size.height,
-          width: size.width,
-          child: ListView(
-            children: <Widget>[...drawerWidgets],
-          ),
-        ),
-      ),
+      key: _scaffoldKey,
+      endDrawer: MyDrawer(),
       appBar: AppBar(
         backgroundColor: Color(0xff5B93E6),
         leading: IconButton(
@@ -214,7 +208,7 @@ class _SettingPageState extends State<SettingPage>
           IconButton(
             onPressed: () {
               setState(() {
-                Scaffold.hasDrawer(context);
+                _scaffoldKey.currentState!.openEndDrawer();
               });
             },
             icon: Icon(

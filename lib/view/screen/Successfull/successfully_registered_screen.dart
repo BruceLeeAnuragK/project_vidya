@@ -16,7 +16,7 @@ class _SuccessfullyRegisteredState extends State<SuccessfullyRegistered> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 8), () {
+    Future.delayed(Duration(seconds: 4), () {
       Navigator.pushNamed(context, MyRoutes.letsGetStartedPage);
     });
   }

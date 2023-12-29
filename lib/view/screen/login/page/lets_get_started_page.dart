@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:project_vidya/utils/route_utils.dart';
 
 class LetsGetStartedPage extends StatefulWidget {
@@ -37,7 +36,7 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                 Gap(69),
                 Text(
                   "Lets Get Started",
-                  style: GoogleFonts.poppins(
+                  style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,
@@ -48,10 +47,9 @@ class _LetsGetStartedPageState extends State<LetsGetStartedPage> {
                   padding: const EdgeInsets.all(10),
                   child: Text(
                     "Enter Your Mobile Number for Two\n            Step Verification",
-                    style: GoogleFonts.poppins(
+                    style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,
-                      fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),
