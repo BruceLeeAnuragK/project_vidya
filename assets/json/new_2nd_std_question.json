@@ -7,10 +7,14 @@
           "chapters": [
             {
               "ch": 1,
+
               "part": [
                 {
                   "pid": 1,
                   "name": "FIRST DAY AT SCHOOL\n",
+                  "video" : "https://www.youtube.com/watch?v=Oq61TxejZ5g",
+
+
                   "topics": [
                     {
                       "id": 1,
@@ -144,6 +148,8 @@
                 {
                   "pid": 2,
                   "name": "Haldi’s Adventure",
+                  "video" : "https://www.youtube.com/watch?v=mFHedz4F4A8",
+
                   "topics": [
                     {
                       "id": 1,
@@ -288,6 +294,8 @@
                 {
                   "pid": 1,
                   "name": "I Am Lucky!",
+                  "video" : "https://www.youtube.com/watch?v=L9DWLMkbjCg",
+
                   "topics": [
                     {
                       "id": 1,
@@ -437,6 +445,8 @@
                 {
                   "pid": 2,
                   "name": "I Want\n",
+                  "video" : " https://www.youtube.com/watch?v=y8Q0jjdFaWE",
+
                   "topics": [
                     {
                       "id": 1,
@@ -623,6 +633,8 @@
                 {
                   "pid": 1,
                   "name": "A Smile",
+                  "video" : "https://www.youtube.com/watch?v=O1eUFagVOHU",
+
                   "topics": [
                     {
                       "id": 1,
@@ -769,6 +781,8 @@
                 {
                   "pid": 1,
                   "name": "The wind and the Sun\n",
+                  "video" : "https://www.youtube.com/watch?v=u21-bqp1SDc",
+
                   "topics": [
                     {
                       "id": 1,
@@ -871,6 +885,8 @@
                 {
                   "pid": 1,
                   "name": "Rain\n",
+                  "video" : "https://www.youtube.com/watch?v=wrnQsHxJ3k4",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1030,6 +1046,8 @@
                 {
                   "pid": 1,
                   "name": "Storm in the Garden\n",
+                  "video" : "https://www.youtube.com/watch?v=yp8wQSMZk3g",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1140,6 +1158,8 @@
                 {
                   "pid": 1,
                   "name": "Zoo Manners\n",
+                  "video" : "https://www.youtube.com/watch?v=iYnU755TNI4",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1264,6 +1284,8 @@
                 {
                   "pid": 2,
                   "name": "A visit to my village \n",
+                  "video" : "https://www.youtube.com/watch?v=Dwzwr8lOcgg",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1381,6 +1403,8 @@
                 {
                   "pid": 1,
                   "name": "Mr. Nobody \n",
+                  "video" : "https://www.youtube.com/watch?v=DvNR3Zkf5Q8",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1474,6 +1498,8 @@
                 {
                   "pid": 2,
                   "name": "Curlylocks And the Three Bears\n",
+                  "video" : "https://www.youtube.com/watch?v=Eql_xESApgU",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1615,6 +1641,8 @@
                 {
                   "pid": 1,
                   "name": "On My Blackboard I can Draw\n",
+                  "video" : "https://www.youtube.com/watch?v=N_8FMJUX69E",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1695,6 +1723,8 @@
                 {
                   "pid": 2,
                   "name": "Make It Shorter\n",
+                  "video" : "https://www.youtube.com/watch?v=DNirfqYvrW0",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1759,6 +1789,8 @@
                 {
                   "pid": 1,
                   "name": "Music man, far away, play, piano, drum, boom\n",
+                  "video" : "https://www.youtube.com/watch?v=vWkHHm8tDbY",
+
                   "topics": [
                     {
                       "id": 1,
@@ -1818,6 +1850,7 @@
                 {
                   "pid": 2,
                   "name": "The Mumbai Musicians\n",
+                  "video" : "https://www.youtube.com/watch?v=SLzoJ0zb_VA",
                   "topics": [
                     {
                       "id": 1,
@@ -1890,6 +1923,8 @@
                 {
                   "pid": 1,
                   "name": "Granny Granny Please Comb My Hair\n",
+                  "video" : "https://www.youtube.com/watch?v=s2AmHcbhWjA",
+
                   "topics": [
                     {
                       "id": 1,
@@ -2009,6 +2044,8 @@
                 {
                   "pid": 2,
                   "name": "The Magic Porridge Pot \n",
+                  "video" : "https://www.youtube.com/watch?v=BERcfWcGpq8",
+
                   "topics": [
                     {
                       "id": 1,
@@ -2126,447 +2163,7 @@
                   ]
                 }
               ]
-            },
-            {
-              "ch": 9,
-              "part": [
-                {
-                  "pid": 1,
-                  "name": "Granny Granny Please Comb My Hair\n",
-                  "topics": [
-                    {
-                      "id": 1,
-                      "name": "NEW WORDS\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Instead, lack, sty, kennel, row, meant \n",
-                          "answer": "1) Instead: in place of \nExample sentences: \n1) I love singing instead of dancing. \n2) Talk to your teacher instead of Sutapa. \n2) Lack: not having enough of something \nExample sentences: \n1) She has lack of confidence. \n2) I am lack of tools to mend this car. \n3) Sty: place where pigs stay \nExample sentences: \n1) Three pigs were coming out of the sty. \n2) The sty was very dirty. \n4) Kennel: a small shelter for dog \nExample sentences: \n1) There was a black shaggy dog in the kennel. \n2) The dog was eating his food in the kennel. \n5) Row: straight line of something \nExample sentences: \n1) Please stand in a row. \n2) I sat in the front row of the theatre. \n6) Meant: to convey or tell something \nExample sentences: \n1) She did not meant to hurt you. \n2) I meant to compliment her work\n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 2,
-                      "name": "READING IS FUN\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Are these sentences true or false? \n• A little green frog said, “Quackquack.” \n• A little pig loved to make a row. \n• A duck only said, “Croak-croak.” \n• A pig cried aloud, “Wee-wee.” \n",
-                          "answer": "• A little green frog said, “Quack-quack.” (False) \n• A little pig loved to make a row. (False) \n• A duck only said, “Croak-croak.” (False) \n• A pig cried aloud, “Wee-wee.” (True)\n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 3,
-                      "name": "LET’S TALK\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Seema talks a lot and her brother calls her talkative. Do you think Seema should talk \n• when the teacher is teaching in class? \n• On the playground? \n• While she is eating? \n• When Mother asks her about what happened in school? \n",
-                          "answer": "• No, Seema should not talk when the teacher is teaching in class. \n• Yes, Seema should talk on the playground. \n• No, Seema should not talk while she is eating. \n• Yes, Seema should talk when her mother asks her about what happened in school. \n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 4,
-                      "name": "LET’S WRITE\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Complete the questions with the words in the box – Will Can What How Where When \n1. _______________ is your name? \n2. _______________ old are you? \n3. _______________ do you play?\n4. _______________ do you live? \nTick (✓) the correct word. \n• We did not (shoot/shout) in the class. \n• Do you like to drink (water/voter)? \n• He (tired/tried) to climb the tree. \n• Will you (please/please) help me? \n• I can (see/sea) with my eyes. Make sentences using the following words. \n1. Is _________________________________________ \n2. Are ________________________________________ \n3. Have _______________________________________ \n4. Has _________________________________________ \n5. Had _________________________________________ \nWrite five lines on My Pet. __________________________________________________ __________________________________________________ __________________________________________________ __________________________________________________ __________________________________________________\n",
-                          "answer": "1. What is your name? \n2. How old are you? \n3. When do you play? \n4. Where do you live? \n• We did not (shoot/sh out) in the class. \n• Do you like to drink (water /voter). \n• He (tired/tried ) to climb the tree. \n• Will you (pleace/please ) help me? \n• I can (see /sea) with my eyes. \n1. Is: Ramya is coming to the class today.\n2. Are: The children are not present in the class. \n3. Have: I have done the homework. \n4. Has: My father has bought me a gift on my birthday. \n5. Had: Rohit had eaten his breakfast. \n1) I have a puppy. \n2) His name is Smurfy. \n3) He loves to eat bread and milk. \n4) He plays with me and my friends in the park. \n5) His best friend is Bronze, a white Pomeranian who lives in our neighbourhood.\n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 5,
-                      "name": "PICTURE STORY\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Picture story Look at these pictures and tell a story about The Talkative Tortoise. ",
-                          "answer": "Once upon a time, there lived two white ducks and a talkative tortoise. They were best friends. They were playing with each other near the pond. One day, they found there was not a single drop for them to drink. They decided to go to the nearby lake to live there permanently. But there was one problem, the tortoise did not know how to fly while the ducks did. The tortoise came up with an idea. He said that he will hold the stick from the middle with his teeth while the two ducks hold the stick from both the ends. In this way, they all can fly together and reach the lake. But the tortoise was very talkative. He opened his mouth to speak in the middle of the flight. As a result, he fell on the ground and died and the two ducks reached the lake safely.\n\n",
-                          "images": [
-                            {
-                              "question": true,
-                              "img": "data:image/jpeg;base64,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"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "pid": 2,
-                  "name": "The Grasshopper & the Ant \n",
-                  "topics": [
-                    {
-                      "id": 1,
-                      "name": "NEW WORDS\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Hardworking, arrived, starve, slammed \n",
-                          "answer": "1) Hardworking: to work with energy \nExample sentences: \n1) My father is a hardworking family man. \n2) She is a hardworking girl.\n2) Arrived: to reach at a place \nExample sentences: \n1) We arrived at the airport on time. \n2) He arrived at his house in the evening. \n3) Starve: to die from hunger \nExample sentences: \n1) My mother left me at home to starve. \n2) We should not starve ourselves to get thin. \n4) Slammed: to shut something forcefully\nExample sentences: \n1) He slammed the door while leaving. \n2) I slammed the brakes.\n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 2,
-                      "name": "READING IS FUN\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "How did the grasshopper spend his days? \n",
-                          "answer": "The grasshopper spent his days by only singing and playing. \n",
-                          "images": [
-                          ]
-                        },
-                        {
-                          "qid": 2,
-                          "question": "Did the grasshopper find food in winter? \n",
-                          "answer": "No, the grasshopper did not find food in winter. ",
-                          "images": [
-                          ]
-                        },
-                        {
-                          "qid": 3,
-                          "question": "What did the ant tell the grasshopper when he asked for food? \n",
-                          "answer": "The ant shook in anger and scolded the grasshopper for being lazy all the summer and not not doing any work.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 3,
-                      "name": "LET’S TALK\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "• If you were asked to store things for the winter what would you store? Name any three things. \n• Which season do you like the best? \n• Tell the class the story of the grasshopper and the ant in your own language. \n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answers based on their own experience and observation. \n• If I were asked to store things for the winter, I would store apples, star fruit and peas. \n• I like rainy season. \n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 4,
-                      "name": "LET’S TALK\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "• If you were asked to store things for the winter what would you store? Name any three things. \n• Which season do you like the best? \n• Tell the class the story of the grasshopper and the ant in your own language. \n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answers based on their own experience and observation. \n• If I were asked to store things for the winter, I would store apples, star fruit and peas. \n• I like rainy season. \n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 4,
-                      "name": "THE WEB WORLD\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "When you hear winter and summer, what are the words that come to your mind? Write these words in the bubbles. \n",
-                          "answer": "",
-                          "images": [
-                            {
-                              "question": true,
-                              "img": "https://img-nm.mnimgs.com/img/study_content/content_ck_images/images/scarf.jpeg"
-                            },
-                            {
-                              "question": false,
-                              "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZrEvpALMSVlFRyNuMMsToCTOZIuBIQKAk1zOqoXmSpUe3qCYN"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 5,
-                      "name": "LET’S WRITE\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Under picture A sentences describe what each person/animal is doing. Under picture B write down what each is doing. \nDisclaimer: Kindly refer the textbook for the images. Use the words ‘he’, ‘she’, ‘it’, ‘they’ instead of a lady, a man, two girls and a dog. \nA lady is cycling. ________________________________ \nA man is running. ________________________________ \nTwo girls are playing. _____________________________ \nA dog is sleeping. _________________________________ \n",
-                          "answer": "Picture A \n1) Two girls are playing football. \n2) One man is jogging in the park. \n3) A dog is sleeping in the grass. \n4) One girl is cycling. Picture B Two girls are skipping the rope. A dog is licking milk from the bowl. A woman is cutting grass. A man is in the cot. \n1) She is cycling. \n2) He is running. \n3) They are playing. \n4) It is sleeping. \n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "class3": [
-        {
-          "subject": "English",
-          "chapters": [
-            {
-              "ch": 1,
-              "part": [
-                {
-                  "pid": 1,
-                  "name": "THE MAGIC GARDEN\n",
-                  "topics": [
-                    {
-                      "id": 1,
-                      "name": "NEW WORDS\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Question 1: Wonder, drawing, stares, Gran, puppy \n",
-                          "answer": "1) Wonder: to have a wish to know something \nExample sentences:\n 1) I wonder how would my result be.\n2) I was looking at my sister with wonder.\n 2) Drawing: making a picture with a pencil or a pen \nExample sentences: \n1) I made a very colourful drawing.\n2) Her drawing was very beautiful. \n3) Stares: To look at someone for a long time \nExample sentences: \n1) My father stares at me when I do not complete my homework. \n2) She gave me a cold stare\n4) Gran: grandmother \nExample sentences:\n 1) My gran makes delicious food. \n2) Gran always loves her grandchildren.\n5) Puppy: a young dog \nExample sentences:\n 1) My puppy‘s name is Smurfy.\n 2) Robinson was a very cheerful puppy. \n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": " I wonder if the sea is blue.\n",
-                          "answer": " I wonder if the sea is blue.\n",
-                          "images": [
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "id": 2,
-                      "name": "READING IS FUN",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "What does the child in the poem think about his drawing?\n",
-                          "answer": "The child wonders whether his drawing will be as good as the other children in the class.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": "What does the child wonder about his teacher? ",
-                          "answer": "The child wonders whether his teacher will look like Mom or Gran.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 3,
-                          "question": "Do you think the child would like to carry his puppy to school",
-                          "answer": "Yes, the child would like to carry his puppy to school.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 3,
-                      "name": "LET’S TALK\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Question 1: \n• Do you remember your first day at school? How did you feel \n   Disclaimer: Kindly refer the textbook for the images\n\n\n• When you entered your class what did you like?\n• Who was the first friend you made?\n• What did you enjoy doing the most? \n• Do you have a pet at home who waits for you to come back from school?\n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answer based on their own experience and observation.\n• I felt very happy when I saw so many students playing in the classroom.\n• Reema was the first friend that I made. \n• I enjoying eating lunch during recess in the classroom. • Yes, I have a pet at home who waits for me to come back from school.\n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 3,
-                      "name": "LET’S ACT?\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Find a partner. Let your partner pretend to be the teacher who welcomed you to your class.\n • Now act out your first day at school. \n",
-                          "answer": "Teacher: Good Morning! Rahul. How are you? \nStudent: Good Morning Ma’am. I am good.\nTeacher: It’s very nice to have you in the class. Please be seated.\n Student: Thank you ma’am. \nTeacher: Rahul, please introduce yourself to everyone in the class.\n Student: Hi, My name is Rahul. I am from Mumbai. I stay with my grandparents here. I like to watch cricket.\n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 4,
-                      "name": "LET’S ACT?\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Find a partner. Let your partner pretend to be the teacher who welcomed you to your class.\n • Now act out your first day at school. \n",
-                          "answer": "Teacher: Good Morning! Rahul. How are you? \nStudent: Good Morning Ma’am. I am good.\nTeacher: It’s very nice to have you in the class. Please be seated.\n Student: Thank you ma’am. \nTeacher: Rahul, please introduce yourself to everyone in the class.\n Student: Hi, My name is Rahul. I am from Mumbai. I stay with my grandparents here. I like to watch cricket.\n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 5,
-                      "name": "LET’S WRITE\n\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Brush, brush, brush your teeth, Brush them everyday. Father, mother, brother, sister Brush them everyday. Comb, comb, comb your hair, Comb it everyday. Father, mother, brother, sister Comb it everyday. Wash, wash, wash your face, Wash it everyday. Father, mother, brother, sister Wash it everyday.\n",
-                          "answer": " Disclaimer: Students are advised to practice this on their own.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": "How many words can you make using letters from the word in the picture? One has been done for you.",
-                          "answer": "Pot ,Potato, Hip, Tap, Pit, Hop",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 6,
-                      "name": "LET’S DO\n\n\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "a b c d e f g h i j k l \n",
-                          "answer": " Instructions: Join the dotted lines to form the given alphabet.\n",
-                          "images": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "pid": 2,
-                  "name": "Haldi’s Adventure",
-                  "topics": [
-                    {
-                      "id": 1,
-                      "name": "LET’S READ\n\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Giraffe, surprised, adventure, wonderful, playground\n",
-                          "answer": "1) Giraffe: a tall mammal with a very long neck and forelegs\nExample sentences: \n1) Harish saw a giraffe in the zoo.\n2) The giraffe eats leaves.\n2) Surprised: amazed\nExample sentences:\n1) I was surprised to see my mother at the airport.\n2) She was surprised to see her birthday gift.\n3) Adventure: an exciting and daring experience \nExample sentences:\n 1) I have to share my adventure experience with Reema.\n 2) My first day in school was an adventure for me. \n4) Wonderful: extremely good\n Example sentences:\n 1) Eating ice-cream is winters is wonderful. \n2) We all had a wonderful weekend.\n5) Playground: an outdoor area for children to play\nExample sentences:\n1) I play football with my friends in the playground.\n2) Ravi was shouting in the playground with his friends. \n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 2,
-                      "name": "READING IS FUN",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Where was Haldi going?\n",
-                          "answer": "Hadi was walking towards school.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": "Why did Haldi stare at the giraffe?",
-                          "answer": "Haldi stared at the giraffe as the giraffe was wearing big glasses and holding a book in his hand.",
-                          "images": []
-                        },
-                        {
-                          "qid": 3,
-                          "question": "How did she reach school?",
-                          "answer": "She reached school by jumping on the giraffe’s back.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 3,
-                      "name": "LET’S TALK\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Where was Haldi going?\n",
-                          "answer": "I go to school on my school bus.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": "What do you wear to school?",
-                          "answer": "I wear a T-shirt and skirt to school.",
-                          "images": []
-                        },
-                        {
-                          "qid": 3,
-                          "question": "Have you ever seen anything strange on your way to school?\nTalk about it.\n",
-                          "answer": "Yes, I saw a very cute puppy playing with a kitten on the street one day. The puppy was blue in colour and the kitten was white. They looked very cute together.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 4,
-                      "name": "SAY ALOUD , LET’S COLOUR\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "Where was Haldi going?\n",
-                          "answer": "I go to school on my school bus.\n",
-                          "images": []
-                        },
-                        {
-                          "qid": 2,
-                          "question": "What do you wear to school?",
-                          "answer": "I wear a T-shirt and skirt to school.",
-                          "images": []
-                        },
-                        {
-                          "qid": 3,
-                          "question": "Have you ever seen anything strange on your way to school?\nTalk about it.\n",
-                          "answer": "Yes, I saw a very cute puppy playing with a kitten on the street one day. The puppy was blue in colour and the kitten was white. They looked very cute together.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 5,
-                      "name": "LET’S WRITE\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "• Fill in the blanks with the words given in the brackets – (sail, bark, sing, play, ring) \nDisclaimer: Kindly refer to the textbook for the images. \nBoats ______________.\nDogs______________. \nChildren ______________. \nBells ______________. \nBirds ______________. \n• Write the names of the days of the week. You can begin with Sunday. \n• Haldi wrote her name at school in this way – ‘haldi‘. She made one mistake. What was it? Write her name correctly. _______________ Now write your name correctly. _______________.\n• Haldi wrote – I met a giraffe. \nShe made two mistakes. What are they? Write Haldi’s sentences correctly.\n",
-                          "answer": "Boats sail. Dogs bark. Children play. Bells ring. Birds sing. \n1)Sunday \n2)Monday \n3)Tuesday \n4)Wednesday \n5)Thursday \n6)Friday \n7)Saturday \nAnswer:\n She did not capitalise the first letter of her name. Write her name correctly. Haldi Now write your name correctly. Shraddha \nAnswer: \n1) She did not capitalise the first alphabet of the sentence. \n2) She did not put full stop at the end of the sentence. \nCorrect sentence: I met a giraffe. \n",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 6,
-                      "name": "LET’S GET READY FOR SCHOOL\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "• What do you do before going to school? Put ‘Y’ for yes and ‘N’ for no. \nDisclaimer: Kindly refer to the textbook for the images.\n\n• Fill in the blanks with ‘before’ or ‘after’. \n________________ eating food, I wash my hands. \n________________ _ reaches school, I sit in class. \n________________ eating food, I wash my mouth. \n________________ reaching home, I do my homework.\n",
-                          "answer": "Before eating food, I wash my hands. \nAfter reaching school, I sit in class. \nBefore eating food, I wash my mouth. \nAfter reaching home, I do my homework.",
-                          "images": []
-                        }
-                      ]
-                    },
-                    {
-                      "id": 6,
-                      "name": "FUN TIME\n",
-                      "exercise": [
-                        {
-                          "qid": 1,
-                          "question": "FUN TIME\n",
-                          "answer": "Disclaimer: These are sample answers. Students are advised to write the answers based on their own experience and observation.\n• My school bell sounds very loud. It sounds like ‘Brrrrrrriiiiing’. \n• Yes, I can make sounds of different bells that I have heard. \n1) phone bell Tring tring \n2) doorbell Ding-dong \n3) cow bell Tun-tun \n4) horse bell Chuk-chuk \n5) Bus bell Paw-paw\n",
-                          "images": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-
           ]
         }
       ]
